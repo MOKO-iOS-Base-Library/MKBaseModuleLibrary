@@ -1,0 +1,6 @@
+framework module Pods_MKBaseModuleLibrary_Example {
+  umbrella header "Pods-MKBaseModuleLibrary_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

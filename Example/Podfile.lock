@@ -1,0 +1,128 @@
+PODS:
+  - CircleProgressBar (0.32)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
+  - MKBaseModuleLibrary (1.0.0):
+    - MKBaseModuleLibrary/Base (= 1.0.0)
+    - MKBaseModuleLibrary/Category (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI (= 1.0.0)
+    - MKBaseModuleLibrary/Defines (= 1.0.0)
+    - MKBaseModuleLibrary/Tools (= 1.0.0)
+  - MKBaseModuleLibrary/Base (1.0.0):
+    - MKBaseModuleLibrary/Base/Cell (= 1.0.0)
+    - MKBaseModuleLibrary/Base/Controller (= 1.0.0)
+    - MKBaseModuleLibrary/Base/NavigationController (= 1.0.0)
+    - MKBaseModuleLibrary/Base/View (= 1.0.0)
+  - MKBaseModuleLibrary/Base/Cell (1.0.0):
+    - MKBaseModuleLibrary/Base/Cell/MKBaseCell (= 1.0.0)
+    - MKBaseModuleLibrary/Base/Cell/MKNormalTextCell (= 1.0.0)
+    - MKBaseModuleLibrary/Base/Cell/MKTextButtonCell (= 1.0.0)
+    - MKBaseModuleLibrary/Base/Cell/MKTextFieldCell (= 1.0.0)
+  - MKBaseModuleLibrary/Base/Cell/MKBaseCell (1.0.0):
+    - Masonry
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/Base/Cell/MKNormalTextCell (1.0.0):
+    - Masonry
+    - MKBaseModuleLibrary/Base/Cell/MKBaseCell
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/Base/Cell/MKTextButtonCell (1.0.0):
+    - Masonry
+    - MKBaseModuleLibrary/Base/Cell/MKBaseCell
+    - MKBaseModuleLibrary/CustomUI/MKPickerView
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/Base/Cell/MKTextFieldCell (1.0.0):
+    - Masonry
+    - MKBaseModuleLibrary/Base/Cell/MKBaseCell
+    - MKBaseModuleLibrary/Category
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/Base/Controller (1.0.0):
+    - MKBaseModuleLibrary/Base/View/WRNavigationBar
+    - MKBaseModuleLibrary/Category
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/Base/NavigationController (1.0.0)
+  - MKBaseModuleLibrary/Base/View (1.0.0):
+    - MKBaseModuleLibrary/Base/View/CollectionView (= 1.0.0)
+    - MKBaseModuleLibrary/Base/View/TableView (= 1.0.0)
+    - MKBaseModuleLibrary/Base/View/WRNavigationBar (= 1.0.0)
+  - MKBaseModuleLibrary/Base/View/CollectionView (1.0.0)
+  - MKBaseModuleLibrary/Base/View/TableView (1.0.0)
+  - MKBaseModuleLibrary/Base/View/WRNavigationBar (1.0.0):
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/Category (1.0.0):
+    - MKBaseModuleLibrary/Defines
+    - Toast
+  - MKBaseModuleLibrary/CustomUI (1.0.0):
+    - MKBaseModuleLibrary/CustomUI/HaveRefreshView (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI/MKHexKeyBoard (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI/MKHudManager (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI/MKPageControl (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI/MKPickerView (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI/MKProgressView (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI/MKSlider (= 1.0.0)
+    - MKBaseModuleLibrary/CustomUI/XDRefresh (= 1.0.0)
+  - MKBaseModuleLibrary/CustomUI/HaveRefreshView (1.0.0):
+    - MJRefresh
+  - MKBaseModuleLibrary/CustomUI/MKHexKeyBoard (1.0.0):
+    - MKBaseModuleLibrary/Category
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/CustomUI/MKHudManager (1.0.0):
+    - MBProgressHUD
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/CustomUI/MKPageControl (1.0.0)
+  - MKBaseModuleLibrary/CustomUI/MKPickerView (1.0.0):
+    - MKBaseModuleLibrary/Defines
+    - MKBaseModuleLibrary/Tools/MKAttributedString
+  - MKBaseModuleLibrary/CustomUI/MKProgressView (1.0.0):
+    - CircleProgressBar
+    - Masonry
+    - MKBaseModuleLibrary/Category
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/CustomUI/MKSlider (1.0.0):
+    - MKBaseModuleLibrary/Defines
+  - MKBaseModuleLibrary/CustomUI/XDRefresh (1.0.0)
+  - MKBaseModuleLibrary/Defines (1.0.0)
+  - MKBaseModuleLibrary/Tools (1.0.0):
+    - MKBaseModuleLibrary/Tools/MKAttributedString (= 1.0.0)
+    - MKBaseModuleLibrary/Tools/MKDateFormatter (= 1.0.0)
+    - MKBaseModuleLibrary/Tools/MKModuleManager (= 1.0.0)
+  - MKBaseModuleLibrary/Tools/MKAttributedString (1.0.0)
+  - MKBaseModuleLibrary/Tools/MKDateFormatter (1.0.0)
+  - MKBaseModuleLibrary/Tools/MKModuleManager (1.0.0)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - MKBaseModuleLibrary (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CircleProgressBar
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - Toast
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  MKBaseModuleLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MKBaseModuleLibrary: 51b7c94fc21f7e8333e855ef74e482b4cfa66009
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: b32ca401543d9b1b4a1cd38811528f5ce6a1389f
+
+COCOAPODS: 1.10.0.rc.1
