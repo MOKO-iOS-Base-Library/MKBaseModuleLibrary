@@ -1,14 +1,16 @@
 //
 //  UIView+XDRefresh.h
-//  仿微信朋友圈下拉刷新
-//  作者：谢兴达（XD）
-//  Created by 谢兴达 on 2017/4/14.
-//  Copyright © 2017年 谢兴达. All rights reserved.
-//  https://github.com/Xiexingda/XDRefresh.git
+//  MKBaseModuleLibrary
+//
+//  Created by aa on 2020/12/19.
+//
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIView (XDRefresh)
+
 /**
  下拉刷新
 
@@ -35,10 +37,10 @@
 
 @end
 
-
-
 @interface RefreshView : UIScrollView
 //刷新view的icon
 @property (nonatomic, strong)UIImageView *refreshIcon;
 
 @end
+
+NS_ASSUME_NONNULL_END

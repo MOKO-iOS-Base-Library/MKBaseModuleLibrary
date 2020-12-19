@@ -1,9 +1,8 @@
 //
 //  UIView+XDRefresh.m
-//  仿微信朋友圈下拉刷新
+//  MKBaseModuleLibrary
 //
-//  Created by 谢兴达 on 2017/4/14.
-//  Copyright © 2017年 谢兴达. All rights reserved.
+//  Created by aa on 2020/12/19.
 //
 
 #import "UIView+XDRefresh.h"

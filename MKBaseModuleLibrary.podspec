@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -60,71 +60,12 @@ TODO: Add long description of the pod here.
     end
   end
 
-  s.subspec 'CustomUI' do |ss|
-    ss.subspec 'HaveRefreshView' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/HaveRefreshView/**'
-      sss.dependency 'MJRefresh'
-    end
-    ss.subspec 'MKHexKeyBoard' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/MKHexKeyBoard/**'
-      sss.dependency 'MKBaseModuleLibrary/Category'
-      sss.dependency 'MKBaseModuleLibrary/Defines'
-    end
-    ss.subspec 'MKHudManager' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/MKHudManager/**'
-      sss.dependency 'MBProgressHUD'
-      sss.dependency 'MKBaseModuleLibrary/Defines'
-    end
-    ss.subspec 'MKPageControl' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/MKPageControl/**'
-    end
-    ss.subspec 'MKProgressView' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/MKProgressView/**'
-      sss.dependency 'Masonry'
-      sss.dependency 'CircleProgressBar'
-      sss.dependency 'MKBaseModuleLibrary/Category'
-      sss.dependency 'MKBaseModuleLibrary/Defines'
-    end
-    ss.subspec 'XDRefresh' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/XDRefresh/**'
-    end
-    ss.subspec 'MKPickerView' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/MKPickerView/**'
-      sss.dependency 'MKBaseModuleLibrary/Defines'
-      sss.dependency 'MKBaseModuleLibrary/Tools/MKAttributedString'
-    end
-    ss.subspec 'MKSlider' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/CustomUI/MKSlider/**'
-      sss.dependency 'MKBaseModuleLibrary/Defines'
-    end
-  end
-
   s.subspec 'Base' do |ss|
     ss.subspec 'Cell' do |sss|
       sss.subspec 'MKBaseCell' do |ssss|
         ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/Cell/MKBaseCell/**'
         ssss.dependency 'Masonry'
         ssss.dependency 'MKBaseModuleLibrary/Defines'
-      end
-      sss.subspec 'MKNormalTextCell' do |ssss|
-        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/Cell/MKNormalTextCell/**'
-        ssss.dependency 'Masonry'
-        ssss.dependency 'MKBaseModuleLibrary/Defines'
-        ssss.dependency 'MKBaseModuleLibrary/Base/Cell/MKBaseCell'
-      end
-      sss.subspec 'MKTextButtonCell' do |ssss|
-        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/Cell/MKTextButtonCell/**'
-        ssss.dependency 'Masonry'
-        ssss.dependency 'MKBaseModuleLibrary/Defines'
-        ssss.dependency 'MKBaseModuleLibrary/Base/Cell/MKBaseCell'
-        ssss.dependency 'MKBaseModuleLibrary/CustomUI/MKPickerView'
-      end
-      sss.subspec 'MKTextFieldCell' do |ssss|
-        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/Cell/MKTextFieldCell/**'
-        ssss.dependency 'Masonry'
-        ssss.dependency 'MKBaseModuleLibrary/Defines'
-        ssss.dependency 'MKBaseModuleLibrary/Base/Cell/MKBaseCell'
-        ssss.dependency 'MKBaseModuleLibrary/Category'
       end
     end
     ss.subspec 'View' do |sss|
@@ -141,7 +82,6 @@ TODO: Add long description of the pod here.
     end
     ss.subspec 'Controller' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/Controller/**'
-#        sss.dependency 'YYKit'
       sss.dependency 'MKBaseModuleLibrary/Category'
       sss.dependency 'MKBaseModuleLibrary/Defines'
       sss.dependency 'MKBaseModuleLibrary/Base/View/WRNavigationBar'
