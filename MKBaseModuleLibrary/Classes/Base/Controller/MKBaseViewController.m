@@ -200,8 +200,8 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(60.0f, 7.0f, [UIScreen mainScreen].bounds.size.width - 120.0f, 30.0f)];
         _titleLabel.font = MKFont(18);
-        _titleLabel.textColor = DEFAULT_TEXT_COLOR;
-        _titleLabel.tintColor = DEFAULT_TEXT_COLOR;
+        _titleLabel.textColor = COLOR_WHITE_MACROS;
+        _titleLabel.tintColor = COLOR_WHITE_MACROS;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.backgroundColor = COLOR_CLEAR_MACROS;
     }
