@@ -20,7 +20,7 @@
   },
   "source_files": "MKBaseModuleLibrary/Classes/MKBaseModule.h",
   "resource_bundles": {
-    "mokoLibrary": [
+    "MKBaseModuleLibrary": [
       "MKBaseModuleLibrary/Assets/*"
     ]
   },

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   
   s.source_files = 'MKBaseModuleLibrary/Classes/MKBaseModule.h'
   s.resource_bundles = {
-      'mokoLibrary' => ['MKBaseModuleLibrary/Assets/*']
+      'MKBaseModuleLibrary' => ['MKBaseModuleLibrary/Assets/*']
   }
   s.subspec 'Defines' do |ss|
     ss.source_files = 'MKBaseModuleLibrary/Classes/Defines/*.h'
