@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -49,9 +49,6 @@ TODO: Add long description of the pod here.
   end
 
   s.subspec 'Tools' do |ss|
-    ss.subspec 'MKAttributedString' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKAttributedString/**'
-    end
     ss.subspec 'MKDateFormatter' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**'
     end

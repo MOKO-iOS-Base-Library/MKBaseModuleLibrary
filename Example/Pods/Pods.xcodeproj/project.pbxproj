@@ -101,7 +101,6 @@
 		8656F2A4796AA6D5AB656140D20CDF93 /* CircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A2A666D66718A208CCB2EC1D01224D /* CircleProgressBar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		87486383B557F0EDE79EFD0F0C745BC3 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 530701C3466A9F2C287E3386A82169B4 /* UIView+Toast.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8BF3A1A6A7034FFF11A21B1E2DC43520 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 993162A749AE8512DEAC1BB5C4CA3D57 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F395EB4D4BBD69523F4B2EC6AAC8880 /* MKAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = DDBC8D60652CE1FB063F32533ACD6367 /* MKAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD6ED57C2D3A01AC2FDDA87F6AF4D619 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9375AA78A2A110F76F5A42747B76A84C /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3237B5827AD66618A14A53C4E88CFF1E /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		945A9BE25F8E6ABADEA3F04A7DDE9B08 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = C4668405137807E6C5F3F66F218AF33E /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -140,7 +139,6 @@
 		BFCD27EA1513719252030E76A60B49D9 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE55EF38AABF46F719A6FA2E1CEC4E9 /* UIImage+Compare.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 484F4C3F4C4D490C7B27E5D2510756C4 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6A43D492FCC08132EA3C46542C4EAE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069A371CADCDDEF048DC24135798D5A4 /* Foundation.framework */; };
-		C744EBF4ADCDD55B416AC45278A7E872 /* MKAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3105CA6A42F0D6FC9151272B96C59B5F /* MKAttributedString.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CA4EB40EBD9315DE088E7FA6F7D76995 /* UIButton+MKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCFC88F365DCB086DACFDC1088E0AAF /* UIButton+MKAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CB27A06C7EAFBFA04873E499B2030BA3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D7396D8665289CC99E76EFE67A30A04B /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CD42CF6D0BB41638132C699A8E7150AA /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BAABB6A6F88F7E421664AF11EFCA29F2 /* MJRefreshBackStateFooter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -346,7 +344,6 @@
 		2F73A946DC6D2F9E2E28D3B5308450A5 /* Pods-MKBaseModuleLibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKBaseModuleLibrary_Example-umbrella.h"; sourceTree = "<group>"; };
 		301AD557CE9900B3006E7037CAE0F6E3 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		30A30B4AE8D86D817332403804151305 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		3105CA6A42F0D6FC9151272B96C59B5F /* MKAttributedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKAttributedString.m; path = MKBaseModuleLibrary/Classes/Tools/MKAttributedString/MKAttributedString.m; sourceTree = "<group>"; };
 		3237B5827AD66618A14A53C4E88CFF1E /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
 		32510BE7146829773809368B66EB0BE2 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		327EE9B340885F7D9D860E680210D9A2 /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
@@ -508,7 +505,6 @@
 		DB8520B44DE477F98D61DE5A8C6A0C25 /* Pods-MKBaseModuleLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DCFB042169DEF2DC9592632241CEF47E /* UIScrollView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIScrollView+MKAdd.h"; sourceTree = "<group>"; };
 		DD96D57DADDF46D8817B4D26C0B6A653 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		DDBC8D60652CE1FB063F32533ACD6367 /* MKAttributedString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKAttributedString.h; path = MKBaseModuleLibrary/Classes/Tools/MKAttributedString/MKAttributedString.h; sourceTree = "<group>"; };
 		DE6E6204BC6AFDCB0E62749104F94B47 /* MKCommonColorsDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKCommonColorsDefine.h; path = MKBaseModuleLibrary/Classes/Defines/MKCommonColorsDefine.h; sourceTree = "<group>"; };
 		DFE26D41664BB7903D05B6D637B0D0DB /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		E1EEA5F4A5481209040FA8168E9F1D38 /* Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.debug.xcconfig; sourceTree = "<group>"; };
@@ -738,15 +734,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		24A74F56761011CA491FD2B69AADB899 /* MKAttributedString */ = {
-			isa = PBXGroup;
-			children = (
-				DDBC8D60652CE1FB063F32533ACD6367 /* MKAttributedString.h */,
-				3105CA6A42F0D6FC9151272B96C59B5F /* MKAttributedString.m */,
-			);
-			name = MKAttributedString;
-			sourceTree = "<group>";
-		};
 		2E1370CC203B1E18494F480369F0BEDD /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -836,7 +823,6 @@
 		748D1AC3C3D71C68E70FBCA3F5D9577D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				24A74F56761011CA491FD2B69AADB899 /* MKAttributedString */,
 				2F5D9D37962FFD0B5DCCC315D34B3F34 /* MKDateFormatter */,
 				5D3EC668AEC215F27217883A53582D24 /* MKModuleManager */,
 			);
@@ -1345,7 +1331,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F395EB4D4BBD69523F4B2EC6AAC8880 /* MKAttributedString.h in Headers */,
 				6A334FDCE6B335245C016372114A18F3 /* MKBaseCell.h in Headers */,
 				F8ED9042622733C3FAB1BC4D47C16D38 /* MKBaseCollectionView.h in Headers */,
 				E670721FCCE9F167CC1450CFC10C302B /* MKBaseModule.h in Headers */,
@@ -1710,7 +1695,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C744EBF4ADCDD55B416AC45278A7E872 /* MKAttributedString.m in Sources */,
 				F419656F942340EFDCA452841D23B6B5 /* MKBaseCell.m in Sources */,
 				50B68714935539681A44EBBCE6E9FCD2 /* MKBaseCollectionView.m in Sources */,
 				02C4E1E0D5E09D6EE192F1B834628E8E /* MKBaseModuleLibrary-dummy.m in Sources */,
