@@ -1,6 +1,6 @@
 {
   "name": "MKBaseModuleLibrary",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "summary": "Some basic component libraries of MOKO.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git",
-    "tag": "1.0.2"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "11.0"
@@ -45,101 +45,12 @@
       "name": "Tools",
       "subspecs": [
         {
-          "name": "MKAttributedString",
-          "source_files": "MKBaseModuleLibrary/Classes/Tools/MKAttributedString/**"
-        },
-        {
           "name": "MKDateFormatter",
           "source_files": "MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**"
         },
         {
           "name": "MKModuleManager",
           "source_files": "MKBaseModuleLibrary/Classes/Tools/MKModuleManager/**"
-        }
-      ]
-    },
-    {
-      "name": "CustomUI",
-      "subspecs": [
-        {
-          "name": "HaveRefreshView",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/HaveRefreshView/**",
-          "dependencies": {
-            "MJRefresh": [
-
-            ]
-          }
-        },
-        {
-          "name": "MKHexKeyBoard",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/MKHexKeyBoard/**",
-          "dependencies": {
-            "MKBaseModuleLibrary/Category": [
-
-            ],
-            "MKBaseModuleLibrary/Defines": [
-
-            ]
-          }
-        },
-        {
-          "name": "MKHudManager",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/MKHudManager/**",
-          "dependencies": {
-            "MBProgressHUD": [
-
-            ],
-            "MKBaseModuleLibrary/Defines": [
-
-            ]
-          }
-        },
-        {
-          "name": "MKPageControl",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/MKPageControl/**"
-        },
-        {
-          "name": "MKProgressView",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/MKProgressView/**",
-          "dependencies": {
-            "Masonry": [
-
-            ],
-            "CircleProgressBar": [
-
-            ],
-            "MKBaseModuleLibrary/Category": [
-
-            ],
-            "MKBaseModuleLibrary/Defines": [
-
-            ]
-          }
-        },
-        {
-          "name": "XDRefresh",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/XDRefresh/**"
-        },
-        {
-          "name": "MKPickerView",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/MKPickerView/**",
-          "dependencies": {
-            "MKBaseModuleLibrary/Defines": [
-
-            ],
-            "MKBaseModuleLibrary/Tools/MKAttributedString": [
-
-            ]
-          }
-        },
-        {
-          "name": "MKSlider",
-          "source_files": "MKBaseModuleLibrary/Classes/CustomUI/MKSlider/**",
-          "dependencies": {
-            "MKBaseModuleLibrary/Defines": [
-
-            ]
-          }
         }
       ]
     },
@@ -157,57 +68,6 @@
 
                 ],
                 "MKBaseModuleLibrary/Defines": [
-
-                ]
-              }
-            },
-            {
-              "name": "MKNormalTextCell",
-              "source_files": "MKBaseModuleLibrary/Classes/Base/Cell/MKNormalTextCell/**",
-              "dependencies": {
-                "Masonry": [
-
-                ],
-                "MKBaseModuleLibrary/Defines": [
-
-                ],
-                "MKBaseModuleLibrary/Base/Cell/MKBaseCell": [
-
-                ]
-              }
-            },
-            {
-              "name": "MKTextButtonCell",
-              "source_files": "MKBaseModuleLibrary/Classes/Base/Cell/MKTextButtonCell/**",
-              "dependencies": {
-                "Masonry": [
-
-                ],
-                "MKBaseModuleLibrary/Defines": [
-
-                ],
-                "MKBaseModuleLibrary/Base/Cell/MKBaseCell": [
-
-                ],
-                "MKBaseModuleLibrary/CustomUI/MKPickerView": [
-
-                ]
-              }
-            },
-            {
-              "name": "MKTextFieldCell",
-              "source_files": "MKBaseModuleLibrary/Classes/Base/Cell/MKTextFieldCell/**",
-              "dependencies": {
-                "Masonry": [
-
-                ],
-                "MKBaseModuleLibrary/Defines": [
-
-                ],
-                "MKBaseModuleLibrary/Base/Cell/MKBaseCell": [
-
-                ],
-                "MKBaseModuleLibrary/Category": [
 
                 ]
               }
