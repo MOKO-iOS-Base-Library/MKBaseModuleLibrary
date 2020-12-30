@@ -8,10 +8,10 @@
 
 #import "NSString+MKAdd.h"
 
+#import <CommonCrypto/CommonDigest.h>
+
 #import "NSData+MKAdd.h"
 #import "NSNumber+MKAdd.h"
-
-#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (MKAdd)
 

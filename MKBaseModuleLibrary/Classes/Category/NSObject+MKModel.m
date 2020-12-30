@@ -7,8 +7,10 @@
 //
 
 #import "NSObject+MKModel.h"
-#import "MKClassInfo.h"
+
 #import <objc/message.h>
+
+#import "MKClassInfo.h"
 
 #define force_inline __inline__ __attribute__((always_inline))
 

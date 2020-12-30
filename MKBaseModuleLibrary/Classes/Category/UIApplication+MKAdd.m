@@ -8,11 +8,13 @@
 
 #import "UIApplication+MKAdd.h"
 #import <sys/utsname.h>
-#import "NSArray+MKAdd.h"
-#import "NSObject+MKAdd.h"
 #import <sys/sysctl.h>
 #import <mach/mach.h>
 #import <objc/runtime.h>
+#import <pthread.h>
+
+#import "NSArray+MKAdd.h"
+#import "NSObject+MKAdd.h"
 
 #ifndef MKSYNTH_DYNAMIC_PROPERTY_OBJECT
 #define MKSYNTH_DYNAMIC_PROPERTY_OBJECT(_getter_, _setter_, _association_, _type_) \
