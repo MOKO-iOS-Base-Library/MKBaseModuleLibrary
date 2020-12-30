@@ -11,7 +11,6 @@
 #import <sys/sysctl.h>
 #import <mach/mach.h>
 #import <objc/runtime.h>
-#import <pthread.h>
 
 #import "NSArray+MKAdd.h"
 #import "NSObject+MKAdd.h"
@@ -27,14 +26,6 @@
     return objc_getAssociatedObject(self, @selector(_setter_:)); \
 }
 #endif
-
-static inline void mk_dispatch_async_on_main_queue(void (^block)()) {
-    if (pthread_main_np()) {
-        block();
-    } else {
-        dispatch_async(dispatch_get_main_queue(), block);
-    }
-}
 
 #define kNetworkIndicatorDelay (1/30.0)
 @interface _MKUIApplicationNetworkIndicatorInfo : NSObject
@@ -373,7 +364,7 @@ MKSYNTH_DYNAMIC_PROPERTY_OBJECT(networkActivityInfo, setNetworkActivityInfo, RET
 
 - (void)_changeNetworkActivityCount:(NSInteger)delta {
     @synchronized(self){
-        mk_dispatch_async_on_main_queue(^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             _MKUIApplicationNetworkIndicatorInfo *info = [self networkActivityInfo];
             if (!info) {
                 info = [_MKUIApplicationNetworkIndicatorInfo new];
