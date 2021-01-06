@@ -113,13 +113,9 @@
 }
 
 + (NSString *)currentIphoneType {
-    
     struct utsname systemInfo;
-    
     uname(&systemInfo);
-    
     NSString * deviceString = [NSString stringWithCString: systemInfo.machine encoding:NSASCIIStringEncoding];
-    
     if([deviceString isEqualToString:@"iPhone1,1"]) return @"iPhone 2G";
     if([deviceString isEqualToString:@"iPhone1,2"]) return @"iPhone 3G";
     if([deviceString isEqualToString:@"iPhone2,1"]) return @"iPhone 3GS";
