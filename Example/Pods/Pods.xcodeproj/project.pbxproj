@@ -139,7 +139,7 @@
 		F666A3E914AD60AF760BE3FB2764B38B /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 817532BAD70890389C438C914C49C8BE /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2CA622C681B084C0651D9A5C029C00D /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F931E10D152D6BEADC781A86AC46B5CC /* NSObject+MKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C23E4C782971649536E236C6DC036806 /* NSObject+MKModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F9820E85244800EC4175A9F8F1B1B594 /* MKCategoryModule.h in Headers */ = {isa = PBXBuildFile; fileRef = D750D6B76A9C25F48ABB4A8B5CCD2B88 /* MKCategoryModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9820E85244800EC4175A9F8F1B1B594 /* MKAddsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D750D6B76A9C25F48ABB4A8B5CCD2B88 /* MKAddsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA295AF5E6F8ECB18E243EADF89F64E5 /* NSData+MKAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = FA03E00B6DFE697CC8E2E8B2DDA00780 /* NSData+MKAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD1CD5A0FA27799C195BD0EEAA6A9B0E /* WRCustomNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BA82CA9FA8A90EB57141AFA2943D50 /* WRCustomNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFD9261DAAD4882F5896A076922DD064 /* MKBaseModuleLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E4C3D4690027E64B2AED937082AB081 /* MKBaseModuleLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -346,7 +346,7 @@
 		CD5486DCCC72B32CCD9A2224EBBAE039 /* MKBaseModuleLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKBaseModuleLibrary.modulemap; sourceTree = "<group>"; };
 		CF31B4E4B7D41AC71A5A20CC3817D793 /* Pods-MKBaseModuleLibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKBaseModuleLibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D4ED49257AEE78EFAD763B1419D6616E /* Toast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toast.modulemap; sourceTree = "<group>"; };
-		D750D6B76A9C25F48ABB4A8B5CCD2B88 /* MKCategoryModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKCategoryModule.h; path = MKBaseModuleLibrary/Classes/Category/MKCategoryModule.h; sourceTree = "<group>"; };
+		D750D6B76A9C25F48ABB4A8B5CCD2B88 /* MKAddsHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKAddsHeader.h; path = MKBaseModuleLibrary/Classes/Category/MKAddsHeader.h; sourceTree = "<group>"; };
 		D81C4CBA94518230C09CA2C1C9069CC2 /* UITextField+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UITextField+MKAdd.m"; sourceTree = "<group>"; };
 		DB8520B44DE477F98D61DE5A8C6A0C25 /* Pods-MKBaseModuleLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DC122CCBA4AA494125272A63E8B56040 /* UIView+XDRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XDRefresh.m"; path = "MKBaseModuleLibrary/Classes/Category/UIView+XDRefresh.m"; sourceTree = "<group>"; };
@@ -863,7 +863,7 @@
 		F9708443DB5B1974E741F71790B36CEA /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				D750D6B76A9C25F48ABB4A8B5CCD2B88 /* MKCategoryModule.h */,
+				D750D6B76A9C25F48ABB4A8B5CCD2B88 /* MKAddsHeader.h */,
 				4ECD978F2B36A56716C117365CC377A6 /* NSArray+MKAdd.h */,
 				ED19750F15CDD9B79D41C5687055F4C6 /* NSArray+MKAdd.m */,
 				FA03E00B6DFE697CC8E2E8B2DDA00780 /* NSData+MKAdd.h */,
@@ -984,7 +984,7 @@
 				09DD83EAFBC677EEB63167BD4D06EAB4 /* MKBaseNavigationController.h in Headers */,
 				A8F1D99BE8B2DE10FEB9D247B9A5BAF6 /* MKBaseTableView.h in Headers */,
 				8A1E471C6B3D125DBA7DDE5C25E7ED29 /* MKBaseViewController.h in Headers */,
-				F9820E85244800EC4175A9F8F1B1B594 /* MKCategoryModule.h in Headers */,
+				F9820E85244800EC4175A9F8F1B1B594 /* MKAddsHeader.h in Headers */,
 				EFC4334DC65F551CDC6A9A8FB09BB52D /* MKClassInfo.h in Headers */,
 				4CFF9A6514C9051DDA94E8F7B866AFDA /* MKCommonColorsDefine.h in Headers */,
 				576593B202DBA44876F3FDF5C6E28793 /* MKDateFormatter.h in Headers */,

@@ -203,9 +203,7 @@
 }
 
 - (NSURL *)mk_documentsURL {
-    return [[[NSFileManager defaultManager]
-             URLsForDirectory:NSDocumentDirectory
-             inDomains:NSUserDomainMask] lastObject];
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 - (NSString *)mk_documentsPath {
@@ -213,9 +211,7 @@
 }
 
 - (NSURL *)mk_cachesURL {
-    return [[[NSFileManager defaultManager]
-             URLsForDirectory:NSCachesDirectory
-             inDomains:NSUserDomainMask] lastObject];
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 - (NSString *)mk_cachesPath {
@@ -223,9 +219,7 @@
 }
 
 - (NSURL *)mk_libraryURL {
-    return [[[NSFileManager defaultManager]
-             URLsForDirectory:NSLibraryDirectory
-             inDomains:NSUserDomainMask] lastObject];
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSLibraryDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 - (NSString *)mk_libraryPath {
@@ -380,11 +374,11 @@ MKSYNTH_DYNAMIC_PROPERTY_OBJECT(networkActivityInfo, setNetworkActivityInfo, RET
     }
 }
 
-- (void)incrementNetworkActivityCount {
+- (void)mk_incrementNetworkActivityCount {
     [self _changeNetworkActivityCount:1];
 }
 
-- (void)decrementNetworkActivityCount {
+- (void)mk_decrementNetworkActivityCount {
     [self _changeNetworkActivityCount:-1];
 }
 
