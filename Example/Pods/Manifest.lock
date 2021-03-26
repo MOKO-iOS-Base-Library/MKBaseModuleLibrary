@@ -5,46 +5,46 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
-  - MKBaseModuleLibrary (1.0.10):
-    - MKBaseModuleLibrary/Base (= 1.0.10)
-    - MKBaseModuleLibrary/Category (= 1.0.10)
-    - MKBaseModuleLibrary/Defines (= 1.0.10)
-    - MKBaseModuleLibrary/Tools (= 1.0.10)
-  - MKBaseModuleLibrary/Base (1.0.10):
-    - MKBaseModuleLibrary/Base/Cell (= 1.0.10)
-    - MKBaseModuleLibrary/Base/Controller (= 1.0.10)
-    - MKBaseModuleLibrary/Base/NavigationController (= 1.0.10)
-    - MKBaseModuleLibrary/Base/View (= 1.0.10)
-  - MKBaseModuleLibrary/Base/Cell (1.0.10):
-    - MKBaseModuleLibrary/Base/Cell/MKBaseCell (= 1.0.10)
-  - MKBaseModuleLibrary/Base/Cell/MKBaseCell (1.0.10):
+  - MKBaseModuleLibrary (1.1.0):
+    - MKBaseModuleLibrary/Base (= 1.1.0)
+    - MKBaseModuleLibrary/Category (= 1.1.0)
+    - MKBaseModuleLibrary/Defines (= 1.1.0)
+    - MKBaseModuleLibrary/Tools (= 1.1.0)
+  - MKBaseModuleLibrary/Base (1.1.0):
+    - MKBaseModuleLibrary/Base/Cell (= 1.1.0)
+    - MKBaseModuleLibrary/Base/Controller (= 1.1.0)
+    - MKBaseModuleLibrary/Base/NavigationController (= 1.1.0)
+    - MKBaseModuleLibrary/Base/View (= 1.1.0)
+  - MKBaseModuleLibrary/Base/Cell (1.1.0):
+    - MKBaseModuleLibrary/Base/Cell/MKBaseCell (= 1.1.0)
+  - MKBaseModuleLibrary/Base/Cell/MKBaseCell (1.1.0):
     - Masonry
     - MKBaseModuleLibrary/Defines
-  - MKBaseModuleLibrary/Base/Controller (1.0.10):
+  - MKBaseModuleLibrary/Base/Controller (1.1.0):
     - MKBaseModuleLibrary/Base/View/WRNavigationBar
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-  - MKBaseModuleLibrary/Base/NavigationController (1.0.10)
-  - MKBaseModuleLibrary/Base/View (1.0.10):
-    - MKBaseModuleLibrary/Base/View/CollectionView (= 1.0.10)
-    - MKBaseModuleLibrary/Base/View/TableView (= 1.0.10)
-    - MKBaseModuleLibrary/Base/View/WRNavigationBar (= 1.0.10)
-  - MKBaseModuleLibrary/Base/View/CollectionView (1.0.10)
-  - MKBaseModuleLibrary/Base/View/TableView (1.0.10)
-  - MKBaseModuleLibrary/Base/View/WRNavigationBar (1.0.10):
+  - MKBaseModuleLibrary/Base/NavigationController (1.1.0)
+  - MKBaseModuleLibrary/Base/View (1.1.0):
+    - MKBaseModuleLibrary/Base/View/CollectionView (= 1.1.0)
+    - MKBaseModuleLibrary/Base/View/TableView (= 1.1.0)
+    - MKBaseModuleLibrary/Base/View/WRNavigationBar (= 1.1.0)
+  - MKBaseModuleLibrary/Base/View/CollectionView (1.1.0)
+  - MKBaseModuleLibrary/Base/View/TableView (1.1.0)
+  - MKBaseModuleLibrary/Base/View/WRNavigationBar (1.1.0):
     - MKBaseModuleLibrary/Defines
-  - MKBaseModuleLibrary/Category (1.0.10):
+  - MKBaseModuleLibrary/Category (1.1.0):
     - MKBaseModuleLibrary/Defines
     - MKBaseModuleLibrary/Tools/MKClassInfo
     - Toast
-  - MKBaseModuleLibrary/Defines (1.0.10)
-  - MKBaseModuleLibrary/Tools (1.0.10):
-    - MKBaseModuleLibrary/Tools/MKClassInfo (= 1.0.10)
-    - MKBaseModuleLibrary/Tools/MKDateFormatter (= 1.0.10)
-    - MKBaseModuleLibrary/Tools/MKModuleManager (= 1.0.10)
-  - MKBaseModuleLibrary/Tools/MKClassInfo (1.0.10)
-  - MKBaseModuleLibrary/Tools/MKDateFormatter (1.0.10)
-  - MKBaseModuleLibrary/Tools/MKModuleManager (1.0.10)
+  - MKBaseModuleLibrary/Defines (1.1.0)
+  - MKBaseModuleLibrary/Tools (1.1.0):
+    - MKBaseModuleLibrary/Tools/MKClassInfo (= 1.1.0)
+    - MKBaseModuleLibrary/Tools/MKDateFormatter (= 1.1.0)
+    - MKBaseModuleLibrary/Tools/MKModuleManager (= 1.1.0)
+  - MKBaseModuleLibrary/Tools/MKClassInfo (1.1.0)
+  - MKBaseModuleLibrary/Tools/MKDateFormatter (1.1.0)
+  - MKBaseModuleLibrary/Tools/MKModuleManager (1.1.0)
   - Toast (4.0.0)
 
 DEPENDENCIES:
@@ -65,7 +65,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MKBaseModuleLibrary: 5fb1d2bd5ec4585f4473edf7a791ffc311846ce3
+  MKBaseModuleLibrary: 3f6402005cd7aafb0a1564261b3ba798bd6b8ba9
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
 PODFILE CHECKSUM: 9f42c43809578bf890fc60263eb2de4aae0daba1
