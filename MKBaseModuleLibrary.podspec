@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -16,23 +16,11 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'aadyx2007@163.com' => 'aadyx2007@163.com' }
   s.source           = { :git => 'https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
-
-#  s.source_files = 'MKBaseModuleLibrary/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MKBaseModuleLibrary' => ['MKBaseModuleLibrary/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
   
   s.source_files = 'MKBaseModuleLibrary/Classes/MKBaseModule.h'
   s.resource_bundles = {
@@ -76,16 +64,13 @@ TODO: Add long description of the pod here.
       sss.subspec 'TableView' do |ssss|
         ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/TableView/**'
       end
-      sss.subspec 'WRNavigationBar' do |ssss|
-        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/WRNavigationBar/**'
-        ssss.dependency 'MKBaseModuleLibrary/Defines'
-      end
     end
     ss.subspec 'Controller' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/Controller/**'
       sss.dependency 'MKBaseModuleLibrary/Category'
       sss.dependency 'MKBaseModuleLibrary/Defines'
-      sss.dependency 'MKBaseModuleLibrary/Base/View/WRNavigationBar'
+      
+      sss.dependency 'WRNavigationBar'
     end
     ss.subspec 'NavigationController' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/NavigationController/**'

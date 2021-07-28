@@ -69,11 +69,7 @@
 @implementation WRCustomNavigationBar
 
 + (instancetype)CustomNavigationBar {
-    CGFloat height = [[UIApplication sharedApplication] statusBarFrame].size.height + 44.f;
-    WRCustomNavigationBar *navigationBar = [[self alloc] initWithFrame:CGRectMake(0,
-                                                                                  0,
-                                                                                  kWRScreenWidth,
-                                                                                  height)];
+    WRCustomNavigationBar *navigationBar = [[self alloc] initWithFrame:CGRectMake(0, 0, kWRScreenWidth, [WRCustomNavigationBar navBarBottom])];
     return navigationBar;
 }
 - (instancetype)init {
@@ -103,7 +99,7 @@
 
 // TODO:这边结合 WRCellView 会不会更好呢？
 -(void)updateFrame {
-    NSInteger top = [[UIApplication sharedApplication] statusBarFrame].size.height;
+    NSInteger top = ([WRCustomNavigationBar isIphoneX]) ? 44 : 20;
     NSInteger margin = 0;
     NSInteger buttonHeight = 44;
     NSInteger buttonWidth = 44;
@@ -266,6 +262,22 @@
         _backgroundImageView.hidden = YES;
     }
     return _backgroundImageView;
+}
+
++ (int)navBarBottom {
+    return 44 + CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
+}
++ (BOOL)isIphoneX {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+    if ([platform isEqualToString:@"i386"] || [platform isEqualToString:@"x86_64"]) {
+        // judgment by height when in simulators
+        return (CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(375, 812)) ||
+                CGSizeEqualToSize([UIScreen mainScreen].bounds.size, CGSizeMake(812, 375)));
+    }
+    BOOL isIPhoneX = [platform isEqualToString:@"iPhone10,3"] || [platform isEqualToString:@"iPhone10,6"];
+    return isIPhoneX;
 }
 
 @end

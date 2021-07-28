@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.defaultTitle = @"Come on";
+    self.custom_naviBarColor = [UIColor redColor];
 }
 
 
