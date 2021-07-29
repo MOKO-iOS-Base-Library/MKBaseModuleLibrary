@@ -228,7 +228,7 @@
 		01A13C024EDB38740382DB80DCEA23BA /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		0249B750E4B8BFF8036F031FB59027BC /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		0485CF8C374973AEB9A1DBC5FC33A5CB /* WRNavigationBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WRNavigationBar-Info.plist"; sourceTree = "<group>"; };
-		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MKBaseModuleLibrary.bundle; path = "MKBaseModuleLibrary-MKBaseModuleLibrary.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKBaseModuleLibrary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		06894892FA15646C889F5E67A38B9D4D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		06A8C678E100823825F997DB799656C3 /* UIImage+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIImage+MKAdd.m"; sourceTree = "<group>"; };
 		06CC5761D21A4D544288F34DFF3D7477 /* MKBaseTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseTableView.m; path = MKBaseModuleLibrary/Classes/Base/View/tableView/MKBaseTableView.m; sourceTree = "<group>"; };
@@ -239,19 +239,19 @@
 		12EB84B497F7E7A789B6163B2F859158 /* Toast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-umbrella.h"; sourceTree = "<group>"; };
 		14A31515784B69045498D3BE261207D1 /* NSDateFormatter+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSDateFormatter+MKAdd.h"; sourceTree = "<group>"; };
 		14D70C738AC6655198D6EB9C737EADD6 /* Pods-MKBaseModuleLibrary_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBaseModuleLibrary_Example-Info.plist"; sourceTree = "<group>"; };
-		14E1EE2538383E2B2D1755EBB05B94FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		14E1EE2538383E2B2D1755EBB05B94FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		15996074C600B2FBF7F3ED34E0435AFF /* WRNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WRNavigationBar.m; path = Demo/CodeDemo/WRNavigationBar/WRNavigationBar.m; sourceTree = "<group>"; };
 		1734A9BA3D05763F2E75F34B54400117 /* MKDeviceDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKDeviceDefine.h; path = MKBaseModuleLibrary/Classes/Defines/MKDeviceDefine.h; sourceTree = "<group>"; };
 		175A798BC766535304E9B11262C19E9A /* Toast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toast.modulemap; sourceTree = "<group>"; };
 		1DCBA8D20385264BF0570E5995369550 /* Pods-MKBaseModuleLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBaseModuleLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1DD46B4AAF69B73A672B373DA107A693 /* Pods_MKBaseModuleLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKBaseModuleLibrary_Example.framework; path = "Pods-MKBaseModuleLibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD46B4AAF69B73A672B373DA107A693 /* Pods_MKBaseModuleLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBaseModuleLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D22F24BEB8F1FCC562CB567EE997AA /* WRNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WRNavigationBar.modulemap; sourceTree = "<group>"; };
 		2118FC5DDECD45EE5826A9F3555A109E /* UIScrollView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIScrollView+MKAdd.h"; sourceTree = "<group>"; };
 		23868629DAEDF88CF0753B744CB8F930 /* NSInvocation+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSInvocation+MKAdd.m"; sourceTree = "<group>"; };
 		238BFEB9003DD213DED1E9B4725974B9 /* WRNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WRNavigationBar.release.xcconfig; sourceTree = "<group>"; };
 		24DDA9009C063F4380949F138ECBF20B /* MKBaseNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseNavigationController.m; path = MKBaseModuleLibrary/Classes/Base/NavigationController/MKBaseNavigationController.m; sourceTree = "<group>"; };
-		2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKBaseModuleLibrary.framework; path = MKBaseModuleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKBaseModuleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5A52D27C5D234FABC084597EAC6FB4 /* UIView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIView+MKAdd.h"; sourceTree = "<group>"; };
 		2D030D1C218BA44EC599106EEFF3DB5F /* Pods-MKBaseModuleLibrary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBaseModuleLibrary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2E39C211B5CF4DAF1D75A9FCCBE38051 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
@@ -290,12 +290,12 @@
 		52952D24745E4A34AA5BC081FB65D48E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		52BB20B5449696774F842E7808C0415E /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		5493B516B9934AAA2E387B4E5C6F4D92 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C0BF3B01E451221FF512106C8DB2A5 /* Pods-MKBaseModuleLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKBaseModuleLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		57FBAF97EDA6C79BF31D48DD4440F018 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		58BD037C03AACAFEF53142B4AEB3005B /* UITableView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UITableView+MKAdd.h"; sourceTree = "<group>"; };
 		595643B5E62ADBCF9DAC086834704725 /* navigation_back_button_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "navigation_back_button_white@2x.png"; path = "MKBaseModuleLibrary/Assets/navigation_back_button_white@2x.png"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C51CF5599AF1D7F8E635A0F356B7268 /* NSDate+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSDate+MKAdd.h"; sourceTree = "<group>"; };
 		5C5E4F328FD8A88580EC7B7F3BCC6B6C /* WRNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WRNavigationBar-umbrella.h"; sourceTree = "<group>"; };
 		5D39B0BFA9EB6D3176FC32434D8F05F0 /* UINavigationItem+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UINavigationItem+MKAdd.h"; sourceTree = "<group>"; };
@@ -307,7 +307,7 @@
 		6D90819E358E8CFAB597F33DD232596D /* Pods-MKBaseModuleLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKBaseModuleLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6DC3F8D9BA4EE4D8D6E55D2DB42D6CBB /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		6E4B905FC052D3200E3737EC16957460 /* MKBaseCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseCell.h; path = MKBaseModuleLibrary/Classes/Base/Cell/MKBaseCell/MKBaseCell.h; sourceTree = "<group>"; };
-		6E55E5E50DD7B2F4AF123ADD095BA4F7 /* Pods_MKBaseModuleLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKBaseModuleLibrary_Tests.framework; path = "Pods-MKBaseModuleLibrary_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E55E5E50DD7B2F4AF123ADD095BA4F7 /* Pods_MKBaseModuleLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBaseModuleLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1D605B5B567D561AAB3DB30793E05D /* Pods-MKBaseModuleLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKBaseModuleLibrary_Tests.modulemap"; sourceTree = "<group>"; };
 		6F5CF042062C401CBFA89BB0559ADBEF /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		7018915558313A09691F8BA8F28F33DB /* UIButton+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIButton+MKAdd.h"; sourceTree = "<group>"; };
@@ -342,13 +342,13 @@
 		9B5399905224A4CDE735BE1F94AF26B9 /* WRCustomNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WRCustomNavigationBar.h; path = Demo/CodeDemo/WRNavigationBar/WRCustomNavigationBar.h; sourceTree = "<group>"; };
 		9B74DEFB38540E5C18B1BF0E704885CF /* NSDate+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSDate+MKAdd.m"; sourceTree = "<group>"; };
 		9CEEF6B9A45165E9A6B852214CD6DED8 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F6D704419B220EEEDE3CD2976ABAC93 /* WRNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WRNavigationBar-prefix.pch"; sourceTree = "<group>"; };
 		9F9BAC94C30F73B22B147BEB2F9978D5 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		9FFBEA17AFCEEC7E166B46253CC691C3 /* MKBaseModuleLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKBaseModuleLibrary-dummy.m"; sourceTree = "<group>"; };
 		A017B402028B4A01811503EB7391F2D2 /* Pods-MKBaseModuleLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A0DF15ACCEE271883A1FA3FFAF201F11 /* MKBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseViewController.m; path = MKBaseModuleLibrary/Classes/Base/Controller/MKBaseViewController.m; sourceTree = "<group>"; };
-		A1033FFFBC7B3DA73CEE60321FCFCF09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A1033FFFBC7B3DA73CEE60321FCFCF09 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A115E38D2D15955EED1777ABA76EA2F1 /* NSData+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSData+MKAdd.h"; sourceTree = "<group>"; };
 		A2255754C6ABC30DF5A00FAB415D82BC /* UITextField+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UITextField+MKAdd.m"; sourceTree = "<group>"; };
 		A670A039B1E912AD1F1C8087D85483D3 /* MKBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseCell.m; path = MKBaseModuleLibrary/Classes/Base/Cell/MKBaseCell/MKBaseCell.m; sourceTree = "<group>"; };
@@ -373,7 +373,7 @@
 		C78FED4BC87D0ECBE5D1F73DAA36891D /* Pods-MKBaseModuleLibrary_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKBaseModuleLibrary_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		C8DF4B19265E22A9E9DAAD93D5203A68 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		C93892D3FDEDD6364D2254A93B683AEE /* MKModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKModuleManager.h; path = MKBaseModuleLibrary/Classes/Tools/MKModuleManager/MKModuleManager.h; sourceTree = "<group>"; };
-		C9800A439DB9730DAE9363CB0617366D /* MKBaseModuleLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MKBaseModuleLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9800A439DB9730DAE9363CB0617366D /* MKBaseModuleLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MKBaseModuleLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		CA30AAEF16D0CC95662B0C8AFC695520 /* WRNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WRNavigationBar.h; path = Demo/CodeDemo/WRNavigationBar/WRNavigationBar.h; sourceTree = "<group>"; };
 		CB79CD287D1A499CF030A17D23D45B46 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		CE4333DE385BD4A89B732EF6C18F9DA5 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
@@ -388,7 +388,7 @@
 		D86F26B9F0B3270A782FD5354B14D3BE /* NSObject+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSObject+MKAdd.h"; sourceTree = "<group>"; };
 		D8E0415791C737DEA32639E21FD2F3B3 /* NSArray+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSArray+MKAdd.h"; sourceTree = "<group>"; };
 		DB8520B44DE477F98D61DE5A8C6A0C25 /* Pods-MKBaseModuleLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DF1910F703AB9A9A05DDD9333F8D0EF9 /* WRNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WRNavigationBar.framework; path = WRNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1910F703AB9A9A05DDD9333F8D0EF9 /* WRNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WRNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF919319FCEE199230250EFD2DA52609 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		E20A552BA7E5DFC3A9D8A37EAF585B8E /* Pods-MKBaseModuleLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E377842541B2C06CEFDF0767E6934F82 /* UIScrollView+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIScrollView+MKAdd.m"; sourceTree = "<group>"; };
@@ -548,7 +548,6 @@
 				15996074C600B2FBF7F3ED34E0435AFF /* WRNavigationBar.m */,
 				1425A114415FCA53BC6F33E23E881C84 /* Support Files */,
 			);
-			name = WRNavigationBar;
 			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
@@ -668,7 +667,6 @@
 				DF919319FCEE199230250EFD2DA52609 /* ViewController+MASAdditions.m */,
 				4B4586BBB535E30C929DDE503ADBEB8E /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -772,7 +770,6 @@
 				CFA484AA132427DAD3DE9310CFD6808B /* UIView+Toast.m */,
 				D169880FD354F26E993F67C55AA9D79E /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -783,7 +780,6 @@
 				70F3AF708520043161CA1639E9CE5AE5 /* Support Files */,
 				4EB44AAC637EBAD8360A357FCAB15114 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -1640,8 +1636,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
