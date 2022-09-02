@@ -8,7 +8,15 @@
 
 #import "MKAppDelegate.h"
 
+#import <CoreLocation/CoreLocation.h>
+
 #import "MKTestBaseController.h"
+
+@interface MKAppDelegate ()
+
+@property (nonatomic, strong)CLLocationManager *locationManager;
+
+@end
 
 @implementation MKAppDelegate
 
@@ -21,6 +29,7 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     _window.rootViewController = nav;
     [_window makeKeyAndVisible];
+    [self addLocationAuth];
     return YES;
 }
 
@@ -49,6 +58,17 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)addLocationAuth {
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 13) {
+        return;
+    }
+    //iOS13版本系统新增位置权限
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        [self.locationManager requestWhenInUseAuthorization];
+    }
 }
 
 @end

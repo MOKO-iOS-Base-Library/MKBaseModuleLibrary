@@ -234,7 +234,7 @@
 		02C06970403F50CB0EE1E81761C9C78D /* UIView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIView+MKAdd.h"; sourceTree = "<group>"; };
 		0485CF8C374973AEB9A1DBC5FC33A5CB /* WRNavigationBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WRNavigationBar-Info.plist"; sourceTree = "<group>"; };
 		04997127DCE3BB73B905614E43B4EB88 /* MKBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseViewController.h; path = MKBaseModuleLibrary/Classes/Base/Controller/MKBaseViewController.h; sourceTree = "<group>"; };
-		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MKBaseModuleLibrary.bundle; path = "MKBaseModuleLibrary-MKBaseModuleLibrary.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKBaseModuleLibrary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		06725D873A434C3A40F581A9C4759661 /* UIButton+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIButton+MKAdd.m"; sourceTree = "<group>"; };
 		06894892FA15646C889F5E67A38B9D4D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		07F3EA02BE2109B97BD9397CE0451020 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
@@ -250,15 +250,15 @@
 		1C84E1C45FD4DB1DC4155E06955C7F97 /* UINavigationItem+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UINavigationItem+MKAdd.m"; sourceTree = "<group>"; };
 		1DA248CE95DBFB53A15D8A4805EAED6E /* MKBaseCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseCollectionView.m; path = MKBaseModuleLibrary/Classes/Base/View/collectionView/MKBaseCollectionView.m; sourceTree = "<group>"; };
 		1DCBA8D20385264BF0570E5995369550 /* Pods-MKBaseModuleLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBaseModuleLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1DD46B4AAF69B73A672B373DA107A693 /* Pods_MKBaseModuleLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKBaseModuleLibrary_Example.framework; path = "Pods-MKBaseModuleLibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD46B4AAF69B73A672B373DA107A693 /* Pods_MKBaseModuleLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBaseModuleLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1783674C36C666A9D4B30361DC8F48 /* NSInvocation+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSInvocation+MKAdd.m"; sourceTree = "<group>"; };
 		1F593970CBCE4B08018C1B6A763242F4 /* UIButton+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIButton+MKAdd.h"; sourceTree = "<group>"; };
 		1FC7093BF17A3132366DDCDD7538D57A /* navigation_back_button_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "navigation_back_button_white@3x.png"; path = "MKBaseModuleLibrary/Assets/navigation_back_button_white@3x.png"; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D22F24BEB8F1FCC562CB567EE997AA /* WRNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WRNavigationBar.modulemap; sourceTree = "<group>"; };
 		238BFEB9003DD213DED1E9B4725974B9 /* WRNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WRNavigationBar.release.xcconfig; sourceTree = "<group>"; };
 		2422196C8F7683C34AB8ABBC1730993F /* NSDictionary+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSDictionary+MKAdd.m"; sourceTree = "<group>"; };
-		2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKBaseModuleLibrary.framework; path = MKBaseModuleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKBaseModuleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		278197CE09399D2AD4FA6C7B57844FF2 /* NSObject+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSObject+MKAdd.h"; sourceTree = "<group>"; };
 		2841CAEC6E4B751E36D2277273181F3F /* UIImage+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIImage+MKAdd.h"; sourceTree = "<group>"; };
 		28758FD46F16E70CA4DD47080921638E /* MKBaseNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseNavigationController.h; path = MKBaseModuleLibrary/Classes/Base/NavigationController/MKBaseNavigationController.h; sourceTree = "<group>"; };
@@ -291,13 +291,13 @@
 		52952D24745E4A34AA5BC081FB65D48E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		52BB20B5449696774F842E7808C0415E /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		5493B516B9934AAA2E387B4E5C6F4D92 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C0BF3B01E451221FF512106C8DB2A5 /* Pods-MKBaseModuleLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKBaseModuleLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		57EAE835612CD761C1606F12A6E71E6F /* navigation_back_button_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "navigation_back_button_white@2x.png"; path = "MKBaseModuleLibrary/Assets/navigation_back_button_white@2x.png"; sourceTree = "<group>"; };
 		57FBAF97EDA6C79BF31D48DD4440F018 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		596BA9253A9D070FCF28F0E74D82D563 /* NSData+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSData+MKAdd.h"; sourceTree = "<group>"; };
 		5B90D389A74C8FE9414276C429522FC1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5E4F328FD8A88580EC7B7F3BCC6B6C /* WRNavigationBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WRNavigationBar-umbrella.h"; sourceTree = "<group>"; };
 		63146073260D576B5C559956F49AF801 /* MKBaseModuleLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKBaseModuleLibrary-umbrella.h"; sourceTree = "<group>"; };
 		65313B93D373463C58D8859DE55CE353 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
@@ -308,7 +308,7 @@
 		6CE7DA539134E16E0FA65FBB0AE80F95 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		6D90819E358E8CFAB597F33DD232596D /* Pods-MKBaseModuleLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKBaseModuleLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6DC3F8D9BA4EE4D8D6E55D2DB42D6CBB /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		6E55E5E50DD7B2F4AF123ADD095BA4F7 /* Pods_MKBaseModuleLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKBaseModuleLibrary_Tests.framework; path = "Pods-MKBaseModuleLibrary_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E55E5E50DD7B2F4AF123ADD095BA4F7 /* Pods_MKBaseModuleLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBaseModuleLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1D605B5B567D561AAB3DB30793E05D /* Pods-MKBaseModuleLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKBaseModuleLibrary_Tests.modulemap"; sourceTree = "<group>"; };
 		6F5CF042062C401CBFA89BB0559ADBEF /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		71002D851FDE3240E2FEAC347861F388 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -329,7 +329,7 @@
 		8B7F810DA152701AF9F111D493ED7AF6 /* NSDateFormatter+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSDateFormatter+MKAdd.m"; sourceTree = "<group>"; };
 		8B8BAF541BAC95B31062116F58BCD777 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		8DC7AB267A1ACACB660719633C2E356B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		8E3E881BB1D82E500B11342DE7FE1D8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8E3E881BB1D82E500B11342DE7FE1D8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8E5BAB4599F49A15C3C563F57606EF94 /* WRNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WRNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE80D00A8215BF4428BF7697B66F38B /* UITextField+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UITextField+MKAdd.h"; sourceTree = "<group>"; };
 		91BC5CF9B4C2EA14C8E7656A5C1AD045 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 		9C7763CFEF65F6424996AEC95C216A7B /* MKClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKClassInfo.h; path = MKBaseModuleLibrary/Classes/Tools/MKClassInfo/MKClassInfo.h; sourceTree = "<group>"; };
 		9CE6C4F74C650CC54E8EC160E915C6C1 /* MKBaseModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseModule.h; path = MKBaseModuleLibrary/Classes/MKBaseModule.h; sourceTree = "<group>"; };
 		9CEEF6B9A45165E9A6B852214CD6DED8 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F6D704419B220EEEDE3CD2976ABAC93 /* WRNavigationBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WRNavigationBar-prefix.pch"; sourceTree = "<group>"; };
 		9F9BAC94C30F73B22B147BEB2F9978D5 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		A017B402028B4A01811503EB7391F2D2 /* Pods-MKBaseModuleLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -366,12 +366,12 @@
 		BD74C2D366008091C89E3D9EB7754C90 /* NSDateFormatter+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSDateFormatter+MKAdd.h"; sourceTree = "<group>"; };
 		BE49E90242F8925B608350DABB35D977 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		BF03558CDC2ED0AFF789A4FB56D70DC5 /* UIScrollView+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIScrollView+MKAdd.m"; sourceTree = "<group>"; };
-		BF5B106CAA535B69DAF82E20A1DC1476 /* MKBaseModuleLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MKBaseModuleLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF5B106CAA535B69DAF82E20A1DC1476 /* MKBaseModuleLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MKBaseModuleLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF7753842A57FC052A4764AD1BA0D8AF /* UIColor+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIColor+MKAdd.m"; sourceTree = "<group>"; };
 		C07349266777D37F61184075666A96AF /* UITableView+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UITableView+MKAdd.m"; sourceTree = "<group>"; };
 		C20D6C11D8B64797F8A8A58F4BB9BE58 /* Pods-MKBaseModuleLibrary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKBaseModuleLibrary_Tests-dummy.m"; sourceTree = "<group>"; };
 		C30BBE1BCE7D2E8BFA8D33A753F035A8 /* UIView+MKRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MKRefresh.m"; path = "MKBaseModuleLibrary/Classes/Category/UIView+MKRefresh.m"; sourceTree = "<group>"; };
-		C3D4DE5499CD6C523DE6D0EEEFEA3D6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C3D4DE5499CD6C523DE6D0EEEFEA3D6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C44391A0700EDA1B7B237ABC2BED0E57 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		C721F3B66EED8D0C3EBA67249F6940C5 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		C78D67CFB04252AAB089F5E3F4D6A51A /* MKModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKModuleManager.h; path = MKBaseModuleLibrary/Classes/Tools/MKModuleManager/MKModuleManager.h; sourceTree = "<group>"; };
@@ -389,7 +389,7 @@
 		D40AE4ACA526BEEE9B80085C0237D846 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
 		DB8520B44DE477F98D61DE5A8C6A0C25 /* Pods-MKBaseModuleLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DC3D467A48995F36E14073484A4E3E52 /* MKBaseModuleLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKBaseModuleLibrary-dummy.m"; sourceTree = "<group>"; };
-		DF1910F703AB9A9A05DDD9333F8D0EF9 /* WRNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WRNavigationBar.framework; path = WRNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1910F703AB9A9A05DDD9333F8D0EF9 /* WRNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WRNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF919319FCEE199230250EFD2DA52609 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		DFD65FAF01B5007340B290C0EDF0F395 /* UISegmentedControl+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UISegmentedControl+MKAdd.m"; sourceTree = "<group>"; };
 		E1C0FEB33847BF8810AA9AF598C73B03 /* MKCommonColorsDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKCommonColorsDefine.h; path = MKBaseModuleLibrary/Classes/Defines/MKCommonColorsDefine.h; sourceTree = "<group>"; };
@@ -552,7 +552,6 @@
 				15996074C600B2FBF7F3ED34E0435AFF /* WRNavigationBar.m */,
 				1425A114415FCA53BC6F33E23E881C84 /* Support Files */,
 			);
-			name = WRNavigationBar;
 			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
@@ -700,7 +699,6 @@
 				DF919319FCEE199230250EFD2DA52609 /* ViewController+MASAdditions.m */,
 				4B4586BBB535E30C929DDE503ADBEB8E /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -779,7 +777,6 @@
 				CFA484AA132427DAD3DE9310CFD6808B /* UIView+Toast.m */,
 				D169880FD354F26E993F67C55AA9D79E /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -826,7 +823,6 @@
 				70F3AF708520043161CA1639E9CE5AE5 /* Support Files */,
 				4EB44AAC637EBAD8360A357FCAB15114 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -1259,7 +1255,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1534,7 +1530,6 @@
 			baseConfigurationReference = E20A552BA7E5DFC3A9D8A37EAF585B8E /* Pods-MKBaseModuleLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1568,7 +1563,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41BAA8C81C2CD6E6B789B8FDDD202F6A /* Toast.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1580,7 +1574,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
 				PRODUCT_MODULE_NAME = Toast;
@@ -1665,7 +1659,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3A886B3E21959FEACF71F925BF358CE /* MKBaseModuleLibrary.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1678,7 +1671,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MKBaseModuleLibrary/MKBaseModuleLibrary-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MKBaseModuleLibrary/MKBaseModuleLibrary-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MKBaseModuleLibrary/MKBaseModuleLibrary.modulemap";
 				PRODUCT_MODULE_NAME = MKBaseModuleLibrary;
@@ -1697,7 +1690,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D40AE4ACA526BEEE9B80085C0237D846 /* Masonry.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1709,7 +1701,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
 				PRODUCT_MODULE_NAME = Masonry;
@@ -1728,7 +1720,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB79CD287D1A499CF030A17D23D45B46 /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1740,7 +1731,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
@@ -1810,8 +1801,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1821,7 +1811,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D334DE98302C380DBC17E920143FD16 /* MKBaseModuleLibrary.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1834,7 +1823,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MKBaseModuleLibrary/MKBaseModuleLibrary-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MKBaseModuleLibrary/MKBaseModuleLibrary-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MKBaseModuleLibrary/MKBaseModuleLibrary.modulemap";
 				PRODUCT_MODULE_NAME = MKBaseModuleLibrary;
@@ -1854,7 +1843,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 238BFEB9003DD213DED1E9B4725974B9 /* WRNavigationBar.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1866,7 +1854,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WRNavigationBar/WRNavigationBar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WRNavigationBar/WRNavigationBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WRNavigationBar/WRNavigationBar.modulemap";
 				PRODUCT_MODULE_NAME = WRNavigationBar;
@@ -1887,7 +1875,6 @@
 			baseConfigurationReference = A017B402028B4A01811503EB7391F2D2 /* Pods-MKBaseModuleLibrary_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1923,7 +1910,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MKBaseModuleLibrary";
 				IBSC_MODULE = MKBaseModuleLibrary;
 				INFOPLIST_FILE = "Target Support Files/MKBaseModuleLibrary/ResourceBundle-MKBaseModuleLibrary-MKBaseModuleLibrary-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MKBaseModuleLibrary;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1936,7 +1923,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 980A58E2D613FADB3C20F362ED0AA18F /* Toast.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1948,7 +1934,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
 				PRODUCT_MODULE_NAME = Toast;
@@ -1969,7 +1955,6 @@
 			baseConfigurationReference = AF508C32184AC5FB04258051521C0CD4 /* Pods-MKBaseModuleLibrary_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2002,7 +1987,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC66CC4094E76552AB3DC52AAB9E5B73 /* FBSnapshotTestCase.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2014,7 +1998,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
@@ -2034,7 +2018,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95B65514768812F4A345B740E7C86348 /* WRNavigationBar.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2046,7 +2029,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WRNavigationBar/WRNavigationBar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WRNavigationBar/WRNavigationBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WRNavigationBar/WRNavigationBar.modulemap";
 				PRODUCT_MODULE_NAME = WRNavigationBar;
@@ -2065,7 +2048,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 366861D1761786C8D989D8A927E5C90E /* Masonry.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2077,7 +2059,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
 				PRODUCT_MODULE_NAME = Masonry;
@@ -2100,7 +2082,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MKBaseModuleLibrary";
 				IBSC_MODULE = MKBaseModuleLibrary;
 				INFOPLIST_FILE = "Target Support Files/MKBaseModuleLibrary/ResourceBundle-MKBaseModuleLibrary-MKBaseModuleLibrary-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = MKBaseModuleLibrary;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2114,7 +2096,6 @@
 			baseConfigurationReference = DB8520B44DE477F98D61DE5A8C6A0C25 /* Pods-MKBaseModuleLibrary_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
