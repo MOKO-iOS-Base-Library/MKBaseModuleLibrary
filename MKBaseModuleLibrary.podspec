@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '1.1.6'
+  s.version          = '1.1.7'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'aadyx2007@163.com' => 'aadyx2007@163.com' }
   s.source           = { :git => 'https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   
   s.source_files = 'MKBaseModuleLibrary/Classes/MKBaseModule.h'
   s.resource_bundles = {
@@ -38,14 +38,22 @@ TODO: Add long description of the pod here.
   end
 
   s.subspec 'Tools' do |ss|
+    ss.subspec 'MKClassInfo' do |sss|
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**'
+    end
     ss.subspec 'MKDateFormatter' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**'
     end
+    ss.subspec 'MKExcelManager' do |sss|
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/**'
+      
+      sss.dependency 'libxlsxwriter'
+      sss.dependency 'SSZipArchive'
+      
+      sss.dependency 'MKBaseModuleLibrary/Defines'
+    end
     ss.subspec 'MKModuleManager' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKModuleManager/**'
-    end
-    ss.subspec 'MKClassInfo' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**'
     end
   end
 
