@@ -18,10 +18,4 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'MKBaseModuleLibrary_Example' do
   pod 'MKBaseModuleLibrary', :path => '../'
-
-  target 'MKBaseModuleLibrary_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
 end
