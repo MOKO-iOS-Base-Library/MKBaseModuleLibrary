@@ -52,63 +52,24 @@
 
 #pragma mark - *************************  硬件相关  *************************
 /** 获取屏幕尺寸、宽度、高度 */
-#define kScreenRect                 ([[UIScreen mainScreen] bounds])            //屏幕frame
-#define kViewWidth                ([UIScreen mainScreen].bounds.size.width)   //屏幕宽度
-#define kViewHeight               ([UIScreen mainScreen].bounds.size.height)  //屏幕高度
-#define kScreenCurrModeSize         [[UIScreen mainScreen] currentMode].size    //currentModel的size
+#define kScreenRect                 ([UIScreen mainScreen].bounds)            //屏幕frame
+#define kViewWidth                  ([UIScreen mainScreen].bounds.size.width)   //屏幕宽度
+#define kViewHeight                 ([UIScreen mainScreen].bounds.size.height)  //屏幕高度
 
 #define kScreenMaxLength            (MAX(kViewWidth, kViewHeight))          //获取屏幕宽高最大者
 #define kScreenMinLength            (MIN(kViewWidth, kViewHeight))          //获取屏幕宽高最小者
-#define launchBounds(i) (CGRectMake(i * kViewWidth,0,kViewWidth,kViewHeight))
-
-#define isIPad                      (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)    //是否是ipad设备
-#define isIPhone                    (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)  //是否是iPhone设备
-#define isRetina                    (kScreenScale >= 2.0)                                     //是否是retina屏幕
-
-//是否是垂直
-#define isPortrait                  ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait || [UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)
-
-//UIScreen是否响应currentMode方法
-#define isRespondCurrModel          [UIScreen instancesRespondToSelector:@selector(currentMode)]
-#define isEqualToCurrModelSize(w,h) CGSizeEqualToSize(CGSizeMake(w,h), kScreenCurrModeSize)
-
-/** 设备是否为iPhone 4/4S 分辨率320x480，像素640x960，@2x */
-#define iPhone4                     (isRespondCurrModel ? isEqualToCurrModelSize(640,960) : NO)
-
-/** 设备是否为iPhone 5C/5/5S 分辨率320x568，像素640x1136，@2x */
-#define iPhone5                     (isRespondCurrModel ? isEqualToCurrModelSize(640,1136) : NO)
-
-/** 设备是否为iPhone 6 分辨率375x667，像素750x1334，@2x */
-#define iPhone6                     (isRespondCurrModel ? isEqualToCurrModelSize(750, 1334) || isEqualToCurrModelSize(640, 1136) : NO)
-
-/** 设备是否为iPhone 6 Plus 分辨率414x736，像素1242x2208，@3x */
-#define iPhone6Plus                 (isRespondCurrModel ? isEqualToCurrModelSize(1125, 2001) || isEqualToCurrModelSize(1242, 2208) : NO)
-
-#define iPhone6PlusZoom             (isRespondCurrModel ? isEqualToCurrModelSize(1125, 2001) : NO)
-
-//判断iPHoneXr、iPhone 11
-#define iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
-
-//判断iPHoneX、iPHoneXs、iPhone 11 Pro
-#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-
-//判断iPhoneXs Max、iPhone 11 Pro Max
-#define iPhoneMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
 
 /*
  判断当前手机有没有安全区域，iPhone X以后新出的设备都有安全区和留海屏.
  */
-#define kIsBangsScreen ({\
-    BOOL isBangsScreen = NO; \
-    if (@available(iOS 11.0, *)) { \
-    UIWindow *window = [[UIApplication sharedApplication].windows firstObject]; \
-    isBangsScreen = window.safeAreaInsets.bottom > 0; \
-    } \
+#define kIsBangsScreen              ({\
+    UIEdgeInsets safeAreaInsets = UIApplication.sharedApplication.windows.firstObject.safeAreaInsets; \
+    BOOL isBangsScreen = safeAreaInsets.bottom > 0; \
     isBangsScreen; \
 })
 
 //状态栏、导航栏、标签栏高度
-#define Height_StatusBar [[UIApplication sharedApplication] statusBarFrame].size.height
+#define Height_StatusBar            UIApplication.sharedApplication.windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height
 
 //底部虚拟home键高度 一般用于最底部view到底部的距离
 #define VirtualHomeHeight (kIsBangsScreen ? 34.f : 0.f)
@@ -117,10 +78,10 @@
 #define defaultTopInset (Height_StatusBar + 44.f)
 
 #pragma mark - *************************  系统相关  *************************
-//delegate对象//AppWindow
+
 #define kAppDelegate            ([[UIApplication sharedApplication] delegate])
-#define kAppWindow              ([UIApplication sharedApplication].keyWindow)
-#define kAppRootController      [UIApplication sharedApplication].keyWindow.rootViewController
+#define kAppWindow ([UIApplication sharedApplication].windows.firstObject)
+#define kAppRootController (UIApplication.sharedApplication.windows.firstObject.rootViewController)
 
 /** 获取系统版本 */
 #define kSystemVersionString    ([[UIDevice currentDevice] systemVersion])

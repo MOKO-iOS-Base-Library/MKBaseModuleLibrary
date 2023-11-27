@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '1.1.8'
+  s.version          = '2.0.0'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -22,7 +22,6 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
   
-  s.source_files = 'MKBaseModuleLibrary/Classes/MKBaseModule.h'
   s.resource_bundles = {
       'MKBaseModuleLibrary' => ['MKBaseModuleLibrary/Assets/*']
   }
@@ -51,9 +50,6 @@ TODO: Add long description of the pod here.
       sss.dependency 'SSZipArchive'
       
       sss.dependency 'MKBaseModuleLibrary/Defines'
-    end
-    ss.subspec 'MKModuleManager' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKModuleManager/**'
     end
   end
 

@@ -1,51 +1,49 @@
 PODS:
   - libxlsxwriter (1.1.5)
   - Masonry (1.1.0)
-  - MKBaseModuleLibrary (1.1.8):
-    - MKBaseModuleLibrary/Base (= 1.1.8)
-    - MKBaseModuleLibrary/Category (= 1.1.8)
-    - MKBaseModuleLibrary/Defines (= 1.1.8)
-    - MKBaseModuleLibrary/Tools (= 1.1.8)
-  - MKBaseModuleLibrary/Base (1.1.8):
-    - MKBaseModuleLibrary/Base/Cell (= 1.1.8)
-    - MKBaseModuleLibrary/Base/Controller (= 1.1.8)
-    - MKBaseModuleLibrary/Base/NavigationController (= 1.1.8)
-    - MKBaseModuleLibrary/Base/View (= 1.1.8)
-  - MKBaseModuleLibrary/Base/Cell (1.1.8):
-    - MKBaseModuleLibrary/Base/Cell/MKBaseCell (= 1.1.8)
-  - MKBaseModuleLibrary/Base/Cell/MKBaseCell (1.1.8):
+  - MKBaseModuleLibrary (2.0.0):
+    - MKBaseModuleLibrary/Base (= 2.0.0)
+    - MKBaseModuleLibrary/Category (= 2.0.0)
+    - MKBaseModuleLibrary/Defines (= 2.0.0)
+    - MKBaseModuleLibrary/Tools (= 2.0.0)
+  - MKBaseModuleLibrary/Base (2.0.0):
+    - MKBaseModuleLibrary/Base/Cell (= 2.0.0)
+    - MKBaseModuleLibrary/Base/Controller (= 2.0.0)
+    - MKBaseModuleLibrary/Base/NavigationController (= 2.0.0)
+    - MKBaseModuleLibrary/Base/View (= 2.0.0)
+  - MKBaseModuleLibrary/Base/Cell (2.0.0):
+    - MKBaseModuleLibrary/Base/Cell/MKBaseCell (= 2.0.0)
+  - MKBaseModuleLibrary/Base/Cell/MKBaseCell (2.0.0):
     - Masonry
     - MKBaseModuleLibrary/Defines
-  - MKBaseModuleLibrary/Base/Controller (1.1.8):
+  - MKBaseModuleLibrary/Base/Controller (2.0.0):
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
     - WRNavigationBar
-  - MKBaseModuleLibrary/Base/NavigationController (1.1.8)
-  - MKBaseModuleLibrary/Base/View (1.1.8):
-    - MKBaseModuleLibrary/Base/View/CollectionView (= 1.1.8)
-    - MKBaseModuleLibrary/Base/View/TableView (= 1.1.8)
-  - MKBaseModuleLibrary/Base/View/CollectionView (1.1.8)
-  - MKBaseModuleLibrary/Base/View/TableView (1.1.8)
-  - MKBaseModuleLibrary/Category (1.1.8):
+  - MKBaseModuleLibrary/Base/NavigationController (2.0.0)
+  - MKBaseModuleLibrary/Base/View (2.0.0):
+    - MKBaseModuleLibrary/Base/View/CollectionView (= 2.0.0)
+    - MKBaseModuleLibrary/Base/View/TableView (= 2.0.0)
+  - MKBaseModuleLibrary/Base/View/CollectionView (2.0.0)
+  - MKBaseModuleLibrary/Base/View/TableView (2.0.0)
+  - MKBaseModuleLibrary/Category (2.0.0):
     - MKBaseModuleLibrary/Defines
     - MKBaseModuleLibrary/Tools/MKClassInfo
     - Toast
-  - MKBaseModuleLibrary/Defines (1.1.8)
-  - MKBaseModuleLibrary/Tools (1.1.8):
-    - MKBaseModuleLibrary/Tools/MKClassInfo (= 1.1.8)
-    - MKBaseModuleLibrary/Tools/MKDateFormatter (= 1.1.8)
-    - MKBaseModuleLibrary/Tools/MKExcelManager (= 1.1.8)
-    - MKBaseModuleLibrary/Tools/MKModuleManager (= 1.1.8)
-  - MKBaseModuleLibrary/Tools/MKClassInfo (1.1.8)
-  - MKBaseModuleLibrary/Tools/MKDateFormatter (1.1.8)
-  - MKBaseModuleLibrary/Tools/MKExcelManager (1.1.8):
+  - MKBaseModuleLibrary/Defines (2.0.0)
+  - MKBaseModuleLibrary/Tools (2.0.0):
+    - MKBaseModuleLibrary/Tools/MKClassInfo (= 2.0.0)
+    - MKBaseModuleLibrary/Tools/MKDateFormatter (= 2.0.0)
+    - MKBaseModuleLibrary/Tools/MKExcelManager (= 2.0.0)
+  - MKBaseModuleLibrary/Tools/MKClassInfo (2.0.0)
+  - MKBaseModuleLibrary/Tools/MKDateFormatter (2.0.0)
+  - MKBaseModuleLibrary/Tools/MKExcelManager (2.0.0):
     - libxlsxwriter
     - MKBaseModuleLibrary/Defines
     - SSZipArchive
-  - MKBaseModuleLibrary/Tools/MKModuleManager (1.1.8)
   - SSZipArchive (2.4.3)
   - Toast (4.0.0)
-  - WRNavigationBar (1.3.0)
+  - WRNavigationBar (1.4.0)
 
 DEPENDENCIES:
   - MKBaseModuleLibrary (from `../`)
@@ -65,11 +63,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   libxlsxwriter: 07cdc00cf0edb30ce9773efbbb49a03459a6e0f0
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MKBaseModuleLibrary: 8d0292b517d87552083f9180eeaa4569605707db
+  MKBaseModuleLibrary: 265f7bf28a33a47473a8f4a715a8ca47c8a15911
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  WRNavigationBar: 84935d8d39d2504a10a8d33688ab169b6a209521
+  WRNavigationBar: 10bfdf96addf14d640d07c2ef08a029c18d8af10
 
 PODFILE CHECKSUM: c305fdd2f936e6895f32b4eada0f39aeed9a3408
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.11.3
