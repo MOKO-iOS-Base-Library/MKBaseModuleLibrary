@@ -99,10 +99,22 @@
             } \
         } \
         if (activeScene) { \
-            statusBarHeight = activeScene.statusBarManager.statusBarFrame.size.height; \
+            UIWindow *mainWindow = activeScene.windows.firstObject; \
+            if (mainWindow) { \
+                statusBarHeight = mainWindow.windowScene.statusBarManager.statusBarFrame.size.height; \
+            } \
         } \
     } else if (@available(iOS 13.0, *)) { \
-        statusBarHeight = UIApplication.sharedApplication.keyWindow.windowScene.statusBarManager.statusBarFrame.size.height; \
+        UIWindowScene *keyWindowScene = nil; \
+        for (UIWindowScene *windowScene in UIApplication.sharedApplication.connectedScenes) { \
+            if (windowScene.activationState == UISceneActivationStateForegroundActive && windowScene.windows.firstObject) { \
+                keyWindowScene = windowScene; \
+                break; \
+            } \
+        } \
+        if (keyWindowScene) { \
+            statusBarHeight = keyWindowScene.windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height; \
+        } \
     } else { \
         statusBarHeight = UIApplication.sharedApplication.statusBarFrame.size.height; \
     } \
@@ -127,7 +139,7 @@
             } \
         } \
     } else if (@available(iOS 13.0, *)) { \
-        UIWindow *mainWindow = UIApplication.sharedApplication.windows.firstObject; \
+        UIWindow *mainWindow = UIWindow.keyWindow; \
         if (mainWindow.safeAreaInsets.bottom > 0) { \
             virtualHomeHeight = 34.0; \
         } \
