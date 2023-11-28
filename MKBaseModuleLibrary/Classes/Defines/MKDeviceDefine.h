@@ -60,40 +60,167 @@
 #define kScreenMinLength            (MIN(kViewWidth, kViewHeight))          //获取屏幕宽高最小者
 
 /*
- 判断当前手机有没有安全区域，iPhone X以后新出的设备都有安全区和留海屏.
+ 判断当前手机有没有安全区域
  */
-#define kIsBangsScreen              ({\
-    UIEdgeInsets safeAreaInsets = UIApplication.sharedApplication.windows.firstObject.safeAreaInsets; \
-    BOOL isBangsScreen = safeAreaInsets.bottom > 0; \
+#define kIsBangsScreen ({ \
+    BOOL isBangsScreen = NO; \
+    if (@available(iOS 15.0, *)) { \
+        UIWindowScene *activeScene = nil; \
+        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
+            if (scene.activationState == UISceneActivationStateForegroundActive) { \
+                activeScene = scene; \
+                break; \
+            } \
+        } \
+        if (activeScene) { \
+            UIWindow *mainWindow = activeScene.windows.firstObject; \
+            if (mainWindow.safeAreaInsets.bottom > 0) { \
+                isBangsScreen = YES; \
+            } \
+        } \
+    } else if (@available(iOS 13.0, *)) { \
+        UIWindow *mainWindow = UIApplication.sharedApplication.windows.firstObject; \
+        if (mainWindow.safeAreaInsets.bottom > 0) { \
+            isBangsScreen = YES; \
+        } \
+    } \
     isBangsScreen; \
 })
 
 //状态栏、导航栏、标签栏高度
-#define Height_StatusBar            UIApplication.sharedApplication.windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height
+#define Height_StatusBar ({ \
+    CGFloat statusBarHeight = 0.0; \
+    if (@available(iOS 15.0, *)) { \
+        UIWindowScene *activeScene = nil; \
+        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
+            if (scene.activationState == UISceneActivationStateForegroundActive) { \
+                activeScene = scene; \
+                break; \
+            } \
+        } \
+        if (activeScene) { \
+            statusBarHeight = activeScene.statusBarManager.statusBarFrame.size.height; \
+        } \
+    } else { \
+        statusBarHeight = UIApplication.sharedApplication.statusBarFrame.size.height; \
+    } \
+    statusBarHeight; \
+})
 
 //底部虚拟home键高度 一般用于最底部view到底部的距离
-#define VirtualHomeHeight (kIsBangsScreen ? 34.f : 0.f)
+#define VirtualHomeHeight ({ \
+    CGFloat virtualHomeHeight = 0.0; \
+    if (@available(iOS 15.0, *)) { \
+        UIWindowScene *activeScene = nil; \
+        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
+            if (scene.activationState == UISceneActivationStateForegroundActive) { \
+                activeScene = scene; \
+                break; \
+            } \
+        } \
+        if (activeScene) { \
+            UIWindow *mainWindow = activeScene.windows.firstObject; \
+            if (mainWindow.safeAreaInsets.bottom > 0) { \
+                virtualHomeHeight = 34.0; \
+            } \
+        } \
+    } else { \
+        UIWindow *mainWindow = UIApplication.sharedApplication.windows.firstObject; \
+        if (mainWindow.safeAreaInsets.bottom > 0) { \
+            virtualHomeHeight = 34.0; \
+        } \
+    } \
+    virtualHomeHeight; \
+})
 
 //默认顶部布局
 #define defaultTopInset (Height_StatusBar + 44.f)
 
 #pragma mark - *************************  系统相关  *************************
 
-#define kAppDelegate            ([[UIApplication sharedApplication] delegate])
-#define kAppWindow ([UIApplication sharedApplication].windows.firstObject)
-#define kAppRootController (UIApplication.sharedApplication.windows.firstObject.rootViewController)
+#define kAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+#define kAppWindow ({ \
+    UIWindow *window = nil; \
+    if (@available(iOS 15.0, *)) { \
+        UIWindowScene *activeScene = nil; \
+        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
+            if (scene.activationState == UISceneActivationStateForegroundActive) { \
+                activeScene = scene; \
+                break; \
+            } \
+        } \
+        if (activeScene) { \
+            window = activeScene.windows.firstObject; \
+        } \
+    } else { \
+        window = [UIApplication sharedApplication].windows.firstObject; \
+    } \
+    window; \
+})
+
+#define kAppRootController ({ \
+    UIViewController *rootController = nil; \
+    if (@available(iOS 15.0, *)) { \
+        UIWindowScene *activeScene = nil; \
+        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
+            if (scene.activationState == UISceneActivationStateForegroundActive) { \
+                activeScene = scene; \
+                break; \
+            } \
+        } \
+        if (activeScene) { \
+            rootController = activeScene.windows.firstObject.rootViewController; \
+        } \
+    } else { \
+        rootController = [UIApplication sharedApplication].windows.firstObject.rootViewController; \
+    } \
+    rootController; \
+})
 
 /** 获取系统版本 */
-#define kSystemVersionString    ([[UIDevice currentDevice] systemVersion])
+#define kSystemVersionString ({ \
+    NSString *systemVersion = nil; \
+    if (@available(iOS 15.0, *)) { \
+        systemVersion = [NSProcessInfo processInfo].operatingSystemVersionString; \
+    } else { \
+        systemVersion = [[UIDevice currentDevice] systemVersion]; \
+    } \
+    systemVersion; \
+})
 
 /** 获取APP名称 */
-#define kAppName                ([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"])
-/** 获取APP版本 */
-#define kAppVersion             ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"])
-/** 获取APP build版本 */
-#define kAppBuildVersion        ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"])
 
-#define iOS(x)                  (([[[UIDevice currentDevice] systemVersion] floatValue] >= x) ? YES : NO)
+#define kAppName ({ \
+    NSString *appName = nil; \
+    if (@available(iOS 15.0, *)) { \
+        appName = [NSBundle mainBundle].infoDictionary[@"CFBundleDisplayName"]; \
+        if (!appName) { \
+            appName = [NSBundle mainBundle].infoDictionary[@"CFBundleName"]; \
+        } \
+    } else { \
+        appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]; \
+    } \
+    appName; \
+})
+
+/** 获取APP版本 */
+#define kAppVersion ({ \
+    NSString *appVersion = nil; \
+    if (@available(iOS 15.0, *)) { \
+        appVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]; \
+    } else { \
+        appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]; \
+    } \
+    appVersion; \
+})
+
+#define iOS(x) ({ \
+    BOOL isIOS = NO; \
+    if (@available(iOS x, *)) { \
+        isIOS = YES; \
+    } \
+    isIOS; \
+})
 
 //获取系统时间戳
 #define  kSystemTimeStamp [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]]
@@ -133,7 +260,17 @@ if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queu
 #define CUTTING_LINE_HEIGHT             ([[UIScreen mainScreen] scale] == 2.f ? 0.5 : 0.34)
 
 //图片的宏定义,注意该方法只对取mainBundle下面的图片有效，如果是自建的bundle，则该方法取不到。
-#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@%@",file,(iPhone6Plus || iPhoneX || iPhoneMax) ? @"@3x" : @"@2x"] ofType:ext]]
+#define LOADIMAGE(file,ext) ({ \
+    NSBundle *bundle = [NSBundle mainBundle]; \
+    NSString *imageName = [NSString stringWithFormat:@"%@%@", file, \
+                           (UIScreen.mainScreen.nativeScale > 2.0) ? @"@3x" : @"@2x"]; \
+    UIImage *image = [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil]; \
+    if (!image) { \
+        NSString *imagePath = [bundle pathForResource:file ofType:ext]; \
+        image = [UIImage imageWithContentsOfFile:imagePath]; \
+    } \
+    image; \
+})
 
 /*
  podLibName:调用该方法的对象所在的bundle名称
