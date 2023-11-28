@@ -139,7 +139,7 @@
             } \
         } \
     } else if (@available(iOS 13.0, *)) { \
-        UIWindow *mainWindow = UIWindow.keyWindow; \
+        UIWindow *mainWindow = UIApplication.sharedApplication.keyWindow; \
         if (mainWindow.safeAreaInsets.bottom > 0) { \
             virtualHomeHeight = 34.0; \
         } \
