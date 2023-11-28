@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0002490E2B15D69F0034829F /* MKPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0002490D2B15D69F0034829F /* MKPickView.m */; };
 		00A501DB258CB39400506A5E /* MKTestBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A501DA258CB39400506A5E /* MKTestBaseController.m */; };
 		16BF371991F905FE2CF28CF2 /* Pods_MKBaseModuleLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F5317EA730A50B5AF3BE0C /* Pods_MKBaseModuleLibrary_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0002490C2B15D69F0034829F /* MKPickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKPickView.h; sourceTree = "<group>"; };
+		0002490D2B15D69F0034829F /* MKPickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPickView.m; sourceTree = "<group>"; };
 		00A501D9258CB39400506A5E /* MKTestBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTestBaseController.h; sourceTree = "<group>"; };
 		00A501DA258CB39400506A5E /* MKTestBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTestBaseController.m; sourceTree = "<group>"; };
 		00F5317EA730A50B5AF3BE0C /* Pods_MKBaseModuleLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBaseModuleLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +131,8 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 				00A501D9258CB39400506A5E /* MKTestBaseController.h */,
 				00A501DA258CB39400506A5E /* MKTestBaseController.m */,
+				0002490C2B15D69F0034829F /* MKPickView.h */,
+				0002490D2B15D69F0034829F /* MKPickView.m */,
 			);
 			name = "Example for MKBaseModuleLibrary";
 			path = MKBaseModuleLibrary;
@@ -338,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A501DB258CB39400506A5E /* MKTestBaseController.m in Sources */,
+				0002490E2B15D69F0034829F /* MKPickView.m in Sources */,
 				6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -429,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -493,7 +499,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKBaseModuleLibrary/MKBaseModuleLibrary-Prefix.pch";
 				INFOPLIST_FILE = "MKBaseModuleLibrary/MKBaseModuleLibrary-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,7 +518,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKBaseModuleLibrary/MKBaseModuleLibrary-Prefix.pch";
 				INFOPLIST_FILE = "MKBaseModuleLibrary/MKBaseModuleLibrary-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

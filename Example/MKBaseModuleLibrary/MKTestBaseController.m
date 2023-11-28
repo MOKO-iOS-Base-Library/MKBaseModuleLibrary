@@ -16,6 +16,8 @@
 
 #import "Masonry.h"
 
+#import "MKPickView.h"
+
 @interface MKTestBaseController ()<CLLocationManagerDelegate>
 
 @property (nonatomic, strong)CLLocationManager *locationManager;
@@ -34,19 +36,35 @@
     self.defaultTitle = @"Come on";
     self.custom_naviBarColor = [UIColor redColor];
     
-    UIButton *button = [[UIButton alloc] init];
+    UIView *topView = [[UIView alloc] init];
+    topView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:topView];
+    [topView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.top.mas_equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        make.height.mas_equalTo(30.f);
+    }];
+        
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"Hello" forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor blueColor]];
     [self.view addSubview:button];
     [button mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(15);
-        make.right.mas_equalTo(-15);
-        make.top.mas_equalTo(defaultTopInset);
-        make.bottom.mas_equalTo(-VirtualHomeHeight);
+        make.left.mas_equalTo(self.view).mas_offset(20);
+        make.right.mas_equalTo(self.view).mas_offset(-20);
+        make.top.mas_equalTo(topView.mas_bottom).mas_offset(15.f);
+        make.bottom.mas_equalTo(self.view.mas_safeAreaLayoutGuideBottom);
     }];
+    NSLog(@"%f",kNavigationBarHeight);
+    NSLog(@"%f",kSafeAreaHeight);
 }
 
 - (void)leftButtonMethod {
-    [self.locationManager startMonitoringForRegion:self.tempRegion];
-    [self.locationManager startRangingBeaconsSatisfyingConstraint:self.region];
+    MKPickView *pickView = [[MKPickView alloc] init];
+    [pickView showPickViewWithDataList:@[@"1",@"2",@"3"] selectedRow:1 block:^(NSInteger currentRow) {
+            
+    }];
 }
 
 #pragma mark - CLLocationManagerDelegate

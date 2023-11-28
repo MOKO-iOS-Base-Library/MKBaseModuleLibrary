@@ -59,116 +59,45 @@
 #define kScreenMaxLength            (MAX(kViewWidth, kViewHeight))          //获取屏幕宽高最大者
 #define kScreenMinLength            (MIN(kViewWidth, kViewHeight))          //获取屏幕宽高最小者
 
-/*
- 判断当前手机有没有安全区域
+/**
+ *  导航栏
  */
-#define kIsBangsScreen ({ \
-    BOOL isBangsScreen = NO; \
-    if (@available(iOS 15.0, *)) { \
-        UIWindowScene *activeScene = nil; \
-        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
-            if (scene.activationState == UISceneActivationStateForegroundActive) { \
-                activeScene = scene; \
-                break; \
-            } \
-        } \
-        if (activeScene) { \
-            UIWindow *mainWindow = activeScene.windows.firstObject; \
-            if (mainWindow.safeAreaInsets.bottom > 0) { \
-                isBangsScreen = YES; \
-            } \
-        } \
-    } else if (@available(iOS 13.0, *)) { \
-        UIWindow *mainWindow = UIApplication.sharedApplication.windows.firstObject; \
-        if (mainWindow.safeAreaInsets.bottom > 0) { \
-            isBangsScreen = YES; \
-        } \
-    } \
-    isBangsScreen; \
-})
+#define kNavigationBarHeight [[UINavigationController alloc] init].navigationBar.frame.size.height
 
-//状态栏、导航栏、标签栏高度
-#define Height_StatusBar ({ \
-    CGFloat statusBarHeight = 0.0; \
-    if (@available(iOS 15.0, *)) { \
-        UIWindowScene *activeScene = nil; \
-        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
-            if (scene.activationState == UISceneActivationStateForegroundActive) { \
-                activeScene = scene; \
-                break; \
-            } \
-        } \
-        if (activeScene) { \
-            UIWindow *mainWindow = activeScene.windows.firstObject; \
-            if (mainWindow) { \
-                statusBarHeight = mainWindow.windowScene.statusBarManager.statusBarFrame.size.height; \
-            } \
-        } \
-    } else if (@available(iOS 13.0, *)) { \
-        UIWindowScene *keyWindowScene = nil; \
-        for (UIWindowScene *windowScene in UIApplication.sharedApplication.connectedScenes) { \
-            if (windowScene.activationState == UISceneActivationStateForegroundActive && windowScene.windows.firstObject) { \
-                keyWindowScene = windowScene; \
-                break; \
-            } \
-        } \
-        if (keyWindowScene) { \
-            statusBarHeight = keyWindowScene.windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height; \
-        } \
-    }  \
-    statusBarHeight; \
-})
+/**
+ *  标签栏
+ */
+#define kTabBarHeight [[UITabBarController alloc] init].tabBar.frame.size.height
 
-//底部虚拟home键高度 一般用于最底部view到底部的距离
-#define VirtualHomeHeight ({ \
-    CGFloat virtualHomeHeight = 0.0; \
-    if (@available(iOS 15.0, *)) { \
-        UIWindowScene *activeScene = nil; \
-        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
-            if (scene.activationState == UISceneActivationStateForegroundActive) { \
-                activeScene = scene; \
-                break; \
-            } \
-        } \
-        if (activeScene) { \
-            UIWindow *mainWindow = activeScene.windows.firstObject; \
-            if (mainWindow.safeAreaInsets.bottom > 0) { \
-                virtualHomeHeight = 34.0; \
-            } \
-        } \
-    } else if (@available(iOS 13.0, *)) { \
-        NSArray<UIWindow *> *windows = [UIApplication sharedApplication].windows; \
-        UIWindow *mainWindow = windows.firstObject; \
-        if (mainWindow.safeAreaInsets.bottom > 0) { \
-            virtualHomeHeight = 34.0; \
-        } \
-    } \
-    virtualHomeHeight; \
+/**
+ *  竖屏底部安全区域
+ */
+#define kSafeAreaHeight ({\
+    CGFloat bottom=0.0;\
+    if (@available(iOS 11.0, *)) {\
+        bottom = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;\
+    } else { \
+        bottom=0;\
+    }\
+    (bottom);\
 })
-
-//默认顶部布局
-#define defaultTopInset (Height_StatusBar + 44.f)
 
 #pragma mark - *************************  系统相关  *************************
 
 #define kAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 #define kAppWindow ({ \
-    UIWindow *window = nil; \
-    if (@available(iOS 15.0, *)) { \
-        UIWindowScene *activeScene = nil; \
-        for (UIWindowScene *scene in UIApplication.sharedApplication.connectedScenes) { \
-            if (scene.activationState == UISceneActivationStateForegroundActive) { \
-                activeScene = scene; \
-                break; \
-            } \
-        } \
-        if (activeScene) { \
-            window = activeScene.windows.firstObject; \
-        } \
+    UIWindow *topWindow = nil; \
+    if (@available(iOS 13.0, *)) { \
+        NSSet<UIScene *> *connectedScenes = [UIApplication sharedApplication].connectedScenes; \
+        UIWindowScene *activeScene = (UIWindowScene *)connectedScenes.anyObject; \
+        topWindow = activeScene.windows.lastObject; \
     } else { \
-        window = [UIApplication sharedApplication].windows.firstObject; \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
+        topWindow = [[UIApplication sharedApplication].windows lastObject]; \
+_Pragma("clang diagnostic pop") \
     } \
-    window; \
+    topWindow; \
 })
 
 #define kAppRootController ({ \
@@ -185,7 +114,10 @@
             rootController = activeScene.windows.firstObject.rootViewController; \
         } \
     } else { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
         rootController = [UIApplication sharedApplication].windows.firstObject.rootViewController; \
+_Pragma("clang diagnostic pop") \
     } \
     rootController; \
 })
@@ -196,7 +128,10 @@
     if (@available(iOS 15.0, *)) { \
         systemVersion = [NSProcessInfo processInfo].operatingSystemVersionString; \
     } else { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
         systemVersion = [[UIDevice currentDevice] systemVersion]; \
+_Pragma("clang diagnostic pop") \
     } \
     systemVersion; \
 })
@@ -211,7 +146,10 @@
             appName = [NSBundle mainBundle].infoDictionary[@"CFBundleName"]; \
         } \
     } else { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
         appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]; \
+_Pragma("clang diagnostic pop") \
     } \
     appName; \
 })
@@ -222,7 +160,10 @@
     if (@available(iOS 15.0, *)) { \
         appVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]; \
     } else { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
         appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]; \
+_Pragma("clang diagnostic pop") \
     } \
     appVersion; \
 })
