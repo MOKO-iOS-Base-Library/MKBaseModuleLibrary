@@ -115,9 +115,7 @@
         if (keyWindowScene) { \
             statusBarHeight = keyWindowScene.windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height; \
         } \
-    } else { \
-        statusBarHeight = UIApplication.sharedApplication.statusBarFrame.size.height; \
-    } \
+    }  \
     statusBarHeight; \
 })
 
@@ -139,12 +137,11 @@
             } \
         } \
     } else if (@available(iOS 13.0, *)) { \
-        UIWindow *mainWindow = UIApplication.sharedApplication.keyWindow; \
+        NSArray<UIWindow *> *windows = [UIApplication sharedApplication].windows; \
+        UIWindow *mainWindow = windows.firstObject; \
         if (mainWindow.safeAreaInsets.bottom > 0) { \
             virtualHomeHeight = 34.0; \
         } \
-    } else { \
-        virtualHomeHeight = 0.0; \
     } \
     virtualHomeHeight; \
 })

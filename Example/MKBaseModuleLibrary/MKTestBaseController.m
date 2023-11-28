@@ -12,6 +12,10 @@
 
 #import "NSString+MKAdd.h"
 
+#import "MKMacroDefines.h"
+
+#import "Masonry.h"
+
 @interface MKTestBaseController ()<CLLocationManagerDelegate>
 
 @property (nonatomic, strong)CLLocationManager *locationManager;
@@ -29,7 +33,15 @@
     // Do any additional setup after loading the view.
     self.defaultTitle = @"Come on";
     self.custom_naviBarColor = [UIColor redColor];
-        
+    
+    UIButton *button = [[UIButton alloc] init];
+    [self.view addSubview:button];
+    [button mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(15);
+        make.right.mas_equalTo(-15);
+        make.top.mas_equalTo(defaultTopInset);
+        make.bottom.mas_equalTo(-VirtualHomeHeight);
+    }];
 }
 
 - (void)leftButtonMethod {

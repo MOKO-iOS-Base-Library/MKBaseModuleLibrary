@@ -252,7 +252,7 @@
 		FA56D89CFBFDF46BCBB8A7D12BE4D493 /* UIScrollView+MKAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A389FEF1AFD7CF142965A966BA03BA /* UIScrollView+MKAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FAA65FE98196D5D54C2C3DDF679D77F8 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1098D60C35297C002A64205DF38BB48E /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FABBAFAAB583B534F9A28472A8C3C7BD /* MKAddsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E99BBAFCCA0EF578E79EF778B7D4C0E7 /* MKAddsHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD2317A69301B103EFE3413C66B88F6F /* MKBaseModuleLibrary-MKBaseModuleLibrary in Resources */ = {isa = PBXBuildFile; fileRef = 05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary-MKBaseModuleLibrary */; };
+		FD2317A69301B103EFE3413C66B88F6F /* MKBaseModuleLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */; };
 		FDCCA83DBC941B674B6D62D37354ADD2 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1461D6F6374B3107FE1C7521F2E50AB8 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEA161897B111093F77C35BB3231B8F6 /* MKBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D636D8ED2D0DB578C8828950731076E2 /* MKBaseCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FF8DB7173C21613355D1CACE73C92C4C /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F45FC14E45A49F3321EEFFD78E7ECFC2 /* WRNavigationBar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -418,11 +418,11 @@
 		0205B816DB799F14D7E3D7D6A80CCEFB /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		02B98C4760C24AE0F81F058B9AF01770 /* refresh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = refresh.png; path = MKBaseModuleLibrary/Assets/refresh.png; sourceTree = "<group>"; };
 		0302BDA919912A16299AA9EEA60DD012 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		03087D97D71EA99DB4D3DFF707B16874 /* worksheet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = worksheet.c; path = src/worksheet.c; sourceTree = "<group>"; };
+		03087D97D71EA99DB4D3DFF707B16874 /* worksheet.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = worksheet.c; path = src/worksheet.c; sourceTree = "<group>"; };
 		034B34C91099D942DDF493A03C6A340F /* mz_strm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm.h; path = SSZipArchive/minizip/mz_strm.h; sourceTree = "<group>"; };
 		04859AA9C88A3FCDD0CBE5CA3D293657 /* MKMacroDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMacroDefines.h; path = MKBaseModuleLibrary/Classes/Defines/MKMacroDefines.h; sourceTree = "<group>"; };
 		04B6A9013142DC4A0BA29766F88FE093 /* mz_strm_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_buf.h; path = SSZipArchive/minizip/mz_strm_buf.h; sourceTree = "<group>"; };
-		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary-MKBaseModuleLibrary */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MKBaseModuleLibrary-MKBaseModuleLibrary"; path = MKBaseModuleLibrary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKBaseModuleLibrary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CAD456DA57E11ECDB271E6E9C9304E /* metadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metadata.h; path = include/xlsxwriter/metadata.h; sourceTree = "<group>"; };
 		086E478D8F24263D377EEB90FA568437 /* Pods-MKBaseModuleLibrary_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBaseModuleLibrary_Example-Info.plist"; sourceTree = "<group>"; };
 		0997641C42E5B5C4B2CA4944682F4080 /* Pods-MKBaseModuleLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKBaseModuleLibrary_Example-dummy.m"; sourceTree = "<group>"; };
@@ -430,11 +430,11 @@
 		0B0A8E55B7B6AA037072C0858FA1D41C /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		0BA51A208D33D0123A5D03E36CE15D60 /* NSInvocation+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSInvocation+MKAdd.h"; sourceTree = "<group>"; };
 		0BC6F626A48FFDC17549F95CDD0D63B8 /* xmlwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = include/xlsxwriter/xmlwriter.h; sourceTree = "<group>"; };
-		0D5CA3C2A1E4C02361AD010F865006EE /* mz_zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip.c; path = SSZipArchive/minizip/mz_zip.c; sourceTree = "<group>"; };
+		0D5CA3C2A1E4C02361AD010F865006EE /* mz_zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_zip.c; path = SSZipArchive/minizip/mz_zip.c; sourceTree = "<group>"; };
 		0DC8397C3957633333923E1FC3C88567 /* MKBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseViewController.m; path = MKBaseModuleLibrary/Classes/Base/Controller/MKBaseViewController.m; sourceTree = "<group>"; };
 		0EB1E04A125BEE942626C79FCBB7D44B /* UITextField+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UITextField+MKAdd.h"; sourceTree = "<group>"; };
 		0EBE8BBD09D012F233B9A9280CC028DC /* MKBaseModuleLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKBaseModuleLibrary.modulemap; sourceTree = "<group>"; };
-		0F4EAB9DDE777CF7289839BD788CA01C /* mz_zip_rw.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip_rw.c; path = SSZipArchive/minizip/mz_zip_rw.c; sourceTree = "<group>"; };
+		0F4EAB9DDE777CF7289839BD788CA01C /* mz_zip_rw.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_zip_rw.c; path = SSZipArchive/minizip/mz_zip_rw.c; sourceTree = "<group>"; };
 		10407ED6D2ABECED22D0423E59144CF4 /* mz_crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = SSZipArchive/minizip/mz_crypt.h; sourceTree = "<group>"; };
 		1098D60C35297C002A64205DF38BB48E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		11B7E37B1C840765AF9E3EEE47BCFD88 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
@@ -453,37 +453,37 @@
 		17001B0CA9C0CDAF5D8BF7649FD991BB /* NSString+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSString+MKAdd.m"; sourceTree = "<group>"; };
 		19001978A41484CD950F4C36835B5544 /* libxlsxwriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libxlsxwriter-prefix.pch"; sourceTree = "<group>"; };
 		1A33DAAF660D33D56B804EEB0775A2CA /* NSData+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSData+MKAdd.h"; sourceTree = "<group>"; };
-		1AABEA1B30A134500FFFC13F2484A69A /* mz_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os_posix.c; path = SSZipArchive/minizip/mz_os_posix.c; sourceTree = "<group>"; };
+		1AABEA1B30A134500FFFC13F2484A69A /* mz_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_os_posix.c; path = SSZipArchive/minizip/mz_os_posix.c; sourceTree = "<group>"; };
 		1C2AFC9A197BAB0C23DA5085954FE8BA /* Toast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.release.xcconfig; sourceTree = "<group>"; };
 		1C3CCF4BED22C85836A55EC946C85AAC /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		1CF3561273C8A08DA9F1469586AC7E15 /* chartsheet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chartsheet.c; path = src/chartsheet.c; sourceTree = "<group>"; };
+		1CF3561273C8A08DA9F1469586AC7E15 /* chartsheet.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = chartsheet.c; path = src/chartsheet.c; sourceTree = "<group>"; };
 		1DAA5A65712ABBBD4572732A0FE50DE6 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/include/ZipArchive.h; sourceTree = "<group>"; };
 		1DD46B4AAF69B73A672B373DA107A693 /* Pods-MKBaseModuleLibrary_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MKBaseModuleLibrary_Example"; path = Pods_MKBaseModuleLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1DF1DF1812367A0CB0EE2B8B87C28B /* Pods-MKBaseModuleLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKBaseModuleLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1EC44924B8FF83F06265C412451883FE /* md5.c */ = {isa = PBXFileReference; includeInIndex = 1; name = md5.c; path = third_party/md5/md5.c; sourceTree = "<group>"; };
+		1EC44924B8FF83F06265C412451883FE /* md5.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = md5.c; path = third_party/md5/md5.c; sourceTree = "<group>"; };
 		1EC4DA27E07E6124C92C9C10E855CBF5 /* NSObject+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSObject+MKAdd.h"; sourceTree = "<group>"; };
 		1FF19E9CB7EE8756889E8A15B7D81E87 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B4783500BF32697F10FC50C50C114A /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = include/xlsxwriter/third_party/queue.h; sourceTree = "<group>"; };
-		24B7AD476294F26A542E1EEBBD939E47 /* MKBaseModuleLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MKBaseModuleLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24B7AD476294F26A542E1EEBBD939E47 /* MKBaseModuleLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MKBaseModuleLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKBaseModuleLibrary; path = MKBaseModuleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2664C596A274C817A0C01FD37E91DC0D /* ResourceBundle-MKBaseModuleLibrary-MKBaseModuleLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MKBaseModuleLibrary-MKBaseModuleLibrary-Info.plist"; sourceTree = "<group>"; };
 		26FB7CDFB3071EEBE84719918959AD0D /* libxlsxwriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libxlsxwriter-umbrella.h"; path = "include/xlsxwriter/libxlsxwriter-umbrella.h"; sourceTree = "<group>"; };
 		28CA3B0B0E6C607D33F6730488636AF2 /* MKBaseModuleLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKBaseModuleLibrary-dummy.m"; sourceTree = "<group>"; };
-		2ACCE1D196D2952B7F5039242EFB83C9 /* mz_strm_zlib.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_zlib.c; path = SSZipArchive/minizip/mz_strm_zlib.c; sourceTree = "<group>"; };
-		2BB5EFD0AC1783E1DFC0463B508FB04E /* custom.c */ = {isa = PBXFileReference; includeInIndex = 1; name = custom.c; path = src/custom.c; sourceTree = "<group>"; };
+		2ACCE1D196D2952B7F5039242EFB83C9 /* mz_strm_zlib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_zlib.c; path = SSZipArchive/minizip/mz_strm_zlib.c; sourceTree = "<group>"; };
+		2BB5EFD0AC1783E1DFC0463B508FB04E /* custom.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = custom.c; path = src/custom.c; sourceTree = "<group>"; };
 		2E9B7A1FEFEB4D1FDD8E635085C72DE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2EA83E2DD4D782495F3758D7EBB831EC /* NSNumber+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSNumber+MKAdd.h"; sourceTree = "<group>"; };
-		2EF82437A5C4279C8365DA866504564A /* theme.c */ = {isa = PBXFileReference; includeInIndex = 1; name = theme.c; path = src/theme.c; sourceTree = "<group>"; };
+		2EF82437A5C4279C8365DA866504564A /* theme.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = theme.c; path = src/theme.c; sourceTree = "<group>"; };
 		2F9CCF4DBB99ECFA148E69CFE34BA7D2 /* WRNavigationBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WRNavigationBar.modulemap; sourceTree = "<group>"; };
 		2FC5526CB95C492AAA7ADF2DF27A14A1 /* MKDateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKDateFormatter.h; path = MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/MKDateFormatter.h; sourceTree = "<group>"; };
-		3172B870FADAF98894926069C2F1D525 /* tmpfileplus.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tmpfileplus.c; path = third_party/tmpfileplus/tmpfileplus.c; sourceTree = "<group>"; };
+		3172B870FADAF98894926069C2F1D525 /* tmpfileplus.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tmpfileplus.c; path = third_party/tmpfileplus/tmpfileplus.c; sourceTree = "<group>"; };
 		32E8EC4FBDDEA4485B89A95F98CD28DB /* MKExcelSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKExcelSheet.m; path = MKBaseModuleLibrary/Classes/Tools/MKExcelManager/MKExcelSheet.m; sourceTree = "<group>"; };
 		32F5E94B8866D902B24F3DA0E9F9D68E /* mz_strm_split.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_split.h; path = SSZipArchive/minizip/mz_strm_split.h; sourceTree = "<group>"; };
-		339F47D10D43480FB6BD7318CD9232CB /* workbook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = workbook.c; path = src/workbook.c; sourceTree = "<group>"; };
+		339F47D10D43480FB6BD7318CD9232CB /* workbook.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = workbook.c; path = src/workbook.c; sourceTree = "<group>"; };
 		33E58482B80F19F44425C9BFEEEEF5B6 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = include/xlsxwriter/third_party/md5.h; sourceTree = "<group>"; };
 		34863CB02F0E91FA5200107BCA9C7013 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = include/xlsxwriter/third_party/zip.h; sourceTree = "<group>"; };
-		350D22133EEEEF0846D12EF804760D6B /* mz_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_compat.c; path = SSZipArchive/minizip/mz_compat.c; sourceTree = "<group>"; };
+		350D22133EEEEF0846D12EF804760D6B /* mz_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_compat.c; path = SSZipArchive/minizip/mz_compat.c; sourceTree = "<group>"; };
 		362B43B992C9069862476B4A04D83FCB /* MKClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKClassInfo.h; path = MKBaseModuleLibrary/Classes/Tools/MKClassInfo/MKClassInfo.h; sourceTree = "<group>"; };
 		365DAB4C24D5FD65059A4CDFD784B3F4 /* MKXMLReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKXMLReader.m; path = MKBaseModuleLibrary/Classes/Tools/MKExcelManager/MKXMLReader.m; sourceTree = "<group>"; };
 		370D0E1807920D13709A387A4F77AEE4 /* UINavigationItem+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UINavigationItem+MKAdd.m"; sourceTree = "<group>"; };
@@ -492,14 +492,14 @@
 		391AB0E64358917998F6B273EDDF10CD /* chart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chart.h; path = include/xlsxwriter/chart.h; sourceTree = "<group>"; };
 		3983D7AA738D3D53AD8690DC80844D12 /* Pods-MKBaseModuleLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKBaseModuleLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		39BAE060BF5E1B09D0B2C757F031FCB6 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		3A3BB11357AF430B72A3ED3EC7DF4606 /* vml.c */ = {isa = PBXFileReference; includeInIndex = 1; name = vml.c; path = src/vml.c; sourceTree = "<group>"; };
+		3A3BB11357AF430B72A3ED3EC7DF4606 /* vml.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = vml.c; path = src/vml.c; sourceTree = "<group>"; };
 		3B9076E3B9604A4E60C22D4EE07E65CD /* worksheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = worksheet.h; path = include/xlsxwriter/worksheet.h; sourceTree = "<group>"; };
-		3BC833D00CDEB31F12DF557EECE291CB /* styles.c */ = {isa = PBXFileReference; includeInIndex = 1; name = styles.c; path = src/styles.c; sourceTree = "<group>"; };
+		3BC833D00CDEB31F12DF557EECE291CB /* styles.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = styles.c; path = src/styles.c; sourceTree = "<group>"; };
 		3C9E28C20A9005ABCD9281D5DEA36357 /* navigation_back_button_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "navigation_back_button_white@3x.png"; path = "MKBaseModuleLibrary/Assets/navigation_back_button_white@3x.png"; sourceTree = "<group>"; };
 		3D9427F025130EC09DF3E0360F442108 /* MKBaseCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseCollectionView.m; path = MKBaseModuleLibrary/Classes/Base/View/collectionView/MKBaseCollectionView.m; sourceTree = "<group>"; };
 		3F037A726C55D0FF1EC94D44533E8D24 /* vml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vml.h; path = include/xlsxwriter/vml.h; sourceTree = "<group>"; };
 		3F48C9E7D8EA3FC2FB3322ED9194D79D /* UITableView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UITableView+MKAdd.h"; sourceTree = "<group>"; };
-		42C4AB25FEC2DEE23DE05AD0618D7085 /* core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = core.c; path = src/core.c; sourceTree = "<group>"; };
+		42C4AB25FEC2DEE23DE05AD0618D7085 /* core.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = core.c; path = src/core.c; sourceTree = "<group>"; };
 		44165E19EE13E3894834DD93DDCE6AA0 /* MKBaseModuleLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKBaseModuleLibrary.debug.xcconfig; sourceTree = "<group>"; };
 		44AAFB3DA615B908C789BB1A43665A0D /* mz_strm_wzaes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_wzaes.h; path = SSZipArchive/minizip/mz_strm_wzaes.h; sourceTree = "<group>"; };
 		44E166EFE00B4F5FF366CB62605957B9 /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = include/xlsxwriter/format.h; sourceTree = "<group>"; };
@@ -510,13 +510,13 @@
 		515683571C4D1E41CF95A549A322E6B1 /* mz_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_compat.h; path = SSZipArchive/minizip/mz_compat.h; sourceTree = "<group>"; };
 		527743C2FA6026859AB044FAB39AC0C5 /* MKExcelSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKExcelSheet.h; path = MKBaseModuleLibrary/Classes/Tools/MKExcelManager/MKExcelSheet.h; sourceTree = "<group>"; };
 		53260D39ECC7CE0C98EE32B82D7B21F6 /* Pods-MKBaseModuleLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKBaseModuleLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		54A2F7AB70342EACDC5A4CF9066B81D3 /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
+		54A2F7AB70342EACDC5A4CF9066B81D3 /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
 		55E0AFD333353D71ACC2207149E879D6 /* Toast */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5688B48EA328C91BEF13D561A7D6AC64 /* mz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz.h; path = SSZipArchive/minizip/mz.h; sourceTree = "<group>"; };
-		57F68B021DF672598F3D9F27D5915554 /* mz_strm_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_buf.c; path = SSZipArchive/minizip/mz_strm_buf.c; sourceTree = "<group>"; };
+		57F68B021DF672598F3D9F27D5915554 /* mz_strm_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_buf.c; path = SSZipArchive/minizip/mz_strm_buf.c; sourceTree = "<group>"; };
 		58114F381B685529B652F19AE189C417 /* xlsxwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlsxwriter.h; path = include/xlsxwriter.h; sourceTree = "<group>"; };
 		59BB45AD79A2D96244A3045C36293E1C /* NSDictionary+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSDictionary+MKAdd.m"; sourceTree = "<group>"; };
-		5B017F1EE9B26162B419C3F29AB4675F /* shared_strings.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shared_strings.c; path = src/shared_strings.c; sourceTree = "<group>"; };
+		5B017F1EE9B26162B419C3F29AB4675F /* shared_strings.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = shared_strings.c; path = src/shared_strings.c; sourceTree = "<group>"; };
 		5B31CE620A853D9875A4B9E634502F87 /* tmpfileplus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tmpfileplus.h; path = include/xlsxwriter/third_party/tmpfileplus.h; sourceTree = "<group>"; };
 		5CB4041AB119809B63F71D0E44EAA34E /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
 		5FE61C9E690F72E0F500DEBD42FF800B /* WRNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WRNavigationBar.h; path = Demo/CodeDemo/WRNavigationBar/WRNavigationBar.h; sourceTree = "<group>"; };
@@ -526,14 +526,14 @@
 		63791E0BDBE4D5F54BF9107C939B5DBC /* UINavigationItem+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UINavigationItem+MKAdd.h"; sourceTree = "<group>"; };
 		6385908677855E7662CD0C74C9504709 /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = theme.h; path = include/xlsxwriter/theme.h; sourceTree = "<group>"; };
 		6479EA90737F342151D748AA02DFC326 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		64BD541E7728E0353773E23D681857AF /* content_types.c */ = {isa = PBXFileReference; includeInIndex = 1; name = content_types.c; path = src/content_types.c; sourceTree = "<group>"; };
-		65132DB31DC2D9AF885B59AA60077DA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		64BD541E7728E0353773E23D681857AF /* content_types.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = content_types.c; path = src/content_types.c; sourceTree = "<group>"; };
+		65132DB31DC2D9AF885B59AA60077DA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		67168439B6CDB12419CA60931A01E165 /* UISegmentedControl+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UISegmentedControl+MKAdd.h"; sourceTree = "<group>"; };
 		67AB81EEC6E614392B42360B3FB9E80E /* MKBaseTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseTableView.h; path = MKBaseModuleLibrary/Classes/Base/View/tableView/MKBaseTableView.h; sourceTree = "<group>"; };
 		686F4155B0FB7F5C8D0E828090F4E36E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		69344CEE75389F8F995EA0F1BB7F2A3A /* NSNumber+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSNumber+MKAdd.m"; sourceTree = "<group>"; };
-		6957962B1D31C3005C3FE469B9EB4D45 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = third_party/minizip/zip.c; sourceTree = "<group>"; };
-		69AC4E6B0BDAD986A243E10CA2DBCA5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6957962B1D31C3005C3FE469B9EB4D45 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = third_party/minizip/zip.c; sourceTree = "<group>"; };
+		69AC4E6B0BDAD986A243E10CA2DBCA5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6AC36E1D8DE1224566BE451080B6F6EF /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		6C3D22F213E10F4C09C912CD15F8EB83 /* UIView+MKRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MKRefresh.m"; path = "MKBaseModuleLibrary/Classes/Category/UIView+MKRefresh.m"; sourceTree = "<group>"; };
 		6C3DE71E0D1DBC9319403AB4BF94F68F /* MKExcelCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKExcelCell.m; path = MKBaseModuleLibrary/Classes/Tools/MKExcelManager/MKExcelCell.m; sourceTree = "<group>"; };
@@ -543,19 +543,19 @@
 		6DD340818C477BC6E7934C4A4D4828FE /* WRNavigationBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WRNavigationBar.debug.xcconfig; sourceTree = "<group>"; };
 		6FA27463F6E4A564D882DFA3D766C872 /* UIView+MKRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MKRefresh.h"; path = "MKBaseModuleLibrary/Classes/Category/UIView+MKRefresh.h"; sourceTree = "<group>"; };
 		7061C399324D411AD02F906CB1A836BD /* NSString+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSString+MKAdd.h"; sourceTree = "<group>"; };
-		710F50597AB0B0056B7C06683F1B6AF2 /* format.c */ = {isa = PBXFileReference; includeInIndex = 1; name = format.c; path = src/format.c; sourceTree = "<group>"; };
+		710F50597AB0B0056B7C06683F1B6AF2 /* format.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = format.c; path = src/format.c; sourceTree = "<group>"; };
 		727F7AC42431752C7151C6EA3AD819B4 /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
 		72ABCEA7150A91D6D1382D69730B5528 /* UIColor+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIColor+MKAdd.h"; sourceTree = "<group>"; };
 		73702834A77D6E680752AF83E6A56A1D /* MKBaseNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseNavigationController.h; path = MKBaseModuleLibrary/Classes/Base/NavigationController/MKBaseNavigationController.h; sourceTree = "<group>"; };
 		73A6DA1513C4E619FB2A8A2DD4091DEC /* MKBaseModuleLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKBaseModuleLibrary.release.xcconfig; sourceTree = "<group>"; };
-		73D220588F535605684294639D139B09 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_pkcrypt.c; path = SSZipArchive/minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
+		73D220588F535605684294639D139B09 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_pkcrypt.c; path = SSZipArchive/minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
 		75048A734E0D9B6D2BE0F0F4724642FD /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
 		751ED80F1F11D9567B966083AB14D82A /* UIImage+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIImage+MKAdd.h"; sourceTree = "<group>"; };
 		755DBAC3925CE1E90A64E5CB9BE94A20 /* UITableView+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UITableView+MKAdd.m"; sourceTree = "<group>"; };
 		76D35528A080722228191AC752BFCC0A /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
 		79827EA9B6FB8CBF8B015158A39FFAE5 /* emyg_dtoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = emyg_dtoa.h; path = include/xlsxwriter/third_party/emyg_dtoa.h; sourceTree = "<group>"; };
 		7E7154AFC577E35CE94DDE53637EDC82 /* mz_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_os.h; path = SSZipArchive/minizip/mz_os.h; sourceTree = "<group>"; };
-		7F5AF3CD83E203096BE87C4675FDE7A4 /* packager.c */ = {isa = PBXFileReference; includeInIndex = 1; name = packager.c; path = src/packager.c; sourceTree = "<group>"; };
+		7F5AF3CD83E203096BE87C4675FDE7A4 /* packager.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = packager.c; path = src/packager.c; sourceTree = "<group>"; };
 		80BE368B6D8C813A818A7DCBB86A8483 /* tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tree.h; path = include/xlsxwriter/third_party/tree.h; sourceTree = "<group>"; };
 		825E027F1A52086DF8B4C098D409B0C8 /* Pods-MKBaseModuleLibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKBaseModuleLibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
 		84D6FC8A1AF10BE1E7D0C41D211B40FC /* libxlsxwriter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libxlsxwriter.debug.xcconfig; sourceTree = "<group>"; };
@@ -567,15 +567,15 @@
 		884022FA8E66B72BEDA25A5C5571E8CA /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		89897B310B24BCF7C9242D96F5514712 /* UIButton+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIButton+MKAdd.m"; sourceTree = "<group>"; };
 		89C81519A889BD5CF3A330C42E57A0B2 /* libxlsxwriter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libxlsxwriter.release.xcconfig; sourceTree = "<group>"; };
-		8A2BF206DC569C83873CF406AFA92F6F /* mz_strm_wzaes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_wzaes.c; path = SSZipArchive/minizip/mz_strm_wzaes.c; sourceTree = "<group>"; };
+		8A2BF206DC569C83873CF406AFA92F6F /* mz_strm_wzaes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_wzaes.c; path = SSZipArchive/minizip/mz_strm_wzaes.c; sourceTree = "<group>"; };
 		8A41034F949B0AAF4FFF5D001AC8007E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		8ADA849C13D1F7B12E0A775DF4F66A96 /* custom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = custom.h; path = include/xlsxwriter/custom.h; sourceTree = "<group>"; };
-		8AEBB620998FB36E9B341E2375116530 /* mz_crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt.c; path = SSZipArchive/minizip/mz_crypt.c; sourceTree = "<group>"; };
+		8AEBB620998FB36E9B341E2375116530 /* mz_crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_crypt.c; path = SSZipArchive/minizip/mz_crypt.c; sourceTree = "<group>"; };
 		8CE73F35674B01F9C542EAEF2E1E6FC5 /* UIButton+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIButton+MKAdd.h"; sourceTree = "<group>"; };
 		8D98577B7D7A2F04BB0CF343D4CDA860 /* hash_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash_table.h; path = include/xlsxwriter/hash_table.h; sourceTree = "<group>"; };
 		8DEECDDC7882A204B7A2CC54C5F68177 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		8F01A16B1DB99AF9EFC2F29EA6254D04 /* relationships.c */ = {isa = PBXFileReference; includeInIndex = 1; name = relationships.c; path = src/relationships.c; sourceTree = "<group>"; };
-		8F3E668A9641A7650D2D7EF15060DAB1 /* comment.c */ = {isa = PBXFileReference; includeInIndex = 1; name = comment.c; path = src/comment.c; sourceTree = "<group>"; };
+		8F01A16B1DB99AF9EFC2F29EA6254D04 /* relationships.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = relationships.c; path = src/relationships.c; sourceTree = "<group>"; };
+		8F3E668A9641A7650D2D7EF15060DAB1 /* comment.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = comment.c; path = src/comment.c; sourceTree = "<group>"; };
 		91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9205FCC2259A3EAF445ADF64600E17F2 /* MKBaseModuleLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKBaseModuleLibrary-Info.plist"; sourceTree = "<group>"; };
 		93CCC343E9AD3E6174B072FD274D21C8 /* MKBaseTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseTableView.m; path = MKBaseModuleLibrary/Classes/Base/View/tableView/MKBaseTableView.m; sourceTree = "<group>"; };
@@ -586,9 +586,9 @@
 		97F5B749664ECDDDF994B950886080C8 /* table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table.h; path = include/xlsxwriter/table.h; sourceTree = "<group>"; };
 		99110FC86EC1F2A41F46D91E51546B2A /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
 		9AA6C7379B33C4194C2DA0946FF8A9B6 /* packager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = packager.h; path = include/xlsxwriter/packager.h; sourceTree = "<group>"; };
-		9C55667E21E9469A6A885C0E31EA4B7D /* libxlsxwriter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = libxlsxwriter; path = xlsxwriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C55667E21E9469A6A885C0E31EA4B7D /* xlsxwriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = xlsxwriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1E93B49DDB7966840D7BBDCB2E7636 /* workbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = workbook.h; path = include/xlsxwriter/workbook.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E823D481D151D0A555151BC658F62E9 /* NSInvocation+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSInvocation+MKAdd.m"; sourceTree = "<group>"; };
 		9EF2B7E82DC6CC9B17D39276557B12E6 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
 		9F1442B1AB8E9EA16D09DDC25B346ACA /* libxlsxwriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = libxlsxwriter.modulemap; sourceTree = "<group>"; };
@@ -602,11 +602,11 @@
 		AE7E5395A6C060DCE056D5AAEC648400 /* navigation_back_button_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "navigation_back_button_white@2x.png"; path = "MKBaseModuleLibrary/Assets/navigation_back_button_white@2x.png"; sourceTree = "<group>"; };
 		AEA31ED53DAE2F4FDAB7AB7604170A4C /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		AF07A20B057FAB8CDA83ECB34D563C8F /* SSZipArchive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSZipArchive-Info.plist"; sourceTree = "<group>"; };
-		B0F59F3BB65A33A793424FAB759CB749 /* utility.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.c; path = src/utility.c; sourceTree = "<group>"; };
+		B0F59F3BB65A33A793424FAB759CB749 /* utility.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = utility.c; path = src/utility.c; sourceTree = "<group>"; };
 		B123AE81726068AB949761E96280C430 /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Toast/UIView+Toast.m"; sourceTree = "<group>"; };
 		B1664A4817F40F93B100C189517A0D18 /* MKBaseModuleLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKBaseModuleLibrary-prefix.pch"; sourceTree = "<group>"; };
 		B1915C156ED096EF78D231B906E8E05D /* UIApplication+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIApplication+MKAdd.h"; sourceTree = "<group>"; };
-		B1F36B013DF862DD506E825BB25A0C43 /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
+		B1F36B013DF862DD506E825BB25A0C43 /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
 		B2DED98881641FD0A16E5C3B7162FB53 /* NSArray+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSArray+MKAdd.m"; sourceTree = "<group>"; };
 		B33788BC978212F36C97B4B356C5F47D /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
 		B492A85440390B6FD3D4C77D2CECFBBD /* mz_strm_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_mem.h; path = SSZipArchive/minizip/mz_strm_mem.h; sourceTree = "<group>"; };
@@ -617,25 +617,25 @@
 		BE88AF1B97F5622D76C3D6DC526204EB /* NSArray+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSArray+MKAdd.h"; sourceTree = "<group>"; };
 		BF428D9C61C1AE5661C38CE3EF430956 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		C05D6A66A1EB3700BD82B23D864B3ED2 /* WRCustomNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WRCustomNavigationBar.h; path = Demo/CodeDemo/WRNavigationBar/WRCustomNavigationBar.h; sourceTree = "<group>"; };
-		C0935C3FD8B9B80AC3C37004313B309D /* mz_strm_split.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_split.c; path = SSZipArchive/minizip/mz_strm_split.c; sourceTree = "<group>"; };
+		C0935C3FD8B9B80AC3C37004313B309D /* mz_strm_split.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_split.c; path = SSZipArchive/minizip/mz_strm_split.c; sourceTree = "<group>"; };
 		C1ECD1633796F5319B3C44DA123866BE /* core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core.h; path = include/xlsxwriter/core.h; sourceTree = "<group>"; };
 		C1EFF7E9A0F3C497225F268FE099F8CA /* SSZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.debug.xcconfig; sourceTree = "<group>"; };
-		C2666E84E19E4837D93BE9C4F955557F /* app.c */ = {isa = PBXFileReference; includeInIndex = 1; name = app.c; path = src/app.c; sourceTree = "<group>"; };
-		C518ABD8530961E1FF15AA5D34FA009E /* hash_table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hash_table.c; path = src/hash_table.c; sourceTree = "<group>"; };
+		C2666E84E19E4837D93BE9C4F955557F /* app.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = app.c; path = src/app.c; sourceTree = "<group>"; };
+		C518ABD8530961E1FF15AA5D34FA009E /* hash_table.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hash_table.c; path = src/hash_table.c; sourceTree = "<group>"; };
 		C52348E5F96BDA1FB031FB15C4AB8A8E /* UIView+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIView+MKAdd.m"; sourceTree = "<group>"; };
 		C7675070074EE73C2232F9C7E4B72BE5 /* relationships.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relationships.h; path = include/xlsxwriter/relationships.h; sourceTree = "<group>"; };
-		C79477C7883C68C9EAD0F7C2F051B505 /* mz_os.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os.c; path = SSZipArchive/minizip/mz_os.c; sourceTree = "<group>"; };
+		C79477C7883C68C9EAD0F7C2F051B505 /* mz_os.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_os.c; path = SSZipArchive/minizip/mz_os.c; sourceTree = "<group>"; };
 		C7BBEAC5AAB7F62198AE9363B740EBD4 /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
 		C7CD35D1FF5EEF92364A5E1F903619E1 /* MKBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseViewController.h; path = MKBaseModuleLibrary/Classes/Base/Controller/MKBaseViewController.h; sourceTree = "<group>"; };
-		CB576D111D1008974B5299F137212E4A /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = third_party/minizip/ioapi.c; sourceTree = "<group>"; };
+		CB576D111D1008974B5299F137212E4A /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = third_party/minizip/ioapi.c; sourceTree = "<group>"; };
 		CCE750DCDCE5665F6E13D7DB1EB3E5F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		CD308E1991A019336010A4769462760A /* chart.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chart.c; path = src/chart.c; sourceTree = "<group>"; };
-		CF61A3E29F515752BCB54EC5C3B0FD63 /* xmlwriter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
+		CD308E1991A019336010A4769462760A /* chart.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = chart.c; path = src/chart.c; sourceTree = "<group>"; };
+		CF61A3E29F515752BCB54EC5C3B0FD63 /* xmlwriter.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
 		D30CBE002B1805E78FAB64C513D050E9 /* MKExcelWookbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKExcelWookbook.h; path = MKBaseModuleLibrary/Classes/Tools/MKExcelManager/MKExcelWookbook.h; sourceTree = "<group>"; };
 		D40150DD9EC63D314EE9642390A6DFB0 /* MKDeviceDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKDeviceDefine.h; path = MKBaseModuleLibrary/Classes/Defines/MKDeviceDefine.h; sourceTree = "<group>"; };
 		D5934D35435A4428DD29424B703A861D /* styles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = styles.h; path = include/xlsxwriter/styles.h; sourceTree = "<group>"; };
 		D636D8ED2D0DB578C8828950731076E2 /* MKBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseCell.m; path = MKBaseModuleLibrary/Classes/Base/Cell/MKBaseCell/MKBaseCell.m; sourceTree = "<group>"; };
-		D7515A9DE2D2667C1B0D56C8BF161066 /* metadata.c */ = {isa = PBXFileReference; includeInIndex = 1; name = metadata.c; path = src/metadata.c; sourceTree = "<group>"; };
+		D7515A9DE2D2667C1B0D56C8BF161066 /* metadata.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = metadata.c; path = src/metadata.c; sourceTree = "<group>"; };
 		D7BB925636763D4B5571402C16AE5E17 /* libxlsxwriter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "libxlsxwriter-Info.plist"; sourceTree = "<group>"; };
 		D8F67C28451F8D6D8ECFF939D5E2837F /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_pkcrypt.h; path = SSZipArchive/minizip/mz_strm_pkcrypt.h; sourceTree = "<group>"; };
 		DB12E7A7169214B52229F89160BFE864 /* WRNavigationBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WRNavigationBar-dummy.m"; sourceTree = "<group>"; };
@@ -649,7 +649,7 @@
 		E01580AA2354FB6997682EF41EE7314E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		E10095FCF996CD15BDD9E216B534143D /* mz_zip_rw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip_rw.h; path = SSZipArchive/minizip/mz_zip_rw.h; sourceTree = "<group>"; };
 		E17A14A299C1DEAE0C8ECCD075540982 /* mz_zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip.h; path = SSZipArchive/minizip/mz_zip.h; sourceTree = "<group>"; };
-		E3BC2EEA18A80D142F040C58C45A0FE9 /* mz_strm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm.c; path = SSZipArchive/minizip/mz_strm.c; sourceTree = "<group>"; };
+		E3BC2EEA18A80D142F040C58C45A0FE9 /* mz_strm.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm.c; path = SSZipArchive/minizip/mz_strm.c; sourceTree = "<group>"; };
 		E4E8468B5E01A6E89497169EB52BB699 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		E57C51ACDB21A26071846B3799BBF74B /* app.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = app.h; path = include/xlsxwriter/app.h; sourceTree = "<group>"; };
 		E67E4C80E45CAB11EC08C21ADB54FF3E /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
@@ -662,16 +662,16 @@
 		ED34329BB2C1C1B90319289456D38604 /* NSDateFormatter+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSDateFormatter+MKAdd.m"; sourceTree = "<group>"; };
 		F003F69FD4C4C1F5C20D7B86D583A5B7 /* Toast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-umbrella.h"; sourceTree = "<group>"; };
 		F45FC14E45A49F3321EEFFD78E7ECFC2 /* WRNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WRNavigationBar.m; path = Demo/CodeDemo/WRNavigationBar/WRNavigationBar.m; sourceTree = "<group>"; };
-		F4B773E476F65BBAEABE02C7A75FD249 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_os_posix.c; path = SSZipArchive/minizip/mz_strm_os_posix.c; sourceTree = "<group>"; };
+		F4B773E476F65BBAEABE02C7A75FD249 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mz_strm_os_posix.c; path = SSZipArchive/minizip/mz_strm_os_posix.c; sourceTree = "<group>"; };
 		F585D7EB4E1B8E921B756615242660C4 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		F82FF0924EDB0759A83AA678437789E1 /* shared_strings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shared_strings.h; path = include/xlsxwriter/shared_strings.h; sourceTree = "<group>"; };
 		F85433ABBDB5290A5B0EC5CCFFE15420 /* NSDateFormatter+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSDateFormatter+MKAdd.h"; sourceTree = "<group>"; };
 		F9C49A349CF320C901F012C286D27648 /* MKRegularsDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKRegularsDefine.h; path = MKBaseModuleLibrary/Classes/Defines/MKRegularsDefine.h; sourceTree = "<group>"; };
 		FB3EFE0D17A4DE9790C6C3DEF27C89E8 /* chartsheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chartsheet.h; path = include/xlsxwriter/chartsheet.h; sourceTree = "<group>"; };
 		FC21FE8681883D30793F6EEE58F85ED1 /* Pods-MKBaseModuleLibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKBaseModuleLibrary_Example-umbrella.h"; sourceTree = "<group>"; };
-		FD2D41CF239539682A8BCACAF0DD0942 /* table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = table.c; path = src/table.c; sourceTree = "<group>"; };
+		FD2D41CF239539682A8BCACAF0DD0942 /* table.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = table.c; path = src/table.c; sourceTree = "<group>"; };
 		FDC7EA1F14A3AC860CA811B226BD1EFB /* UIScrollView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIScrollView+MKAdd.h"; sourceTree = "<group>"; };
-		FDD728DE53EA67BC127C344F940B93E1 /* drawing.c */ = {isa = PBXFileReference; includeInIndex = 1; name = drawing.c; path = src/drawing.c; sourceTree = "<group>"; };
+		FDD728DE53EA67BC127C344F940B93E1 /* drawing.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = drawing.c; path = src/drawing.c; sourceTree = "<group>"; };
 		FE26DAD243AB41680823EED51A95A5CB /* MKBaseCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBaseCollectionView.h; path = MKBaseModuleLibrary/Classes/Base/View/collectionView/MKBaseCollectionView.h; sourceTree = "<group>"; };
 		FE4E1B5ADC07D63AC819D6E60C4C283B /* Pods-MKBaseModuleLibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKBaseModuleLibrary_Example.modulemap"; sourceTree = "<group>"; };
 		FEE09C8D9269B05BA40B5D12AC2DE664 /* NSDate+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSDate+MKAdd.h"; sourceTree = "<group>"; };
@@ -814,7 +814,6 @@
 				1DAA5A65712ABBBD4572732A0FE50DE6 /* ZipArchive.h */,
 				D563E42D2D327358C59061484551C66A /* Support Files */,
 			);
-			name = SSZipArchive;
 			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
@@ -885,10 +884,10 @@
 		38C0D6C92F3F7323568216D9BE5FB20A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C55667E21E9469A6A885C0E31EA4B7D /* libxlsxwriter */,
+				9C55667E21E9469A6A885C0E31EA4B7D /* xlsxwriter.framework */,
 				1FFED36A657123030ABB700256D73F15 /* Masonry */,
 				2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary */,
-				05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary-MKBaseModuleLibrary */,
+				05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */,
 				1DD46B4AAF69B73A672B373DA107A693 /* Pods-MKBaseModuleLibrary_Example */,
 				91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */,
 				55E0AFD333353D71ACC2207149E879D6 /* Toast */,
@@ -1088,7 +1087,6 @@
 				B123AE81726068AB949761E96280C430 /* UIView+Toast.m */,
 				CD05B468B2B411B1DFAB10BF9CD7BE0D /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -1151,7 +1149,6 @@
 				8A41034F949B0AAF4FFF5D001AC8007E /* ViewController+MASAdditions.m */,
 				95F221F64C0C799DA9C82F26CBC5B1B5 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1221,7 +1218,6 @@
 				F45FC14E45A49F3321EEFFD78E7ECFC2 /* WRNavigationBar.m */,
 				0B794574FA95B21ED3FFAFFB7E82316F /* Support Files */,
 			);
-			name = WRNavigationBar;
 			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
@@ -1296,7 +1292,6 @@
 				34863CB02F0E91FA5200107BCA9C7013 /* zip.h */,
 				0BC5FDC42A443F6D04B71CDBC096B7D2 /* Support Files */,
 			);
-			name = libxlsxwriter;
 			path = libxlsxwriter;
 			sourceTree = "<group>";
 		};
@@ -1521,7 +1516,7 @@
 			);
 			name = libxlsxwriter;
 			productName = xlsxwriter;
-			productReference = 9C55667E21E9469A6A885C0E31EA4B7D /* libxlsxwriter */;
+			productReference = 9C55667E21E9469A6A885C0E31EA4B7D /* xlsxwriter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A3D038F30359181AD35B8B5F858E9AC5 /* Pods-MKBaseModuleLibrary_Example */ = {
@@ -1580,7 +1575,7 @@
 			);
 			name = "MKBaseModuleLibrary-MKBaseModuleLibrary";
 			productName = MKBaseModuleLibrary;
-			productReference = 05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary-MKBaseModuleLibrary */;
+			productReference = 05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		E566CA03BC93C7DE8636C6718294E0D9 /* MKBaseModuleLibrary */ = {
@@ -1633,6 +1628,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CA90AF0E1A27AF2B4F700D6F71D1E793 = {
+						DevelopmentTeam = R558LEUW2T;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1699,7 +1699,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD2317A69301B103EFE3413C66B88F6F /* MKBaseModuleLibrary-MKBaseModuleLibrary in Resources */,
+				FD2317A69301B103EFE3413C66B88F6F /* MKBaseModuleLibrary.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2235,6 +2235,7 @@
 			baseConfigurationReference = 73A6DA1513C4E619FB2A8A2DD4091DEC /* MKBaseModuleLibrary.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MKBaseModuleLibrary";
+				DEVELOPMENT_TEAM = R558LEUW2T;
 				IBSC_MODULE = MKBaseModuleLibrary;
 				INFOPLIST_FILE = "Target Support Files/MKBaseModuleLibrary/ResourceBundle-MKBaseModuleLibrary-MKBaseModuleLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -2332,8 +2333,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -2376,6 +2376,7 @@
 			baseConfigurationReference = 44165E19EE13E3894834DD93DDCE6AA0 /* MKBaseModuleLibrary.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MKBaseModuleLibrary";
+				DEVELOPMENT_TEAM = R558LEUW2T;
 				IBSC_MODULE = MKBaseModuleLibrary;
 				INFOPLIST_FILE = "Target Support Files/MKBaseModuleLibrary/ResourceBundle-MKBaseModuleLibrary-MKBaseModuleLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -2403,7 +2404,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/libxlsxwriter/libxlsxwriter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/libxlsxwriter/libxlsxwriter.modulemap";
 				PRODUCT_MODULE_NAME = xlsxwriter;
@@ -2464,7 +2465,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/libxlsxwriter/libxlsxwriter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/libxlsxwriter/libxlsxwriter.modulemap";
 				PRODUCT_MODULE_NAME = xlsxwriter;
