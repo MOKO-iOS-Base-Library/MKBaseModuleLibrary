@@ -59,29 +59,6 @@
 #define kScreenMaxLength            (MAX(kViewWidth, kViewHeight))          //获取屏幕宽高最大者
 #define kScreenMinLength            (MIN(kViewWidth, kViewHeight))          //获取屏幕宽高最小者
 
-/**
- *  导航栏
- */
-#define kNavigationBarHeight [[UINavigationController alloc] init].navigationBar.frame.size.height
-
-/**
- *  标签栏
- */
-#define kTabBarHeight [[UITabBarController alloc] init].tabBar.frame.size.height
-
-/**
- *  竖屏底部安全区域
- */
-#define kSafeAreaHeight ({\
-    CGFloat bottom=0.0;\
-    if (@available(iOS 11.0, *)) {\
-        bottom = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;\
-    } else { \
-        bottom=0;\
-    }\
-    (bottom);\
-})
-
 #pragma mark - *************************  系统相关  *************************
 
 #define kAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
@@ -178,6 +155,45 @@ _Pragma("clang diagnostic pop") \
 
 //获取系统时间戳
 #define  kSystemTimeStamp [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]]
+
+#pragma mark - *************************  状态栏、导航栏、标签栏相关  *************************
+
+/*
+    状态栏
+ */
+
+#define kStatusBarHeight kAppWindow.windowScene.statusBarManager.statusBarFrame.size.height
+
+/**
+ *  导航栏
+ */
+#define kNavigationBarHeight [[UINavigationController alloc] init].navigationBar.frame.size.height
+
+/**
+ *  标签栏(底部)
+ */
+#define kTabBarHeight [[UITabBarController alloc] init].tabBar.frame.size.height
+
+
+
+
+/*
+    顶部导航栏+导航栏高度
+ */
+#define kTopBarHeight (kStatusBarHeight + kNavigationBarHeight)
+
+/**
+ *  竖屏底部安全区域
+ */
+#define kSafeAreaHeight ({\
+    CGFloat bottom=0.0;\
+    if (@available(iOS 11.0, *)) {\
+        bottom = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;\
+    } else { \
+        bottom=0;\
+    }\
+    (bottom);\
+})
 
 
 #pragma mark - *************************  本地文档相关  *************************

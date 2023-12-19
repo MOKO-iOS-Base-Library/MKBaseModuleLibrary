@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '2.0.8'
+  s.version          = '2.0.9'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'aadyx2007@163.com' => 'aadyx2007@163.com' }
   s.source           = { :git => 'https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   
   s.resource_bundles = {
       'MKBaseModuleLibrary' => ['MKBaseModuleLibrary/Assets/*']

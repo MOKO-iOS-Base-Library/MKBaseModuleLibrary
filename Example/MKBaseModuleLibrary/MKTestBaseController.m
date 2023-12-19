@@ -56,8 +56,9 @@
         make.top.mas_equalTo(topView.mas_bottom).mas_offset(15.f);
         make.bottom.mas_equalTo(self.view.mas_safeAreaLayoutGuideBottom);
     }];
-    NSLog(@"%f",kNavigationBarHeight);
-    NSLog(@"%f",kSafeAreaHeight);
+    NSLog(@"状态栏:%f",kStatusBarHeight);
+    NSLog(@"导航栏:%f",kNavigationBarHeight);
+    NSLog(@"总高度:%f",kTopBarHeight);
 }
 
 - (void)leftButtonMethod {
