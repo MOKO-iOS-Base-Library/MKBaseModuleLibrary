@@ -205,7 +205,13 @@ if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queu
 }
 #endif
 #pragma mark - **************************  字体相关  *********************************
-#define MKFont(a) [UIFont fontWithName:@"Helvetica-Bold" size:a] ?: [UIFont systemFontOfSize:a]
+#define MKFont(a) ({  \
+    UIFont *font = [UIFont fontWithName:@"Helvetica-Bold" size:a];  \
+    if (!font) {    \
+        font = [UIFont systemFontOfSize:a]; \
+    }   \
+    font;   \
+})
 
 #pragma mark - **************************  国际化相关  *********************************
 #define LS(a)                           NSLocalizedString(a, nil)
