@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '2.2.0'
+  s.version          = '2.2.1'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -41,6 +41,7 @@ TODO: Add long description of the pod here.
   end
 
   s.subspec 'Tools' do |ss|
+    ss.dependency 'MKBaseModuleLibrary/Defines'
     ss.subspec 'MKClassInfo' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**'
     end
@@ -53,7 +54,6 @@ TODO: Add long description of the pod here.
       sss.dependency 'libxlsxwriter'
       sss.dependency 'SSZipArchive'
       
-      sss.dependency 'MKBaseModuleLibrary/Defines'
     end
   end
 
