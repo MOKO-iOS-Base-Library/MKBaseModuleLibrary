@@ -60,7 +60,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   libxlsxwriter: b013eaa467bbf24336b71b6cac15a6fbaf4e613b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MKBaseModuleLibrary: 16d6fc780e24efd9f0877071059696a7c84a9a46
+  MKBaseModuleLibrary: d304894a093bc874ed0f89e1513b810d5a16e0fb
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
 
