@@ -23,6 +23,14 @@
       "MKBaseModuleLibrary/Assets/*"
     ]
   },
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "Toast": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "Defines",
@@ -32,9 +40,6 @@
       "name": "Category",
       "source_files": "MKBaseModuleLibrary/Classes/Category/**",
       "dependencies": {
-        "Toast": [
-
-        ],
         "MKBaseModuleLibrary/Defines": [
 
         ],
@@ -73,23 +78,18 @@
     },
     {
       "name": "Base",
+      "dependencies": {
+        "MKBaseModuleLibrary/Defines": [
+
+        ],
+        "MKBaseModuleLibrary/Category": [
+
+        ]
+      },
       "subspecs": [
         {
-          "name": "Cell",
-          "subspecs": [
-            {
-              "name": "MKBaseCell",
-              "source_files": "MKBaseModuleLibrary/Classes/Base/Cell/MKBaseCell/**",
-              "dependencies": {
-                "Masonry": [
-
-                ],
-                "MKBaseModuleLibrary/Defines": [
-
-                ]
-              }
-            }
-          ]
+          "name": "MKBaseCell",
+          "source_files": "MKBaseModuleLibrary/Classes/Base/MKBaseCell/**"
         },
         {
           "name": "View",
@@ -106,15 +106,7 @@
         },
         {
           "name": "Controller",
-          "source_files": "MKBaseModuleLibrary/Classes/Base/Controller/**",
-          "dependencies": {
-            "MKBaseModuleLibrary/Category": [
-
-            ],
-            "MKBaseModuleLibrary/Defines": [
-
-            ]
-          }
+          "source_files": "MKBaseModuleLibrary/Classes/Base/Controller/**"
         },
         {
           "name": "NavigationController",

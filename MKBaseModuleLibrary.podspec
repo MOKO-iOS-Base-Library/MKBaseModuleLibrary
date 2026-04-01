@@ -22,104 +22,62 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '14.0'
   
-  # 资源文件
   s.resource_bundles = {
       'MKBaseModuleLibrary' => ['MKBaseModuleLibrary/Assets/*']
   }
   
-  # 公共头文件
-  s.public_header_files = 'MKBaseModuleLibrary/Classes/**/*.h'
-  
-  # 依赖
+  s.dependency 'Masonry'
   s.dependency 'Toast'
-  s.dependency 'Masonry', '~> 1.1.0'
-  s.dependency 'libxlsxwriter'
-  s.dependency 'SSZipArchive'
   
-  # 主 subspec
   s.subspec 'Defines' do |ss|
     ss.source_files = 'MKBaseModuleLibrary/Classes/Defines/*.h'
-    ss.public_header_files = 'MKBaseModuleLibrary/Classes/Defines/*.h'
   end
 
   s.subspec 'Category' do |ss|
-    ss.source_files = 'MKBaseModuleLibrary/Classes/Category/**/*.{h,m}'
+    ss.source_files = 'MKBaseModuleLibrary/Classes/Category/**'
+    
     ss.dependency 'MKBaseModuleLibrary/Defines'
     ss.dependency 'MKBaseModuleLibrary/Tools/MKClassInfo'
-    ss.dependency 'Toast'
   end
 
   s.subspec 'Tools' do |ss|
     ss.subspec 'MKClassInfo' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**/*.{h,m}'
-      sss.public_header_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**/*.h'
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**'
     end
     ss.subspec 'MKDateFormatter' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**/*.{h,m}'
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**'
     end
     ss.subspec 'MKExcelManager' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/**/*.{h,m}'
-      sss.exclude_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/libxlsxwriter/third_party/**/*.h'
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/**'
+      
       sss.dependency 'libxlsxwriter'
       sss.dependency 'SSZipArchive'
+      
       sss.dependency 'MKBaseModuleLibrary/Defines'
     end
   end
 
-  # 基础组件
   s.subspec 'Base' do |ss|
-    # Cell
-    ss.subspec 'Cell' do |sss|
-      sss.subspec 'MKBaseCell' do |ssss|
-        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/Cell/MKBaseCell/**/*.{h,m}'
-        ssss.dependency 'Masonry'
-        ssss.dependency 'MKBaseModuleLibrary/Defines'
-      end
-    end
+    ss.dependency 'MKBaseModuleLibrary/Defines'
+    ss.dependency 'MKBaseModuleLibrary/Category'
     
-    # View
+    ss.subspec 'MKBaseCell' do |sss|
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Base/MKBaseCell/**'
+    end
     ss.subspec 'View' do |sss|
       sss.subspec 'CollectionView' do |ssss|
-        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/CollectionView/**/*.{h,m}'
-        ssss.dependency 'MKBaseModuleLibrary/Defines'
+        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/CollectionView/**'
       end
       sss.subspec 'TableView' do |ssss|
-        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/TableView/**/*.{h,m}'
-        ssss.dependency 'MKBaseModuleLibrary/Defines'
+        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/TableView/**'
       end
     end
-    
-    # Controller
     ss.subspec 'Controller' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Base/Controller/**/*.{h,m}'
-      sss.dependency 'MKBaseModuleLibrary/Category'
-      sss.dependency 'MKBaseModuleLibrary/Defines'
-      sss.dependency 'MKBaseModuleLibrary/Base/Cell/MKBaseCell'
-      sss.dependency 'Masonry'
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Base/Controller/**'
     end
-    
-    # NavigationController
     ss.subspec 'NavigationController' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Base/NavigationController/**/*.{h,m}'
-      sss.dependency 'MKBaseModuleLibrary/Defines'
+      sss.source_files = 'MKBaseModuleLibrary/Classes/Base/NavigationController/**'
     end
   end
-  
-  # 解决 xcodebuild 错误
-  s.pod_target_xcconfig = {
-    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'DEFINES_MODULE' => 'YES',
-    'IPHONEOS_DEPLOYMENT_TARGET' => '14.0',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  
-  s.user_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  
-  # 解决 libarclite 错误
-  s.pod_target_xcconfig = {
-    'OTHER_LDFLAGS' => '-larc'
-  }
   
 end
