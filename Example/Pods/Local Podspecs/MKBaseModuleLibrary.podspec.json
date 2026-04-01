@@ -1,6 +1,6 @@
 {
   "name": "MKBaseModuleLibrary",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "summary": "Some basic component libraries of MOKO.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git",
-    "tag": "2.2.0"
+    "tag": "2.2.1"
   },
   "platforms": {
     "ios": "14.0"
@@ -50,14 +50,15 @@
     },
     {
       "name": "Tools",
+      "dependencies": {
+        "MKBaseModuleLibrary/Defines": [
+
+        ]
+      },
       "subspecs": [
         {
           "name": "MKClassInfo",
           "source_files": "MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**"
-        },
-        {
-          "name": "MKDateFormatter",
-          "source_files": "MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**"
         },
         {
           "name": "MKExcelManager",
@@ -67,9 +68,6 @@
 
             ],
             "SSZipArchive": [
-
-            ],
-            "MKBaseModuleLibrary/Defines": [
 
             ]
           }

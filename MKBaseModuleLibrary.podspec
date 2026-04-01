@@ -45,9 +45,6 @@ TODO: Add long description of the pod here.
     ss.subspec 'MKClassInfo' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**'
     end
-    ss.subspec 'MKDateFormatter' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**'
-    end
     ss.subspec 'MKExcelManager' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/**'
       
