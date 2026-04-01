@@ -1,6 +1,6 @@
 {
   "name": "MKBaseModuleLibrary",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "summary": "Some basic component libraries of MOKO.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git",
-    "tag": "2.1.0"
+    "tag": "2.2.0"
   },
   "platforms": {
     "ios": "13.0"
@@ -113,15 +113,8 @@
             ],
             "MKBaseModuleLibrary/Defines": [
 
-            ],
-            "MKBaseModuleLibrary/Base/NavigationBar": [
-
             ]
           }
-        },
-        {
-          "name": "NavigationBar",
-          "source_files": "MKBaseModuleLibrary/Classes/Base/NavigationBar/**"
         },
         {
           "name": "NavigationController",

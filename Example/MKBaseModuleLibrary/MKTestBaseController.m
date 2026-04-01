@@ -18,6 +18,8 @@
 
 #import "MKPickView.h"
 
+#import "MKSecondViewController.h"
+
 @interface MKTestBaseController ()<CLLocationManagerDelegate>
 
 @property (nonatomic, strong)CLLocationManager *locationManager;
@@ -34,8 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.defaultTitle = @"Come on";
-    self.custom_naviBarColor = [UIColor redColor];
-    
+//    self.custom_naviBarColor = [UIColor redColor];
+    [self.rightButton setTitle:@"Edit" forState:UIControlStateNormal];
     UIView *topView = [[UIView alloc] init];
     topView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:topView];
@@ -66,6 +68,11 @@
     [pickView showPickViewWithDataList:@[@"1",@"2",@"3"] selectedRow:1 block:^(NSInteger currentRow) {
             
     }];
+}
+
+- (void)rightButtonMethod {
+    MKSecondViewController *vc = [[MKSecondViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - CLLocationManagerDelegate

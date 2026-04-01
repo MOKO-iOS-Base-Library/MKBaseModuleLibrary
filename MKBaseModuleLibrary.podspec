@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '2.1.0'
+  s.version          = '2.2.0'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -73,11 +73,6 @@ TODO: Add long description of the pod here.
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/Controller/**'
       sss.dependency 'MKBaseModuleLibrary/Category'
       sss.dependency 'MKBaseModuleLibrary/Defines'
-      
-      sss.dependency 'MKBaseModuleLibrary/Base/NavigationBar'
-    end
-    ss.subspec 'NavigationBar' do |sss|
-      sss.source_files = 'MKBaseModuleLibrary/Classes/Base/NavigationBar/**'
     end
     ss.subspec 'NavigationController' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/NavigationController/**'

@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0002490E2B15D69F0034829F /* MKPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0002490D2B15D69F0034829F /* MKPickView.m */; };
+		005CFFF42F7CC3AC00F81D0A /* idm_saveIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005CFFF22F7CC3AC00F81D0A /* idm_saveIcon@2x.png */; };
+		005CFFF52F7CC3AC00F81D0A /* idm_saveIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005CFFF32F7CC3AC00F81D0A /* idm_saveIcon@3x.png */; };
 		00A501DB258CB39400506A5E /* MKTestBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A501DA258CB39400506A5E /* MKTestBaseController.m */; };
+		00E23CA62F7BB8800013A013 /* MKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E23CA52F7BB8800013A013 /* MKSecondViewController.m */; };
 		16BF371991F905FE2CF28CF2 /* Pods_MKBaseModuleLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F5317EA730A50B5AF3BE0C /* Pods_MKBaseModuleLibrary_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,8 +40,12 @@
 /* Begin PBXFileReference section */
 		0002490C2B15D69F0034829F /* MKPickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKPickView.h; sourceTree = "<group>"; };
 		0002490D2B15D69F0034829F /* MKPickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPickView.m; sourceTree = "<group>"; };
+		005CFFF22F7CC3AC00F81D0A /* idm_saveIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idm_saveIcon@2x.png"; sourceTree = "<group>"; };
+		005CFFF32F7CC3AC00F81D0A /* idm_saveIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idm_saveIcon@3x.png"; sourceTree = "<group>"; };
 		00A501D9258CB39400506A5E /* MKTestBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTestBaseController.h; sourceTree = "<group>"; };
 		00A501DA258CB39400506A5E /* MKTestBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTestBaseController.m; sourceTree = "<group>"; };
+		00E23CA42F7BB8800013A013 /* MKSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKSecondViewController.h; sourceTree = "<group>"; };
+		00E23CA52F7BB8800013A013 /* MKSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKSecondViewController.m; sourceTree = "<group>"; };
 		00F5317EA730A50B5AF3BE0C /* Pods_MKBaseModuleLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBaseModuleLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D38669605C0BC2E3059B63 /* MKBaseModuleLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MKBaseModuleLibrary.podspec; path = ../MKBaseModuleLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2EE5E200B2C644DEA28185A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -125,6 +132,8 @@
 		6003F593195388D20070C39A /* Example for MKBaseModuleLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				005CFFF22F7CC3AC00F81D0A /* idm_saveIcon@2x.png */,
+				005CFFF32F7CC3AC00F81D0A /* idm_saveIcon@3x.png */,
 				6003F59C195388D20070C39A /* MKAppDelegate.h */,
 				6003F59D195388D20070C39A /* MKAppDelegate.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -133,6 +142,8 @@
 				00A501DA258CB39400506A5E /* MKTestBaseController.m */,
 				0002490C2B15D69F0034829F /* MKPickView.h */,
 				0002490D2B15D69F0034829F /* MKPickView.m */,
+				00E23CA42F7BB8800013A013 /* MKSecondViewController.h */,
+				00E23CA52F7BB8800013A013 /* MKSecondViewController.m */,
 			);
 			name = "Example for MKBaseModuleLibrary";
 			path = MKBaseModuleLibrary;
@@ -271,6 +282,8 @@
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				005CFFF42F7CC3AC00F81D0A /* idm_saveIcon@2x.png in Resources */,
+				005CFFF52F7CC3AC00F81D0A /* idm_saveIcon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A501DB258CB39400506A5E /* MKTestBaseController.m in Sources */,
+				00E23CA62F7BB8800013A013 /* MKSecondViewController.m in Sources */,
 				0002490E2B15D69F0034829F /* MKPickView.m in Sources */,
 				6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
