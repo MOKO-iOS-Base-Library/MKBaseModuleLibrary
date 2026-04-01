@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
   
   # 依赖
   s.dependency 'Toast'
-  s.dependency 'Masonry'
+  s.dependency 'Masonry', '~> 1.1.0'
   s.dependency 'libxlsxwriter'
   s.dependency 'SSZipArchive'
   
@@ -45,18 +45,21 @@ TODO: Add long description of the pod here.
   s.subspec 'Category' do |ss|
     ss.source_files = 'MKBaseModuleLibrary/Classes/Category/**/*.{h,m}'
     ss.dependency 'MKBaseModuleLibrary/Defines'
+    ss.dependency 'MKBaseModuleLibrary/Tools/MKClassInfo'
     ss.dependency 'Toast'
   end
 
   s.subspec 'Tools' do |ss|
     ss.subspec 'MKClassInfo' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**/*.{h,m}'
+      sss.public_header_files = 'MKBaseModuleLibrary/Classes/Tools/MKClassInfo/**/*.h'
     end
     ss.subspec 'MKDateFormatter' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKDateFormatter/**/*.{h,m}'
     end
     ss.subspec 'MKExcelManager' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/**/*.{h,m}'
+      sss.exclude_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/libxlsxwriter/third_party/**/*.h'
       sss.dependency 'libxlsxwriter'
       sss.dependency 'SSZipArchive'
       sss.dependency 'MKBaseModuleLibrary/Defines'
@@ -69,6 +72,7 @@ TODO: Add long description of the pod here.
     ss.subspec 'Cell' do |sss|
       sss.subspec 'MKBaseCell' do |ssss|
         ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/Cell/MKBaseCell/**/*.{h,m}'
+        ssss.dependency 'Masonry'
         ssss.dependency 'MKBaseModuleLibrary/Defines'
       end
     end
@@ -77,9 +81,11 @@ TODO: Add long description of the pod here.
     ss.subspec 'View' do |sss|
       sss.subspec 'CollectionView' do |ssss|
         ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/CollectionView/**/*.{h,m}'
+        ssss.dependency 'MKBaseModuleLibrary/Defines'
       end
       sss.subspec 'TableView' do |ssss|
         ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/TableView/**/*.{h,m}'
+        ssss.dependency 'MKBaseModuleLibrary/Defines'
       end
     end
     
@@ -88,11 +94,14 @@ TODO: Add long description of the pod here.
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/Controller/**/*.{h,m}'
       sss.dependency 'MKBaseModuleLibrary/Category'
       sss.dependency 'MKBaseModuleLibrary/Defines'
+      sss.dependency 'MKBaseModuleLibrary/Base/Cell/MKBaseCell'
+      sss.dependency 'Masonry'
     end
     
     # NavigationController
     ss.subspec 'NavigationController' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/NavigationController/**/*.{h,m}'
+      sss.dependency 'MKBaseModuleLibrary/Defines'
     end
   end
   
@@ -100,11 +109,17 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'DEFINES_MODULE' => 'YES',
+    'IPHONEOS_DEPLOYMENT_TARGET' => '14.0',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
   
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  
+  # 解决 libarclite 错误
+  s.pod_target_xcconfig = {
+    'OTHER_LDFLAGS' => '-larc'
   }
   
 end
