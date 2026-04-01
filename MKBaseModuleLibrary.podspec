@@ -26,8 +26,8 @@ TODO: Add long description of the pod here.
       'MKBaseModuleLibrary' => ['MKBaseModuleLibrary/Assets/*']
   }
   
-  s.dependency 'Masonry'
-  s.dependency 'Toast'
+  s.dependency 'Masonry', '~> 1.1.0'
+  s.dependency 'Toast', '~> 4.0.0'
   
   s.subspec 'Defines' do |ss|
     ss.source_files = 'MKBaseModuleLibrary/Classes/Defines/*.h'
@@ -48,8 +48,8 @@ TODO: Add long description of the pod here.
     ss.subspec 'MKExcelManager' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Tools/MKExcelManager/**'
       
-      sss.dependency 'libxlsxwriter'
-      sss.dependency 'SSZipArchive'
+      sss.dependency 'libxlsxwriter', '~> 1.1.7'
+      sss.dependency 'SSZipArchive', '~> 2.4.0'
       
     end
   end
