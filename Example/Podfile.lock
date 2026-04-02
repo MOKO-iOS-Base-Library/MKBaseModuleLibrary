@@ -1,80 +1,94 @@
 PODS:
   - libxlsxwriter (1.1.9)
   - Masonry (1.1.0)
-  - MKBaseModuleLibrary (2.2.1):
-    - Masonry
-    - MKBaseModuleLibrary/Base (= 2.2.1)
-    - MKBaseModuleLibrary/Category (= 2.2.1)
-    - MKBaseModuleLibrary/Defines (= 2.2.1)
-    - MKBaseModuleLibrary/Tools (= 2.2.1)
-    - Toast
-  - MKBaseModuleLibrary/Base (2.2.1):
-    - Masonry
-    - MKBaseModuleLibrary/Base/Controller (= 2.2.1)
-    - MKBaseModuleLibrary/Base/MKBaseCell (= 2.2.1)
-    - MKBaseModuleLibrary/Base/NavigationController (= 2.2.1)
-    - MKBaseModuleLibrary/Base/View (= 2.2.1)
+  - MKBaseModuleLibrary (2.2.3):
+    - Masonry (~> 1.1)
+    - MKBaseModuleLibrary/Base (= 2.2.3)
+    - MKBaseModuleLibrary/Category (= 2.2.3)
+    - MKBaseModuleLibrary/Defines (= 2.2.3)
+    - MKBaseModuleLibrary/Tools (= 2.2.3)
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Base (2.2.3):
+    - Masonry (~> 1.1)
+    - MKBaseModuleLibrary/Base/Controller (= 2.2.3)
+    - MKBaseModuleLibrary/Base/MKBaseCell (= 2.2.3)
+    - MKBaseModuleLibrary/Base/NavigationController (= 2.2.3)
+    - MKBaseModuleLibrary/Base/View (= 2.2.3)
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Base/Controller (2.2.1):
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Base/Controller (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Base/MKBaseCell (2.2.1):
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Base/MKBaseCell (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Base/NavigationController (2.2.1):
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Base/NavigationController (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Base/View (2.2.1):
-    - Masonry
-    - MKBaseModuleLibrary/Base/View/CollectionView (= 2.2.1)
-    - MKBaseModuleLibrary/Base/View/TableView (= 2.2.1)
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Base/View (2.2.3):
+    - Masonry (~> 1.1)
+    - MKBaseModuleLibrary/Base/View/CollectionView (= 2.2.3)
+    - MKBaseModuleLibrary/Base/View/TableView (= 2.2.3)
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Base/View/CollectionView (2.2.1):
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Base/View/CollectionView (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Base/View/TableView (2.2.1):
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Base/View/TableView (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Category
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Category (2.2.1):
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Category (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Defines
     - MKBaseModuleLibrary/Tools/MKClassInfo
-    - Toast
-  - MKBaseModuleLibrary/Defines (2.2.1):
-    - Masonry
-    - Toast
-  - MKBaseModuleLibrary/Tools (2.2.1):
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Defines (2.2.3):
+    - Masonry (~> 1.1)
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Tools (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Defines
-    - MKBaseModuleLibrary/Tools/MKClassInfo (= 2.2.1)
-    - MKBaseModuleLibrary/Tools/MKExcelManager (= 2.2.1)
-    - Toast
-  - MKBaseModuleLibrary/Tools/MKClassInfo (2.2.1):
-    - Masonry
+    - MKBaseModuleLibrary/Tools/MKClassInfo (= 2.2.3)
+    - MKBaseModuleLibrary/Tools/MKExcelManager (= 2.2.3)
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Tools/MKClassInfo (2.2.3):
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Defines
-    - Toast
-  - MKBaseModuleLibrary/Tools/MKExcelManager (2.2.1):
-    - libxlsxwriter
-    - Masonry
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
+  - MKBaseModuleLibrary/Tools/MKExcelManager (2.2.3):
+    - libxlsxwriter (~> 1.1.7)
+    - Masonry (~> 1.1)
     - MKBaseModuleLibrary/Defines
-    - SSZipArchive
-    - Toast
+    - SSZipArchive (~> 2.4.0)
+    - Toast (~> 4.1)
+    - WRNavigationBar (~> 1.4)
   - SSZipArchive (2.4.3)
   - Toast (4.1.1)
+  - WRNavigationBar (1.4.0)
 
 DEPENDENCIES:
   - MKBaseModuleLibrary (from `../`)
@@ -85,6 +99,7 @@ SPEC REPOS:
     - Masonry
     - SSZipArchive
     - Toast
+    - WRNavigationBar
 
 EXTERNAL SOURCES:
   MKBaseModuleLibrary:
@@ -93,9 +108,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   libxlsxwriter: b013eaa467bbf24336b71b6cac15a6fbaf4e613b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MKBaseModuleLibrary: 8cd3b9796d91070a32137566fc92d9309df9f3ac
+  MKBaseModuleLibrary: 8a5f1d14e321f7c30d559a51911566cd315e6baf
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
+  WRNavigationBar: 10bfdf96addf14d640d07c2ef08a029c18d8af10
 
 PODFILE CHECKSUM: 2782e3691d612e4b2b2159f272a56c3046971ee4
 
