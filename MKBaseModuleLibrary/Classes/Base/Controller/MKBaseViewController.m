@@ -43,16 +43,6 @@
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    if (self.customNavBarView) {
-        [self.view bringSubviewToFront:self.customNavBarView];
-        [self updateCustomNavBarFrame];
-        [self adjustSubviewsFrame];
-    }
-}
-
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     self.navigationController.interactivePopGestureRecognizer.delegate = nil;
@@ -103,41 +93,6 @@
     UIColor *buttonColor = [self getNavBarButtonColor];
     [self.leftButton setTitleColor:buttonColor forState:UIControlStateNormal];
     [self.rightButton setTitleColor:buttonColor forState:UIControlStateNormal];
-}
-
-- (void)updateCustomNavBarFrame {
-    CGFloat totalHeight = kTopBarHeight;
-    
-    CGRect frame = self.customNavBarView.frame;
-    frame.size.width = kViewWidth;
-    frame.size.height = totalHeight;
-    self.customNavBarView.frame = frame;
-}
-
-- (void)adjustSubviewsFrame {
-    CGFloat statusBarHeight = kStatusBarHeight;
-    CGFloat navBarHeight = kNavigationBarHeight;
-    CGFloat totalHeight = kTopBarHeight;
-    
-    // 调整按钮和标题位置
-    self.leftButton.frame = CGRectMake(0, statusBarHeight, 44, navBarHeight);
-    self.rightButton.frame = CGRectMake(kViewWidth - 44, statusBarHeight, 44, navBarHeight);
-    self.titleLabel.frame = CGRectMake(60, statusBarHeight, kViewWidth - 120, navBarHeight);
-    
-    // 调整其他子视图，避免被导航栏遮挡
-    for (UIView *subview in self.view.subviews) {
-        if (subview != self.customNavBarView &&
-            subview != self.leftButton &&
-            subview != self.rightButton &&
-            subview != self.titleLabel) {
-            CGRect frame = subview.frame;
-            if (frame.origin.y < totalHeight && frame.origin.y > 0) {
-                frame.origin.y = totalHeight;
-                frame.size.height = kViewHeight - totalHeight - kSafeAreaHeight;
-                subview.frame = frame;
-            }
-        }
-    }
 }
 
 #pragma mark - Color Configuration (子类可重写)
