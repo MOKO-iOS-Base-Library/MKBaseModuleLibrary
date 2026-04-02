@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  自定义导航栏颜色
  */
-@property (nonatomic, strong, nullable) UIColor *custom_naviBarColor;
+@property (nonatomic, strong, nullable) UIColor *navBarBackgroundColor;
 
 /**
  *  设置导航栏背景颜色

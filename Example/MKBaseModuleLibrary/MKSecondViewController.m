@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.defaultTitle = @"第二个";
-//    self.custom_naviBarColor = [UIColor redColor];
+    self.navBarBackgroundColor = [UIColor redColor];
     [self.rightButton setImage:[UIImage imageNamed:@"idm_saveIcon.png"] forState:UIControlStateNormal];
     // Do any additional setup after loading the view.
 }

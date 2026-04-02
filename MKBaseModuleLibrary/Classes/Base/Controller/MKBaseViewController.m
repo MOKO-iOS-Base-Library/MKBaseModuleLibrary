@@ -88,7 +88,7 @@
 - (void)setupCustomNavigationBar {
     // 创建自定义导航栏
     self.customNavBar = [WRCustomNavigationBar CustomNavigationBar];
-    self.customNavBar.barBackgroundColor = self.custom_naviBarColor ?: NAVBAR_COLOR_MACROS;
+    self.customNavBar.barBackgroundColor = self.navBarBackgroundColor ?: NAVBAR_COLOR_MACROS;
     self.customNavBar.titleLabelColor = COLOR_WHITE_MACROS;
     self.customNavBar.titleLabelFont = MKFont(20);
     
@@ -155,9 +155,9 @@
     [self updateTitle];
 }
 
-- (void)setCustom_naviBarColor:(UIColor *)custom_naviBarColor {
-    _custom_naviBarColor = custom_naviBarColor;
-    self.customNavBar.barBackgroundColor = custom_naviBarColor ?: NAVBAR_COLOR_MACROS;
+- (void)setNavBarBackgroundColor:(UIColor *)navBarBackgroundColor {
+    _navBarBackgroundColor = navBarBackgroundColor;
+    self.customNavBar.barBackgroundColor = navBarBackgroundColor ?: NAVBAR_COLOR_MACROS;
 }
 
 - (void)setNavigationBarImage:(UIImage *)image {
