@@ -1,6 +1,6 @@
 {
   "name": "MKBaseModuleLibrary",
-  "version": "2.2.3",
+  "version": "2.2.7",
   "summary": "Some basic component libraries of MOKO.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKBaseModuleLibrary.git",
-    "tag": "2.2.3"
+    "tag": "2.2.7"
   },
   "platforms": {
     "ios": "14.0"
@@ -29,9 +29,6 @@
     ],
     "Toast": [
       "~> 4.1"
-    ],
-    "WRNavigationBar": [
-      "~> 1.4"
     ]
   },
   "subspecs": [
@@ -100,6 +97,10 @@
               "source_files": "MKBaseModuleLibrary/Classes/Base/View/CollectionView/**"
             },
             {
+              "name": "NavigationBar",
+              "source_files": "MKBaseModuleLibrary/Classes/Base/View/NavigationBar/**"
+            },
+            {
               "name": "TableView",
               "source_files": "MKBaseModuleLibrary/Classes/Base/View/TableView/**"
             }
@@ -107,7 +108,12 @@
         },
         {
           "name": "Controller",
-          "source_files": "MKBaseModuleLibrary/Classes/Base/Controller/**"
+          "source_files": "MKBaseModuleLibrary/Classes/Base/Controller/**",
+          "dependencies": {
+            "MKBaseModuleLibrary/Base/View/NavigationBar": [
+
+            ]
+          }
         },
         {
           "name": "NavigationController",

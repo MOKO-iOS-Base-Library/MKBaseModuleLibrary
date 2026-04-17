@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '2.2.6'
+  s.version          = '2.2.7'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC
@@ -28,7 +28,6 @@ TODO: Add long description of the pod here.
   
   s.dependency 'Masonry', '~> 1.1'
   s.dependency 'Toast', '~> 4.1'
-  s.dependency 'WRNavigationBar', '~> 1.4'
   
   
   s.subspec 'Defines' do |ss|
@@ -67,12 +66,17 @@ TODO: Add long description of the pod here.
       sss.subspec 'CollectionView' do |ssss|
         ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/CollectionView/**'
       end
+      sss.subspec 'NavigationBar' do |ssss|
+        ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/NavigationBar/**'
+      end
       sss.subspec 'TableView' do |ssss|
         ssss.source_files = 'MKBaseModuleLibrary/Classes/Base/View/TableView/**'
       end
     end
     ss.subspec 'Controller' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/Controller/**'
+      
+      sss.dependency 'MKBaseModuleLibrary/Base/View/NavigationBar'
     end
     ss.subspec 'NavigationController' do |sss|
       sss.source_files = 'MKBaseModuleLibrary/Classes/Base/NavigationController/**'

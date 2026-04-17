@@ -10,6 +10,7 @@
 		0002490E2B15D69F0034829F /* MKPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0002490D2B15D69F0034829F /* MKPickView.m */; };
 		005CFFF42F7CC3AC00F81D0A /* idm_saveIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005CFFF22F7CC3AC00F81D0A /* idm_saveIcon@2x.png */; };
 		005CFFF52F7CC3AC00F81D0A /* idm_saveIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 005CFFF32F7CC3AC00F81D0A /* idm_saveIcon@3x.png */; };
+		0070BD982F92144000984851 /* MKTestSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070BD972F92144000984851 /* MKTestSecondCell.m */; };
 		00A501DB258CB39400506A5E /* MKTestBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A501DA258CB39400506A5E /* MKTestBaseController.m */; };
 		00E23CA62F7BB8800013A013 /* MKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E23CA52F7BB8800013A013 /* MKSecondViewController.m */; };
 		16BF371991F905FE2CF28CF2 /* Pods_MKBaseModuleLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F5317EA730A50B5AF3BE0C /* Pods_MKBaseModuleLibrary_Example.framework */; };
@@ -42,6 +43,8 @@
 		0002490D2B15D69F0034829F /* MKPickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPickView.m; sourceTree = "<group>"; };
 		005CFFF22F7CC3AC00F81D0A /* idm_saveIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idm_saveIcon@2x.png"; sourceTree = "<group>"; };
 		005CFFF32F7CC3AC00F81D0A /* idm_saveIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idm_saveIcon@3x.png"; sourceTree = "<group>"; };
+		0070BD962F92144000984851 /* MKTestSecondCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTestSecondCell.h; sourceTree = "<group>"; };
+		0070BD972F92144000984851 /* MKTestSecondCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTestSecondCell.m; sourceTree = "<group>"; };
 		00A501D9258CB39400506A5E /* MKTestBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKTestBaseController.h; sourceTree = "<group>"; };
 		00A501DA258CB39400506A5E /* MKTestBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKTestBaseController.m; sourceTree = "<group>"; };
 		00E23CA42F7BB8800013A013 /* MKSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKSecondViewController.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				0002490D2B15D69F0034829F /* MKPickView.m */,
 				00E23CA42F7BB8800013A013 /* MKSecondViewController.h */,
 				00E23CA52F7BB8800013A013 /* MKSecondViewController.m */,
+				0070BD962F92144000984851 /* MKTestSecondCell.h */,
+				0070BD972F92144000984851 /* MKTestSecondCell.m */,
 			);
 			name = "Example for MKBaseModuleLibrary";
 			path = MKBaseModuleLibrary;
@@ -309,7 +314,6 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
-				"${BUILT_PRODUCTS_DIR}/WRNavigationBar/WRNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/libxlsxwriter/xlsxwriter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -318,7 +322,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xlsxwriter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A501DB258CB39400506A5E /* MKTestBaseController.m in Sources */,
+				0070BD982F92144000984851 /* MKTestSecondCell.m in Sources */,
 				00E23CA62F7BB8800013A013 /* MKSecondViewController.m in Sources */,
 				0002490E2B15D69F0034829F /* MKPickView.m in Sources */,
 				6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */,
