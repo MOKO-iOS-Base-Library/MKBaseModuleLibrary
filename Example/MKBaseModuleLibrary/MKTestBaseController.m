@@ -37,7 +37,7 @@
     // Do any additional setup after loading the view.
     self.defaultTitle = @"Come on";
 //    self.custom_naviBarColor = [UIColor redColor];
-    [self.rightButton setTitle:@"Edit" forState:UIControlStateNormal];
+    [self.rightButton setTitle:@"EditEditEdit" forState:UIControlStateNormal];
     UIView *topView = [[UIView alloc] init];
     topView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:topView];
