@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+MKModel.h"
+#import <UIKit/UIKit.h>
 
 #import <objc/message.h>
 

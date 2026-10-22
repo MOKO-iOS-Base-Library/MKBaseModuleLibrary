@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+MKAdd.h"
+#import <UIKit/UIKit.h>
 #import <ImageIO/ImageIO.h>
 #import <Accelerate/Accelerate.h>
 #import <CoreText/CoreText.h>
