@@ -22,7 +22,7 @@ let package = Package(
             ],
             sources: ["Classes"],
             resources: [.process("Assets")],
-            publicHeadersPath: "Classes",
+            publicHeadersPath: "Classes/PublicHeaders",
             cSettings: [
                 .headerSearchPath("Classes/Defines"),
                 .headerSearchPath("Classes/Category"),
