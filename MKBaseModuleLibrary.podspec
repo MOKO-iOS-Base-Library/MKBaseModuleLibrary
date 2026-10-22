@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBaseModuleLibrary'
-  s.version          = '2.2.11'
+  s.version          = '2.2.13'
   s.summary          = 'Some basic component libraries of MOKO.'
 
   s.description      = <<-DESC

@@ -15,7 +15,7 @@
 #pragma GCC system_header
 #include "minizip/zip.h"
 #else
-#include "third_party/zip.h"
+#include "../../third_party/zip.h"
 #endif
 
 #include "common.h"
