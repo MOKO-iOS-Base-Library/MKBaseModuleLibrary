@@ -274,6 +274,9 @@ if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queu
 ({\
     NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(bundleClassName)];\
     NSString *bundlePath = [bundle pathForResource:podLibName ofType:@"bundle"];\
+    if (!bundlePath) { \
+        bundlePath = [bundle pathForResource:[NSString stringWithFormat:@"%@_%@", podLibName, podLibName] ofType:@"bundle"]; \
+    } \
     UIImage *image = [UIImage imageWithContentsOfFile:[bundlePath stringByAppendingPathComponent:imageName]];\
     image;\
 })
