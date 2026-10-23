@@ -190,9 +190,7 @@
         
         // 修复白色圆环
         _leftButton.backgroundColor = [UIColor clearColor];
-        if (@available(iOS 15.0, *)) {
-            _leftButton.configuration = nil;
-        }
+        _leftButton.configuration = nil;
     }
     return _leftButton;
 }
@@ -206,9 +204,7 @@
         
         // 修复白色圆环
         _rightButton.backgroundColor = [UIColor clearColor];
-        if (@available(iOS 15.0, *)) {
-            _rightButton.configuration = nil;
-        }
+        _rightButton.configuration = nil;
     }
     return _rightButton;
 }

@@ -13,17 +13,12 @@
 @implementation CTMediator (HandyTools)
 
 - (UIWindow *)keyWindow {
-    if (@available(iOS 13, *)) {
-        NSArray<UIWindow *> *windows = [[UIApplication sharedApplication] windows];
-        for (UIWindow *window in windows) {
-            if (window.isKeyWindow) {
-                return window;
-            }
+    NSArray<UIWindow *> *windows = [[UIApplication sharedApplication] windows];
+    for (UIWindow *window in windows) {
+        if (window.isKeyWindow) {
+            return window;
         }
-    }else {
-        return [UIApplication sharedApplication].keyWindow;
     }
-    
     return nil;
 }
 

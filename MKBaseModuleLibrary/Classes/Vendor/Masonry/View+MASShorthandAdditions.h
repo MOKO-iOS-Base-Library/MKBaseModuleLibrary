@@ -47,16 +47,16 @@
 
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideLeading NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideTrailing NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideLeft NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideRight NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideTop NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideBottom NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideWidth NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideHeight NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideCenterX NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideCenterY NS_AVAILABLE_IOS(11.0);
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideLeading;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideTrailing;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideLeft;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideRight;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideTop;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideBottom;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideWidth;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideHeight;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideCenterX;
+@property (nonatomic, strong, readonly) MASViewAttribute *safeAreaLayoutGuideCenterY;
 
 #endif
 
@@ -71,8 +71,8 @@
     return [self mas_##attr];   \
 }
 
-#define MAS_ATTR_FORWARD_AVAILABLE(attr, available)  \
-- (MASViewAttribute *)attr available {    \
+#define MAS_ATTR_FORWARD_AVAILABLE(attr)  \
+- (MASViewAttribute *)attr {    \
     return [self mas_##attr];   \
 }
 
@@ -104,16 +104,16 @@ MAS_ATTR_FORWARD(trailingMargin);
 MAS_ATTR_FORWARD(centerXWithinMargins);
 MAS_ATTR_FORWARD(centerYWithinMargins);
 
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideLeading, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideTrailing, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideLeft, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideRight, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideTop, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideBottom, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideWidth, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideHeight, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideCenterX, NS_AVAILABLE_IOS(11.0));
-MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideCenterY, NS_AVAILABLE_IOS(11.0));
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideLeading);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideTrailing);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideLeft);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideRight);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideTop);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideBottom);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideWidth);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideHeight);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideCenterX);
+MAS_ATTR_FORWARD_AVAILABLE(safeAreaLayoutGuideCenterY);
 
 #endif
 

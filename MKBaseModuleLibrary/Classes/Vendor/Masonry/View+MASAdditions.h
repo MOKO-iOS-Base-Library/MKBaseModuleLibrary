@@ -46,17 +46,17 @@
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerXWithinMargins;
 @property (nonatomic, strong, readonly) MASViewAttribute *mas_centerYWithinMargins;
 
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuide NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideLeading NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideTrailing NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideLeft NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideRight NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideTop NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideBottom NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideWidth NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideHeight NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideCenterX NS_AVAILABLE_IOS(11.0);
-@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideCenterY NS_AVAILABLE_IOS(11.0);
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuide;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideLeading;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideTrailing;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideLeft;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideRight;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideTop;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideBottom;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideWidth;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideHeight;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideCenterX;
+@property (nonatomic, strong, readonly) MASViewAttribute *mas_safeAreaLayoutGuideCenterY;
 
 #endif
 

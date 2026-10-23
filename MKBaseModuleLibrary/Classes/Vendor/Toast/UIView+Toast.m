@@ -434,10 +434,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
 - (CGPoint)cs_centerPointForPosition:(id)point withToast:(UIView *)toast {
     CSToastStyle *style = [CSToastManager sharedStyle];
     
-    UIEdgeInsets safeInsets = UIEdgeInsetsZero;
-    if (@available(iOS 11.0, *)) {
-        safeInsets = self.safeAreaInsets;
-    }
+    UIEdgeInsets safeInsets = self.safeAreaInsets;
     
     CGFloat topPadding = style.verticalPadding + safeInsets.top;
     CGFloat bottomPadding = style.verticalPadding + safeInsets.bottom;

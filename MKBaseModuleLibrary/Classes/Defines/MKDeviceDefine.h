@@ -144,10 +144,7 @@
  */
 #define kNavigationBarHeight \
 ({ \
-    CGFloat height = 44; \
-    if (@available(iOS 15.0, *)) { \
-        height = 54; \
-    } \
+    CGFloat height = 54; \
     height; \
 })
 
@@ -156,17 +153,13 @@
  */
 #define kNavigationBarHeightExact \
 ({ \
-    CGFloat height = 44; \
+    CGFloat height = 0; \
     UIViewController *rootVC = kAppRootController; \
     if (rootVC.navigationController) { \
         height = rootVC.navigationController.navigationBar.frame.size.height; \
     } \
     if (height <= 0) { \
-        if (@available(iOS 15.0, *)) { \
-            height = 54; \
-        } else { \
-            height = 44; \
-        } \
+        height = 54; \
     } \
     height; \
 })
