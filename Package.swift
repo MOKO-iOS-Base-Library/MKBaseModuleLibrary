@@ -16,14 +16,19 @@ let package = Package(
         .target(
             name: "MKBaseModuleLibrary",
             path: "MKBaseModuleLibrary",
-            exclude: [
-                "Classes/Tools/MKExcelManager/libxlsxwriter/third_party/ioapi.c",
-                "Classes/Tools/MKExcelManager/libxlsxwriter/third_party/zip.c",
-            ],
             sources: ["Classes"],
             resources: [.process("Assets")],
             publicHeadersPath: "Classes/PublicHeaders",
             cSettings: [
+                // SSZipArchive podspec 对应宏（pod_target_xcconfig GCC_PREPROCESSOR_DEFINITIONS）
+                .define("HAVE_WZAES"),
+                .define("HAVE_PKCRYPT"),
+                .define("HAVE_ZLIB"),
+                .define("HAVE_INTTYPES_H"),
+                .define("HAVE_STDINT_H"),
+                // libxlsxwriter podspec compiler_flags
+                .define("NOCRYPT", to: "1"),
+                .define("NOUNCRYPT", to: "1"),
                 .headerSearchPath("Classes/Defines"),
                 .headerSearchPath("Classes/Category"),
                 .headerSearchPath("Classes/Tools/MKClassInfo"),
@@ -45,7 +50,8 @@ let package = Package(
             linkerSettings: [
                 .linkedFramework("UIKit"),
                 .linkedLibrary("z"),
-                .linkedLibrary("xml2")
+                .linkedLibrary("xml2"),
+                .linkedLibrary("iconv")
             ]
         )
     ]

@@ -45,6 +45,28 @@
 #ifndef _zip12_H
 #define _zip12_H
 
+/* SPM: rename public symbols to avoid clashing with SSZipArchive's mz_compat.c
+   (both provide legacy minizip API). packager.c includes this header so its
+   call sites are renamed consistently. */
+#define zipOpen                       lxw_zipOpen
+#define zipOpen64                     lxw_zipOpen64
+#define zipOpen2                      lxw_zipOpen2
+#define zipOpen2_64                   lxw_zipOpen2_64
+#define zipOpenNewFileInZip           lxw_zipOpenNewFileInZip
+#define zipOpenNewFileInZip64         lxw_zipOpenNewFileInZip64
+#define zipOpenNewFileInZip2          lxw_zipOpenNewFileInZip2
+#define zipOpenNewFileInZip2_64       lxw_zipOpenNewFileInZip2_64
+#define zipOpenNewFileInZip3          lxw_zipOpenNewFileInZip3
+#define zipOpenNewFileInZip3_64       lxw_zipOpenNewFileInZip3_64
+#define zipOpenNewFileInZip4          lxw_zipOpenNewFileInZip4
+#define zipOpenNewFileInZip4_64       lxw_zipOpenNewFileInZip4_64
+#define zipWriteInFileInZip           lxw_zipWriteInFileInZip
+#define zipCloseFileInZip             lxw_zipCloseFileInZip
+#define zipCloseFileInZipRaw          lxw_zipCloseFileInZipRaw
+#define zipCloseFileInZipRaw64        lxw_zipCloseFileInZipRaw64
+#define zipClose                      lxw_zipClose
+#define zipRemoveExtraInfoBlock       lxw_zipRemoveExtraInfoBlock
+
 #ifdef __cplusplus
 extern "C" {
 #endif

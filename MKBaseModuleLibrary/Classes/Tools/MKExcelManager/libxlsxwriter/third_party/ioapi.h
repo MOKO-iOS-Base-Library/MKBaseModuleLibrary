@@ -27,6 +27,13 @@
 #ifndef _ZLIBIOAPI64_H
 #define _ZLIBIOAPI64_H
 
+/* SPM: rename public symbols to avoid clashing with SSZipArchive's mz_compat.c. */
+#define fill_fopen_filefunc                          lxw_fill_fopen_filefunc
+#define fill_fopen64_filefunc                        lxw_fill_fopen64_filefunc
+#define call_zopen64                                 lxw_call_zopen64
+#define call_zseek64                                 lxw_call_zseek64
+#define fill_zlib_filefunc64_32_def_from_filefunc32  lxw_fill_zlib_filefunc64_32_def_from_filefunc32
+
 #if (!defined(_WIN32)) && (!defined(WIN32)) && (!defined(__APPLE__))
 
   // Linux needs this to support file operation on files larger then 4+GB
