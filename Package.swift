@@ -46,6 +46,9 @@ let package = Package(
                 .headerSearchPath("Classes/Base/View/tableView"),
                 .headerSearchPath("Classes/Vendor/Masonry"),
                 .headerSearchPath("Classes/Vendor/Toast"),
+                .headerSearchPath("Classes/Vendor/CTMediator"),
+                .headerSearchPath("Classes/Vendor/HHTransition"),
+                .headerSearchPath("Classes/Vendor/MLInputDodger"),
             ],
             linkerSettings: [
                 .linkedFramework("UIKit"),
