@@ -9,8 +9,8 @@
 #define HasString(str,key)  ([str rangeOfString:key].location!=NSNotFound)
 
 #define ValidStr(f)         StrValid(f)
-#define ValidDict(f)        (f!=nil && [f isKindOfClass:[NSDictionary class]] && [f count]>0)
-#define ValidArray(f)       (f!=nil && [f isKindOfClass:[NSArray class]] && [f count]>0)
+#define ValidDict(f)        (f!=nil && [f isKindOfClass:[NSDictionary class]] && [(NSDictionary *)f count]>0)
+#define ValidArray(f)       (f!=nil && [f isKindOfClass:[NSArray class]] && [(NSArray *)f count]>0)
 #define ValidNum(f)         (f!=nil && [f isKindOfClass:[NSNumber class]])
 #define ValidClass(f,cls)   (f!=nil && [f isKindOfClass:[cls class]])
 #define ValidData(f)        (f!=nil && [f isKindOfClass:[NSData class]])
