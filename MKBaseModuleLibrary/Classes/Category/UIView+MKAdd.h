@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIView (MKAdd)
 
 /** 添加单击事件*/
-- (void)addTapAction:(id)target selector:(SEL)selector;
+- (void)addTapAction:(id)target selector:(SEL _Nonnull)selector;
 
 /** 添加长按事件*/
-- (void)addLongPressAction:(id)target selector:(SEL)selector;
+- (void)addLongPressAction:(id)target selector:(SEL _Nonnull)selector;
 
 /**
  中心位置浮层提示
@@ -111,3 +113,5 @@
 - (CGRect)mk_convertRect:(CGRect)rect fromViewOrWindow:(nullable UIView *)view;
 
 @end
+
+NS_ASSUME_NONNULL_END

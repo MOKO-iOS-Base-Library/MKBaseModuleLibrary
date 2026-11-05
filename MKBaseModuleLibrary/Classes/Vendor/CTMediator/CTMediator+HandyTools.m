@@ -13,10 +13,14 @@
 @implementation CTMediator (HandyTools)
 
 - (UIWindow *)keyWindow {
-    NSArray<UIWindow *> *windows = [[UIApplication sharedApplication] windows];
-    for (UIWindow *window in windows) {
-        if (window.isKeyWindow) {
-            return window;
+    for (UIScene *scene in UIApplication.sharedApplication.connectedScenes) {
+        if (![scene isKindOfClass:[UIWindowScene class]]) {
+            continue;
+        }
+        for (UIWindow *window in ((UIWindowScene *)scene).windows) {
+            if (window.isKeyWindow) {
+                return window;
+            }
         }
     }
     return nil;

@@ -295,14 +295,13 @@
         };
         
         if (animated) {
-            [UIView beginAnimations:nil context:NULL];
-            [UIView setAnimationDuration:self.inputViewAnimationDuration];
-            [UIView setAnimationCurve:self.inputViewAnimationCurve];
-            [UIView setAnimationBeginsFromCurrentState:YES];
-            
-            changeDodgerViewBlock();
-            
-            [UIView commitAnimations];
+            UIViewAnimationOptions options = ((UIViewAnimationOptions)(self.inputViewAnimationCurve << 16)) | UIViewAnimationOptionBeginFromCurrentState;
+            [UIView animateWithDuration:self.inputViewAnimationDuration
+                                  delay:0
+                                options:options
+                             animations:^{
+                changeDodgerViewBlock();
+            } completion:nil];
         }else{
             changeDodgerViewBlock();
         }
@@ -405,14 +404,13 @@
         };
         
         if (animated) {
-            [UIView beginAnimations:nil context:NULL];
-            [UIView setAnimationDuration:self.inputViewAnimationDuration];
-            [UIView setAnimationCurve:self.inputViewAnimationCurve];
-            [UIView setAnimationBeginsFromCurrentState:YES];
-            
-            changeDodgerViewBlock();
-            
-            [UIView commitAnimations];
+            UIViewAnimationOptions options = ((UIViewAnimationOptions)(self.inputViewAnimationCurve << 16)) | UIViewAnimationOptionBeginFromCurrentState;
+            [UIView animateWithDuration:self.inputViewAnimationDuration
+                                  delay:0
+                                options:options
+                             animations:^{
+                changeDodgerViewBlock();
+            } completion:nil];
         }else{
             changeDodgerViewBlock();
         }

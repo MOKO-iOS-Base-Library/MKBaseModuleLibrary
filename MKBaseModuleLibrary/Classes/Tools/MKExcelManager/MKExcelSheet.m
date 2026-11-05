@@ -146,7 +146,7 @@
 + (NSString *)getMergeCellColumAndRowStrWithCell:(MKExcelCell *)cell
                              mergeCellInfoArray:(NSArray *)mergeCellInfoArray {
     if (ValidDict(mergeCellInfoArray)) {
-        return [self getMergeStrWithMergeInfoDic:mergeCellInfoArray column:cell.column row:cell.row];
+        return [self getMergeStrWithMergeInfoDic:(NSDictionary *)mergeCellInfoArray column:cell.column row:cell.row];
     }
     if (ValidArray(mergeCellInfoArray)) {
         for(NSInteger i = 0 ;i < mergeCellInfoArray.count ;i ++) {

@@ -13,6 +13,10 @@
 
 @implementation NSData (MKAdd)
 
+#pragma clang diagnostic push
+// MD2/MD4/MD5 仅作为兼容性校验算法保留，CommonCrypto 无对应 C 接口替代
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (NSString *)mk_md2String {
     unsigned char result[CC_MD2_DIGEST_LENGTH];
     CC_MD2(self.bytes, (CC_LONG)self.length, result);
@@ -66,6 +70,8 @@
     CC_MD5(self.bytes, (CC_LONG)self.length, result);
     return [NSData dataWithBytes:result length:CC_MD5_DIGEST_LENGTH];
 }
+
+#pragma clang diagnostic pop
 
 - (NSString *)mk_sha1String {
     unsigned char result[CC_SHA1_DIGEST_LENGTH];

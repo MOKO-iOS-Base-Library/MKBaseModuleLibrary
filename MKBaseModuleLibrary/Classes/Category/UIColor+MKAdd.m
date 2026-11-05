@@ -291,7 +291,7 @@ static BOOL hexStrToRGBA(NSString *str,
     return YES;
 }
 
-+ (instancetype)colorWithHexString:(NSString *)hexStr {
++ (UIColor *)mk_colorWithHexString:(NSString *)hexStr {
     CGFloat r, g, b, a;
     if (hexStrToRGBA(hexStr, &r, &g, &b, &a)) {
         return [UIColor colorWithRed:r green:g blue:b alpha:a];
@@ -303,7 +303,7 @@ static BOOL hexStrToRGBA(NSString *str,
     return [self mk_hexStringWithAlpha:NO];
 }
 
-- (NSString *)hexStringWithAlpha {
+- (NSString *)mk_hexStringWithAlpha {
     return [self mk_hexStringWithAlpha:YES];
 }
 

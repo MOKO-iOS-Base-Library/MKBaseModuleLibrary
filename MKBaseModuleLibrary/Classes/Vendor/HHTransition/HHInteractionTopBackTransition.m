@@ -97,7 +97,7 @@ static HHInteractionTopBackView *topBackView = nil;
 }
 
 - (UIImage *)captureCurrentPicture {
-    UIWindow *topWindow = [UIApplication sharedApplication].keyWindow;
+    UIWindow *topWindow = HHKeyWindow();
     CGRect rect = [UIScreen mainScreen].bounds;
     UIGraphicsBeginImageContextWithOptions(rect.size, NO, [UIScreen mainScreen].scale);
     [topWindow drawViewHierarchyInRect:rect afterScreenUpdates:NO];

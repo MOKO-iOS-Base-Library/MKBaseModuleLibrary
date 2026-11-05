@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface UIApplication (MKAdd)
 
 /// "Documents" folder in this app's sandbox.
@@ -96,3 +98,5 @@
 + (nullable UIApplication *)mk_sharedExtensionApplication;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -16,6 +16,20 @@
 isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
 (isPhoneX);})
 
+static inline UIWindow * _Nullable HHKeyWindow(void) {
+    for (UIScene *scene in UIApplication.sharedApplication.connectedScenes) {
+        if (![scene isKindOfClass:[UIWindowScene class]]) {
+            continue;
+        }
+        for (UIWindow *window in ((UIWindowScene *)scene).windows) {
+            if (window.isKeyWindow) {
+                return window;
+            }
+        }
+    }
+    return nil;
+}
+
 typedef NS_ENUM(NSUInteger, HHPresentStyle) {
     HHPresentStyleNone = 0,
     HHPresentStyleSlipFromTop,

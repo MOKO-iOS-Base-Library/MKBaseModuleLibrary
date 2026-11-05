@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 //*************************************正则表达式******************************************************
 static NSString *const isRealNumbers = @"[0-9]*";           //是否是纯数字
 static NSString *const isChinese = @"[\u4e00-\u9fa5]+";     //是否是汉字
@@ -59,13 +61,13 @@ static NSString *const isUrl = @"[a-zA-z]+://[^\\s]*";      //是否是Url
 - (BOOL)isAsciiString;
 
 /// 将16进制数据转换成2进制数据
-- (NSString *)binaryByhex;
+- (nullable NSString *)binaryByhex;
 
 /// 将2进制数据转换成对应的16进制数据
-- (NSString *)fetchHexByBinary;
+- (nullable NSString *)fetchHexByBinary;
 
 /// 将十六进制字符转换成对应的NSData
-- (NSData *)stringToData;
+- (nullable NSData *)stringToData;
 
 #pragma mark - Hash
 ///=============================================================================
@@ -174,19 +176,19 @@ static NSString *const isUrl = @"[a-zA-z]+://[^\\s]*";      //是否是Url
  URL encode a string in utf-8.
  @return the encoded string.
  */
-- (NSString *)mk_stringByURLEncode;
+- (nullable NSString *)mk_stringByURLEncode;
 
 /**
  URL decode a string in utf-8.
  @return the decoded string.
  */
-- (NSString *)mk_stringByURLDecode;
+- (nullable NSString *)mk_stringByURLDecode;
 
 /**
  Escape common HTML to Entity.
  Example: "a<b" will be escape to "a&lt;b".
  */
-- (NSString *)mk_stringByEscapingHTML;
+- (nullable NSString *)mk_stringByEscapingHTML;
 
 #pragma mark - Drawing
 ///=============================================================================
@@ -275,7 +277,7 @@ static NSString *const isUrl = @"[a-zA-z]+://[^\\s]*";      //是否是Url
  
  @return A string with matching regular expressions replaced by the template string.
  */
-- (NSString *)mk_stringByReplacingRegex:(NSString *)regex
+- (nullable NSString *)mk_stringByReplacingRegex:(NSString *)regex
                                 options:(NSRegularExpressionOptions)options
                              withString:(NSString *)replacement;
 
@@ -352,8 +354,8 @@ static NSString *const isUrl = @"[a-zA-z]+://[^\\s]*";      //是否是Url
  e.g.
  <table>
  <tr><th>Before     </th><th>After(scale:2)</th></tr>
- <tr><td>"icon"     </td><td>"icon@2x"     </td></tr>
- <tr><td>"icon "    </td><td>"icon @2x"    </td></tr>
+ <tr><td>"icon"     </td><td>"icon@2x"  </td></tr>
+ <tr><td>"icon "    </td><td>"icon @2x" </td></tr>
  <tr><td>"icon.top" </td><td>"icon.top@2x" </td></tr>
  <tr><td>"/p/name"  </td><td>"/p/name@2x"  </td></tr>
  <tr><td>"/path/"   </td><td>"/path/"      </td></tr>
@@ -454,3 +456,5 @@ static NSString *const isUrl = @"[a-zA-z]+://[^\\s]*";      //是否是Url
 + (nullable NSString *)mk_stringNamed:(NSString *)name;
 
 @end
+
+NS_ASSUME_NONNULL_END

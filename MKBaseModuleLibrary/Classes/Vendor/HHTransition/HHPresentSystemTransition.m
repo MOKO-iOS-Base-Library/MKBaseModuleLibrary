@@ -105,7 +105,7 @@
     if ([delegate respondsToSelector:@selector(window)]) {
         return delegate.window;
     }
-    return [UIApplication.sharedApplication keyWindow];
+    return HHKeyWindow();
 }
 
 @end

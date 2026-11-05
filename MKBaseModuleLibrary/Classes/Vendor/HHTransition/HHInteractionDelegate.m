@@ -82,8 +82,8 @@
 }
 
 - (void)edgePanGestureAction:(UIScreenEdgePanGestureRecognizer *)gesture {
-    CGFloat rate = [gesture translationInView:[[UIApplication sharedApplication] keyWindow]].x / [UIScreen mainScreen].bounds.size.width;
-    CGFloat velocity = [gesture velocityInView:[[UIApplication sharedApplication] keyWindow]].x;
+    CGFloat rate = [gesture translationInView:HHKeyWindow()].x / [UIScreen mainScreen].bounds.size.width;
+    CGFloat velocity = [gesture velocityInView:HHKeyWindow()].x;
     switch (gesture.state) {
         case UIGestureRecognizerStateBegan:
             self.isPopInteraction = YES;

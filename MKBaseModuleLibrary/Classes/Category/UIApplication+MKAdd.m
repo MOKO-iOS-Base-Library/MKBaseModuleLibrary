@@ -350,10 +350,14 @@
 MKSYNTH_DYNAMIC_PROPERTY_OBJECT(networkActivityInfo, setNetworkActivityInfo, RETAIN_NONATOMIC, _MKUIApplicationNetworkIndicatorInfo *);
 
 - (void)_delaySetActivity:(NSTimer *)timer {
+#pragma clang diagnostic push
+// networkActivityIndicatorVisible 无替代 API，保留旧行为
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSNumber *visiable = timer.userInfo;
     if (self.networkActivityIndicatorVisible != visiable.boolValue) {
         [self setNetworkActivityIndicatorVisible:visiable.boolValue];
     }
+#pragma clang diagnostic pop
     [timer invalidate];
 }
 

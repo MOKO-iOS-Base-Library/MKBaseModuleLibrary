@@ -70,7 +70,11 @@ va_start(args, _last_arg_); \
 [NSObject setInv:inv withSig:sig andArgs:args]; \
 va_end(args);
 
-- (id)mk_performSelectorWithArgs:(SEL)sel, ...{
+#pragma clang diagnostic push
+// va_start 引用 BOOL 类型最后一个命名参数，属预期用法，屏蔽 -Wvarargs
+#pragma clang diagnostic ignored "-Wvarargs"
+
+- (id)mk_performSelectorWithArgs:(SEL _Nonnull)sel, ...{
     INIT_INV(sel, nil);
     [inv invoke];
     return [NSObject getReturnFromInv:inv withSig:sig];
@@ -103,6 +107,8 @@ va_end(args);
 }
 
 #undef INIT_INV
+
+#pragma clang diagnostic pop
 
 + (id)getReturnFromInv:(NSInvocation *)inv withSig:(NSMethodSignature *)sig {
     NSUInteger length = [sig methodReturnLength];
@@ -405,6 +411,10 @@ else if (size <= 4 * _size_ ) { \
     return [NSString stringWithUTF8String:class_getName([self class])];
 }
 
+#pragma clang diagnostic push
+// 通用 deepCopy 无法预知对象图中的类列表，无法迁移到 secure coding API，保留旧行为
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (id)mk_deepCopy {
     id obj = nil;
     @try {
@@ -426,6 +436,8 @@ else if (size <= 4 * _size_ ) { \
     }
     return obj;
 }
+
+#pragma clang diagnostic pop
 
 - (void)mk_addObserverBlockForKeyPath:(NSString *)keyPath block:(void (^)(__weak id obj, id oldVal, id newVal))block {
     if (!keyPath || !block) return;
