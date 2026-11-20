@@ -113,7 +113,7 @@
     [self updateTitle];
     
     // 设置默认左按钮
-    UIImage *backImage = LOADICON(@"MKBaseModuleLibrary", @"MKBaseViewController", @"navigation_back_button_white@2x.png");
+    UIImage *backImage = LOADICON(@"MKBaseModuleLibrary", @"MKBaseViewController", @"navigation_back_button_white.png");
     backImage = [backImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [self.leftButton setImage:backImage forState:UIControlStateNormal];
     self.leftButton.hidden = NO;
