@@ -34,7 +34,7 @@
         //see https://github.com/CocoaPods/CocoaPods/issues/3226
         NSBundle *bundle = [NSBundle bundleForClass:NSClassFromString(@"MLInputDodger")];
         NSString *bundlePath = [bundle pathForResource:@"MLInputDodger" ofType:@"bundle"];
-        UIImage *retractImage = [[UIImage alloc]initWithContentsOfFile:[bundlePath stringByAppendingPathComponent:@"retract.png"]];
+        UIImage *retractImage = [[UIImage alloc]initWithContentsOfFile:[bundlePath stringByAppendingPathComponent:@"retract@2x.png"]];
         [button setImage:retractImage forState:UIControlStateNormal];
         [button addTarget:self action:@selector(retract) forControlEvents:UIControlEventTouchUpInside];
         
